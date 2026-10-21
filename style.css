@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  --navy: #080f35;
+  --purple: #a63cff;
+  --blue: #237bff;
+  --muted: #b8c3e1;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--navy);
+  color: #fff;
+}
+
+.web_logo {
+  display: flex;
+  margin-top: 18px;
+  margin-left: 24px;
+}
+
+.logo {
+    font-size: clamp(25px, 3vw, 39px);
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo1 {
+    font-size: clamp(25px, 3vw, 39px);
+  color: #f7f8ff;
+  display: flex;
+}
+
+.logo1 div {
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.welome {
+  position: relative;
+  width: min(92%, 850px);
+  margin-top: 2.5rem;
+  text-align: center;
+  animation: arrive .6s ease both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wel_inteo {
+  margin: 75px 0 4px;
+  font-size: clamp(2.6rem, 6.5vw, 6.2rem);
+  line-height: 1.08;
+  letter-spacing: -3.8px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wel1_inteo {
+  margin: 0;
+  font-size: clamp(3.3rem, 7.6vw, 7rem);
+  line-height: 1.13;
+  letter-spacing: -4px;
+  font-weight: 800;
+  background: linear-gradient(100deg, #c03dff 10%, #8b4bff 43%, #2888ff 95%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wel2_inteo {
+  margin: 35px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.15rem, 2.35vw, 2.15rem);
+  font-weight: 400;
+  letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-button {
+  margin-top: clamp(72px, 8.8vw, 132px);
+  min-width: 252px;
+  min-height: 79px;
+  padding: 18px 30px;
+  border: 0;
+  border-radius: 999px;
+  color: white;
+  background: linear-gradient(105deg, #b22fff, #147dff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font: inherit;
+  font-size: 1.65rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 12px 34px rgba(29, 83, 255, .12);
+  transition: transform .2s ease, filter .2s ease;
+}
+
+.next-button:hover { transform: translateY(-3px); filter: brightness(1.12); }
+.next-button:active { transform: translateY(0) scale(.98); }
+.next-button:focus-visible { outline: 3px solid white; outline-offset: 5px; }
+.arrow { font-size: 2.1rem; line-height: .8; font-weight: 400; }
+
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .web_logo { top: 25px; left: 6%; }
+  .welcome { margin-top: 1rem; }
+  .wel_inteo { letter-spacing: -1.7px; }
+  .wel1_inteo { letter-spacing: -2px; }
+  .wel2_inteo { margin-top: 22px; }
+  .next-button { min-width: 205px; min-height: 62px; font-size: 1.25rem; margin-top: 68px; }
+  .arrow { font-size: 1.7rem; }
+  .progress { margin-top: 68px; gap: 13px; }
+  .progress-dot, .progress-dot.active { width: 30px; height: 5px; } */
+  .orb-top { width: 65vw; right: -30%; top: -12%; }
+  .orb-bottom { width: 75vw; left: -35%; bottom: -20%; }
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: clamp(75px, 6.5vw, 98px);
+}
+
+.progress-dot {
+  width: 39px;
+  height: 6px;
+  border-radius: 99px;
+  background: #26376d;
+  transition: width .25s ease, background .25s ease;
+}
+
+.progress-dot.active {
+  width: 39px;
+  background: linear-gradient(90deg, #b339ff, #8a4cff);
+}
