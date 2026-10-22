@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_codepath</title>
+    <link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body> 
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div>path</div>
+        </div>
+    </div>
+
+    <div class="big-box">
+    <div class="add_info">
+        <p class="info">LEARN. BUILD. GROW.</p>
+        <h1 class="info1">Your next chapter starts with</h1>
+        <div>Codepath.</div>
+        <br>
+        <p class="info2">Build real-world skills and take your coding journey to the next level.</p>
+        <br>
+        <p class="info3">〈/〉 Learn by building</p>
+        <br>
+        <p class="info4">↗ Track your progress</p>
+    </div>
+
+    <div class="login">
+        <h1 class="wel" id="title">Welcome back</h1>
+        <p class="wel2">Sign in to continue learning</p>
+ 
+        <div class="sign_in">
+            <button class="on" type="button" id="signin-tab">Sign in</button>
+            <button class type="button" id="signup-tab">Create Account</button>
+        </div>
+
+        <div class="login-box" id="loginBox">
+
+            <div class="sign1_in" role="tablist">
+                <button class="on" type="button" id="username-tab">Username</button>
+                <button class type="button" id="phoneno-tab">Phone number</button>
+            </div>
+
+            <div id="byUser" class>
+                <label for="lu">Username</label>
+                <br>
+                <input type="text" placeholder="your_username" id="lu">
+                <div class="signin">
+                    <label for="lp">Password</label>
+                    <br>
+                    <input type="password" placeholder="Password" id="lp">
+                    <button type="button" data-eye="lp">Show</button>
+                </div>
+            </div>
+
+            <div id="byPhone" class="hide">
+                <label for="lph">Phone number</label>
+                <br>
+                <input type="number" placeholder="+1 555 123 4567" id="lph">
+                <div class="sign1in">
+                    <label for="lpp">Password</label>
+                    <br>
+                    <input type="password" placeholder="Password" id="lpp">
+                    <button type="button" data-eye="lpp">Show</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="signin-box" id="signinBox">
+            <div class="log_in">
+                <button class="on" type="button" id="email-tab">Email</button>
+                <button class type="button" id="phone-tab">Phone number</button>
+            </div>
+
+            <div id="sEmailW" class>
+                <label for="le">Email Id</label>
+                <br>
+                <input type="text" placeholder="you@example.com" id="le" autocomplete="Email">
+            </div>
+
+            <div id="sPhoneW" class="hide">
+                <label for="sp">Phone number</label>
+                <br>
+                <input type="number" placeholder="+1 555 123 4567" id="sp">
+            </div>
+
+            <label for="su">Create username</label>
+            <br>
+            <input id="su" autocomplete="username" placeholder="choose_a_username">
+            <div class="pw">
+                <label for="sw">Create Password</label>
+                <br>
+                <input id="sw"  autocomplete="new-password" placeholder="At least 8 character">
+                <button type="button" data-eye="sw">Show</button>
+            </div>
+        </div>
+        
+        <button type="button" id="go" class="main-button">
+           Sign in
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+    </div>
+
+</body>
+<script src="login.js" defer></script>
+</html>
