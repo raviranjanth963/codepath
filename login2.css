@@ -204,31 +204,54 @@ body {
 .sign1_in {
   margin-left: 35px;
   margin-top: 25px;
-  height: 25px;
+  height: 30px;
   width: 200px;
   background: #FFFFFF0F;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color-scheme: dark;
+  --navy: #080f35;
+  --purple: #a63cff;
+  --blue: #237bff;
+  --muted: #b8c3e1;
 }
 
 #username-tab {
-  height: 25px;
+  height: 30px;
+  /* width: 95px; */
   background: #FFFFFF0F;
   color: #A9B0D6;
+  color-scheme: dark;
+  --navy: #080f35;
+  --purple: #a63cff;
+  --blue: #237bff;
+  --muted: #b8c3e1;
+  border-color: transparent;
 }
 
 #phoneno-tab {
-  height: 25px;
+  height: 30px;
+  /* width: 95px; */
   background: #FFFFFF0F;
   color: #A9B0D6;
+  color-scheme: dark;
+  --navy: #080f35;
+  --purple: #a63cff;
+  --blue: #237bff;
+  --muted: #b8c3e1;
+   border-color: transparent;
 }
 
 #username-tab:active {
-  text-decoration: 2px underline blue;
+  text-decoration: 2px underline rgb(239, 239, 245);
   color: white;
 }
 #username-tab:focus-visible { outline: 3px solid white; outline-offset: 5px; }
 
 #phoneno-tab:active {
-  text-decoration: 2px underline blue;
+  text-decoration: 2px underline rgb(239, 239, 245);
   color: white;
 }
 #phoneno-tab:focus-visible { outline: 3px solid white; outline-offset: 5px; }
@@ -261,3 +284,7 @@ body {
     color: #c5a2ff;
     text-align: center;
 }
+
+#go:hover { transform: translateY(-3px); filter: brightness(1.12); }
+#go:active { transform: translateY(0) scale(.98); }
+#go:focus-visible { outline: 3px solid white; outline-offset: 5px; }

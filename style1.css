@@ -168,3 +168,7 @@ body {
   width: 39px;
   background: linear-gradient(90deg, #b339ff, #8a4cff);
 }
+
+a {
+  text-decoration: none;
+}
