@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login_codepath</title>
-    <link rel="stylesheet" href="login.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>codepath - Log in</title>
+    <link rel="stylesheet" href="login2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body> 
+
+<body>
+
     <div class="web_logo">
         <div class="logo">
             <i class="fa-solid fa-code"></i>
@@ -15,7 +18,7 @@
 
         <div class="logo1">
             code
-            <div>path</div>
+            <div><dfn>path</dfn></div>
         </div>
     </div>
 
@@ -32,85 +35,90 @@
         <p class="info4">↗ Track your progress</p>
     </div>
 
-    <div class="login">
-        <h1 class="wel" id="title">Welcome back</h1>
-        <p class="wel2">Sign in to continue learning</p>
- 
-        <div class="sign_in">
-            <button class="on" type="button" id="signin-tab">Sign in</button>
-            <button class type="button" id="signup-tab">Create Account</button>
+    <div class="card">
+        <h1 id="title">Welcome back</h1>
+        <p id="sub">Sign in to continue learning.</p>
+
+        <!-- Two main buttons -->
+        <div class="tabs">
+            <button type="button" id="tLogin" class="on">Sign in</button>
+            <button type="button" id="tSign">Create account</button>
         </div>
 
+        <!-- ========== SIGN IN BOX ========== -->
         <div class="login-box" id="loginBox">
 
-            <div class="sign1_in" role="tablist">
-                <button class="on" type="button" id="username-tab">Username</button>
-                <button class type="button" id="phoneno-tab">Phone number</button>
+            <div class="sign1_in">
+                <button type="button" id="username-tab" class="on">Username</button>
+                <button type="button" id="phoneno-tab">Phone number</button>
             </div>
 
-            <div id="byUser" class>
+            <!-- Sign in with username -->
+            <div id="byUser">
                 <label for="lu">Username</label>
-                <br>
                 <input type="text" placeholder="your_username" id="lu">
-                <div class="signin">
-                    <label for="lp">Password</label>
-                    <br>
+
+                <label for="lp">Password</label>
+                <div class="pw">
                     <input type="password" placeholder="Password" id="lp">
                     <button type="button" data-eye="lp">Show</button>
                 </div>
             </div>
 
+            <!-- Sign in with phone (hidden at start) -->
             <div id="byPhone" class="hide">
                 <label for="lph">Phone number</label>
-                <br>
-                <input type="number" placeholder="+1 555 123 4567" id="lph">
-                <div class="sign1in">
-                    <label for="lpp">Password</label>
-                    <br>
+                <input type="tel" placeholder="+1 555 123 4567" id="lph">
+
+                <label for="lpp">Password</label>
+                <div class="pw">
                     <input type="password" placeholder="Password" id="lpp">
                     <button type="button" data-eye="lpp">Show</button>
                 </div>
             </div>
         </div>
 
-        <div class="signin-box" id="signinBox">
+        <!-- ========== CREATE ACCOUNT BOX (hidden at start) ========== -->
+        <div class="signin-box hide" id="signinBox">
+
             <div class="log_in">
-                <button class="on" type="button" id="email-tab">Email</button>
-                <button class type="button" id="phone-tab">Phone number</button>
+                <button type="button" id="email-tab" class="on">Email</button>
+                <button type="button" id="phone-tab">Phone number</button>
             </div>
 
-            <div id="sEmailW" class>
+            <!-- Email -->
+            <div id="sEmailW">
                 <label for="le">Email Id</label>
-                <br>
-                <input type="text" placeholder="you@example.com" id="le" autocomplete="Email">
+                <input type="email" placeholder="you@example.com" id="le">
             </div>
 
+            <!-- Phone (hidden at start) -->
             <div id="sPhoneW" class="hide">
                 <label for="sp">Phone number</label>
-                <br>
-                <input type="number" placeholder="+1 555 123 4567" id="sp">
+                <input type="tel" placeholder="+1 555 123 4567" id="sp">
             </div>
 
             <label for="su">Create username</label>
-            <br>
-            <input id="su" autocomplete="username" placeholder="choose_a_username">
+            <input type="text" placeholder="choose_a_username" id="su">
+
+            <label for="sw">Create password</label>
             <div class="pw">
-                <label for="sw">Create Password</label>
-                <br>
-                <input id="sw"  autocomplete="new-password" placeholder="At least 8 character">
+                <input type="password" placeholder="At least 8 characters" id="sw">
                 <button type="button" data-eye="sw">Show</button>
             </div>
         </div>
-        
-        <button type="button" id="go" class="main-button">
-           Sign in
-        </button>
 
-        <p id="message"></p>
+        <!-- Main button and message -->
+        <button type="button" class="main" id="go">Sign in</button>
+        <p id="msg"></p>
+
+        <p class="or">or</p>
+        <button type="button" class="g" id="google">Continue with Google</button>
 
     </div>
     </div>
 
+    <script src="login2.js"></script>
 </body>
-<script src="login.js" defer></script>
+
 </html>

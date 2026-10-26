@@ -44,6 +44,17 @@ body {
   display: flex;
 }
 
+.logo1 div {
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+dfn {
+    font-weight: bolder;
+}
+
 .extra {
     width: 300px;
     height: 30px;
@@ -347,4 +358,8 @@ details {
 
 .end {
     color: #A9B0D6;
+}
+
+a {
+    text-decoration: none;
 }

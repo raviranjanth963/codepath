@@ -49,6 +49,10 @@ body {
   -webkit-background-clip: text;
 }
 
+dfn {
+    font-weight: bolder;
+}
+
 .welome {
   position: relative;
   width: min(92%, 850px);

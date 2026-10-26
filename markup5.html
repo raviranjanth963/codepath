@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markup language</title>
+    <link rel="stylesheet" href="markup5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div>path</div>
+        </div>
+    </div>
+
+    <h1 class="hea">HTML: HyperText Markup Language</h1>
+    <p class="hea2"><dfn>HTML</dfn> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and 
+        structure of web content. Other technologies besides HTML are generally used to describe a web page's 
+        appearance/presentation (CSS) or functionality/behavior (JavaScript).
+    </p>
+    
+    <p class="hea2">"Hypertext" refers to text containing links that connect web pages to one another, either within a single 
+        website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking 
+        it to pages created by other people, you become an active participant in the World Wide Web.
+    </p>
+    
+    <p class="hea2">HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup
+        includes special "elements" such as &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;divv, 
+        &lt;span&gt;, &lt;img&gt;,&lt;aside&gt;, &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;search&gt;, &lt;output&gt;, &lt;progress&gt;, 
+        &lt;video&gt;, &lt;ul&gt;, &lt;o&gt;, &lt;li&gt; and many others.
+    </p>
+     
+    <p class="hea2">An <dfn>HTML</dfn> element is set off from other text in a document by "tags", which consist of the element name surrounded 
+        by < and >. The name of an element inside a tag is case-insensitive. That is, it can be written in uppercase, lowercase, or 
+        a mixture. For example, the &lt;title&gt; tag can be written as &lt;Title&gt;, &lt;TITLE&gt;, or in any other way. However, the convention and 
+        recommended practice is to write tags in lowercase.
+    </p>
+
+    <p class="hea3">The articles below can help you learn more about HTML.</p>
+    <hr>
+    <h1 class="hea">Define terms with HTML</h1>
+    <p class="hea3">HTML provides several ways to convey description semantics, whether inline or as structured glossaries. In this 
+        article, we'll cover how to properly mark up keywords when you're defining them.
+    </p>
+    <p  class="hea3">When you need a term defined, you probably go straight to a dictionary or glossary. Dictionaries and 
+        glossaries formally associate keywords with one or more descriptions, as in this case:
+    </p>
+    <p class="hea3">To deal with these use cases, HTML provides tags to mark descriptions and words described, so that your 
+        meaning gets across properly to your readers.
+    </p>
+    <hr>
+    <h1 class="hea">How to make informal description</h1>
+
+    <p class="hea2">In textbooks, the first time a keyword occurs, it's common to put the keyword in bold and define it right away.<br>
+        We do that in HTML too, except HTML is not a visual medium and so we don't use bold.We use &lt;dfn&gt;, which is a special 
+        element just for marking the first occurrence of keywords. Note that &lt;dfn&gt; tags go around the word to be defined, not the 
+        definition (the definition consists of the entire paragraph):
+    </p>
+    <div class="des">
+        <div class="code-box">
+           <button type="button" class="copy-btn" id="copyBtn">copy</button>
+<pre><code>&lt;dfn&gt;Firefox&lt;/dfn&gt; is the web browser created by the Mozilla Foundation.</code></pre>
+        </div>
+    <p class="hea4">ex:- <dfn>Firefox</dfn> is the web browser created by the Mozilla Foundation.</p>
+    </div>
+    <hr>
+
+    <h1 class="hea">Special case: Abbriviations.</h1>
+    <p class="hea2">It's best to mark abbreviations specially with &lt;abbr&gt;, so that screen readers read them appropriately and so 
+        that you can operate on all abbreviations uniformly. Just as with any new keyword, you should define your abbreviations 
+        the first time they occur.
+    </p>
+
+    <div class="des1">
+        <div class="code-box">
+           <button type="button" class="copy-btn" id="copyBtn">copy</button>
+<pre><code>
+&lt;p&gt;
+  &lt;dfn&gt;&lt;abbr&gt;HTML&lt;/abbr&gt; (hypertext markup language)&lt;/dfn&gt;
+  is a description language used to structure documents on the web.
+&lt;/p&gt;
+</code></pre>
+        </div>
+        <p>
+            <dfn><abbr>HTML</abbr> (hypertext markup language)</dfn>
+            is a description language used to structure documents on the web.
+        </p>
+    </div>
+    <hr>
+    <h1 class="hea">How to build a descrioption list.</h1>
+
+    <div class="des2">
+        <div class="code-box">
+           <button type="button" class="copy-btn" id="copyBtn">copy</button>
+<pre><code>
+&lt;p&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;jambalaya&lt;/dt&gt;
+        &lt;dd&gt;
+             rice-based entree typically containing chicken, sausage, seafood, and spices
+        &lt;/dd&gt;
+
+        &lt;dt&gt;sukiyaki&lt;/dt&gt;
+        &lt;dd&gt;
+            Japanese specialty consisting of thinly sliced meat, vegetables, and
+            noodles, cooked in sake and soy sauce
+        &lt;/dd&gt;
+
+        &lt;dt&gt;chianti&lt;/dt&gt;
+        &lt;dd&gt;dry Italian red wine originating in Tuscany&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/p&gt;;
+</code></pre>
+        </div>
+
+        <p>
+            <dl>
+                <dt>jambalaya</dt>
+                <dd>
+                    rice-based entree typically containing chicken, sausage, seafood, and spices
+                </dd>
+
+                <dt>sukiyaki</dt>
+                <dd>
+                    Japanese specialty consisting of thinly sliced meat, vegetables, and
+                    noodles, cooked in sake and soy sauce
+                </dd>
+
+                <dt>chianti</dt>
+                <dd>dry Italian red wine originating in Tuscany</dd>
+            </dl>
+        </p>
+    </div>
+    <hr>
+</body>
+<script src="copy.js" defer></script>
+</html>
