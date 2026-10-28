@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codepath - Log in</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="big-box">
+    <div class="add_info">
+        <p class="info">LEARN. BUILD. GROW.</p>
+        <h1 class="info1">Your next chapter starts with</h1>
+        <div>Codepath.</div>
+        <br>
+        <p class="info2">Build real-world skills and take your coding journey to the next level.</p>
+        <br>
+        <p class="info3">〈/〉 Learn by building</p>
+        <br>
+        <p class="info4">↗ Track your progress</p>
+    </div>
+
+    <div class="card">
+        <h1 id="title">Welcome back</h1>
+        <p id="sub">Sign in to continue learning.</p>
+
+        <!-- Two main buttons -->
+        <div class="tabs">
+            <button type="button" id="tLogin" class="on">Sign in</button>
+            <button type="button" id="tSign">Create account</button>
+        </div>
+
+        <!-- ========== SIGN IN BOX ========== -->
+        <div class="login-box" id="loginBox">
+
+            <div class="sign1_in">
+                <button type="button" id="username-tab" class="on">Username</button>
+                <button type="button" id="phoneno-tab">Phone number</button>
+            </div>
+
+            <!-- Sign in with username -->
+            <div id="byUser">
+                <label for="lu">Username</label>
+                <input type="text" placeholder="your_username" id="lu">
+
+                <label for="lp">Password</label>
+                <div class="pw">
+                    <input type="password" placeholder="Password" id="lp">
+                    <button type="button" data-eye="lp">Show</button>
+                </div>
+            </div>
+
+            <!-- Sign in with phone (hidden at start) -->
+            <div id="byPhone" class="hide">
+                <label for="lph">Phone number</label>
+                <input type="tel" placeholder="+1 555 123 4567" id="lph">
+
+                <label for="lpp">Password</label>
+                <div class="pw">
+                    <input type="password" placeholder="Password" id="lpp">
+                    <button type="button" data-eye="lpp">Show</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== CREATE ACCOUNT BOX (hidden at start) ========== -->
+        <div class="signin-box hide" id="signinBox">
+
+            <div class="log_in">
+                <button type="button" id="email-tab" class="on">Email</button>
+                <button type="button" id="phone-tab">Phone number</button>
+            </div>
+
+            <!-- Email -->
+            <div id="sEmailW">
+                <label for="le">Email Id</label>
+                <input type="email" placeholder="you@example.com" id="le">
+            </div>
+
+            <!-- Phone (hidden at start) -->
+            <div id="sPhoneW" class="hide">
+                <label for="sp">Phone number</label>
+                <input type="tel" placeholder="+1 555 123 4567" id="sp">
+            </div>
+
+            <label for="su">Create username</label>
+            <input type="text" placeholder="choose_a_username" id="su">
+
+            <label for="sw">Create password</label>
+            <div class="pw">
+                <input type="password" placeholder="At least 8 characters" id="sw">
+                <button type="button" data-eye="sw">Show</button>
+            </div>
+        </div>
+
+        <!-- Main button and message -->
+        <button type="button" class="main" id="go">Sign in</button>
+        <p id="msg"></p>
+
+        <p class="or">or</p>
+        <button type="button" class="g" id="google">Continue with Google</button>
+
+    </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

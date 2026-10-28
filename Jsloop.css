@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  --navy: #080f35;
+  --purple: #a63cff;
+  --blue: #237bff;
+  --muted: #b8c3e1;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--navy);
+  color: #fff;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.web_logo {
+  display: flex;
+  margin-top: 18px;
+  margin-left: 24px;
+}
+
+.logo {
+    font-size: clamp(25px, 3vw, 39px);
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo1 {
+    font-size: clamp(25px, 3vw, 39px);
+  color: #f7f8ff;
+  display: flex;
+}
+
+.logo1 div {
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+dfn {
+    font-weight: bolder;
+}
+
+/*copy for*/
+
+.code-box {
+    position: relative;          /* lets the button sit in the corner */
+    background: #040126;
+    padding: 40px 20px 20px; 
+    color: white;
+    font-size: 20px;
+    border-radius: 24px;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.copy-btn:active {
+    color: #ffd43b;
+    background: #2ecc71;
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hed {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 1300px;
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #b8c3e1;
+    width: 1250px;
+}
+
+h1 {
+    color: #f7f8ff;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.jscod {
+    width: 1250px;
+    height: 290px;
+    border: 1.5px solid rgb(184, 115, 249);
+    border-radius: 24px;
+}
+
+.cod {
+    width: 1200px;
+    height: 200px;
+    background: #19002e;
+    border: 0px;
+    border-radius: 26px;
+    padding-left: 15px;
+}
+
+pre {
+    font-size: 20px;
+    color: #d79ffd;
+}
+
+h2 {
+    color: #f7f8ff;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.jscod2 {
+    width: 1250px;
+    height: 220px;
+    border: 1.5px solid rgb(184, 115, 249);
+    border-radius: 24px;
+}
+
+.cod2 {
+    width: 1200px;
+    height: 150px;
+    background: #19002e;
+    border: 0px;
+    border-radius: 26px;
+    padding: 15px;
+}
+
+.jscod3 {
+    width: 1250px;
+    height: 535px;
+    border: 1.5px solid rgb(184, 115, 249);
+    border-radius: 24px;
+}
+
+.cod3 {
+    width: 1200px;
+    height: 460px;
+    background: #19002e;
+    border: 0px;
+    border-radius: 26px;
+    padding: 15px;
+}

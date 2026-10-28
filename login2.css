@@ -273,9 +273,57 @@ dfn {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 700px;
 }
 
 .add_info {
   width: 750px;
   height: 850px;
+}
+
+#email-tab {
+    font-size: 20px;
+}
+
+#phone-tab {
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.next-button {
+  margin-top: clamp(72px, 8.8vw, 132px);
+  min-width: 252px;
+  min-height: 79px;
+  padding: 18px 30px;
+  border: 0;
+  border-radius: 999px;
+  color: white;
+  background: linear-gradient(105deg, #b22fff, #147dff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font: inherit;
+  font-size: 1.65rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 12px 34px rgba(29, 83, 255, .12);
+  transition: transform .2s ease, filter .2s ease;
+}
+
+.next-button:hover { transform: translateY(-3px); filter: brightness(1.12); }
+.next-button:active { transform: translateY(0) scale(.98); }
+.next-button:focus-visible { outline: 3px solid white; outline-offset: 5px; }
+.arrow { font-size: 2.1rem; line-height: .8; font-weight: 400; }
+
+a {
+    text-decoration: none;
 }

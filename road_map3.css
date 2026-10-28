@@ -363,3 +363,25 @@ details {
 a {
     text-decoration: none;
 }
+
+.butt {
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+    border: 0px;
+    height: 70px;
+    width: 240px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 36px;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 300px;
+}
+
+.butt:hover { transform: translateY(-3px); filter: brightness(1.12); }
+.butt:active { transform: translateY(0) scale(.98); }
+.butt:focus-visible { outline: 3px solid white; outline-offset: 5px; }
