@@ -32,7 +32,7 @@
                         <li><a href="#">Standerd built-in object</a></li>
                         <li><a href="#">Expression & Operators</a></li>
                         <li><a href="#">Statements & declarations</a></li>
-                        <li><a href="#">Functions</a></li>
+                        <li><a href="jsFunction.html">Functions</a></li>
                         <li><a href="#">Classes</a></li>
                         <li><a href="#">Errors</a></li>
                         <li><a href="#">Regular expressions</a></li>
@@ -63,6 +63,464 @@
     </div>
     <div class="top">
         <h1 class="hed">JavaScript</h1>
+        <h2>1. Introduction to JavaScript</h2>
+        <p class="def">JavaScript (JS) is a programming language used to make websites interactive and dynamic. It allows us to respond to user actions, update webpage content, validate forms, and perform calculations.</p>
+        <h2>Examples of JavaScript applications:</h2>
+        <ul>
+            <li><p class="def">Displaying alerts and messages.</p></li>
+            <li><p class="def">Responding to button clicks.</p></li>
+            <li><p class="def">Updating text and HTML elements.</p></li>
+            <li><p class="def">Validating login and registration forms.</p></li>
+        </ul>
+        <h2>2. How to Run JavaScript in the Browser Console</h2>
+        <p class="def">You can execute JavaScript directly in Google Chrome without creating a file.</p>
+        <ul>
+            <li><p class="def">Open Google Chrome.</p></li>
+            <li><p class="def">Open a webpage.</p></li>
+            <li><p class="def">Right-click and select Inspect.</p></li>
+            <li><p class="def">Select the Console tab.</p></li>
+            <li><p class="def">Type JavaScript code and press Enter.</p></li>
+        </ul>
+        <p class="def">To clear the console, use Ctrl + L in the Console on most Chrome setups.</p>
+        <h2>Example: Display an alert</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+alert("Welcome to codepath!");
+alert("Start learning JavaScript");
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Print a message in the console</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log("Welcome to codepath!");
+console.log("JavaScript is easy to learn.");
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def"><dfn>Explanation:</dfn> console.log() displays a message or value in the browser console. You can use it to test your code and debug problems.</p>
+        <h2>3. Adding JavaScript to an HTML File</h2>
+        <p class="def">You can connect JavaScript to an HTML webpage using the &lt;script> tag.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>JavaScript Lesson&lt;/title>
+&lt;/head>
+&lt;body>
+
+    &lt;h1>Welcome to codepath&lt;/h1>
+
+    &lt;script src="first.js">&lt;/script>
+&lt;/body>
+&lt;/html>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def">Create another file named first.js in the same folder.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log("Welcome to codepath!");
+alert("Your first JavaScript lesson starts here!");
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def">When you open the HTML file in a browser, the JavaScript code will run.</p>
+        <h2>4. Variables in JavaScript</h2>
+        <p class="def">A variable is a named container used to store data in a program.</p>
+        <p class="def">JavaScript provides three keywords for declaring variables: var, let, and const.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 24;
+let name = "Ravi";
+
+console.log(age);
+console.log(name);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <div class="box">
+        <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+24
+Ravi
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Updating a variable</h2>
+        <div class="box">
+        <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 24;
+
+age = 25;
+
+console.log(age); // 25
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def">You can also increase a number by one:</p>
+        <div class="box">
+        <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 24;
+
+age = age + 1;
+// Or use:
+age++;
+
+console.log(age); // 25
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Different values stored in variables</h2>
+        <div class="box">
+        <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 24;
+let name = "Ravi";
+let x = null;
+let y;
+
+console.log(age, name, x, y);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <ul>
+            <li><p class="def">24 is a number.</p></li>
+            <li><p class="def">"Ravi" is a string.</p></li>
+            <li><p class="def">null represents an intentional absence of a value.</p></li>
+            <li><p class="def">undefined is the value of a declared variable that has not been assigned a value.</p></li>
+        </ul>
+        <h2>5. JavaScript Is Dynamically Typed</h2>
+        <p class="def">JavaScript is a <dfn>dynamically typed languag</dfn>e. This means you do not need to specify a variable's data type when declaring it. The type is determined from the value assigned to it, and a variable can hold values of different types at different times.</p>
+        <div class="box">
+        <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let value = 25;
+console.log(value); // 25
+
+value = "Hello";
+console.log(value); // Hello
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def">Unlike some statically typed languages, JavaScript does not require declarations such as int age = 24.</p>
+        <h2>6. Rules for Naming Variables</h2>
+        <p class="def">Follow these rules when creating variable names:</p>
+        <ul>
+            <li><p class="def">Variable names are case-sensitive. age and Age are different variables.</p></li>
+            <li><p class="def">Names can contain letters, digits, underscores (_) and dollar signs ($).</p></li>
+            <li><p class="def">A variable name cannot start with a digit.</p></li>
+            <li><p class="def">Spaces and hyphens are not allowed in variable names.</p></li>
+            <li><p class="def">Reserved keywords such as let, const, and if cannot be used as variable names.</p></li>
+            <li><p class="def">Use meaningful names to make your code easier to understand.</p></li>
+        </ul>
+        <dfn>Examples:</dfn>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let fullName = "Ravi Kumar"; // Valid
+let age2 = 20;               // Valid
+let _score = 90;             // Valid
+let $price = 100;            // Valid
+
+// Invalid variable names:
+// let 2age = 20;
+// let full-name = "Ravi";
+// let full name = "Ravi";
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>7. Difference Between var, let, and const</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+var age = 20;
+age = 21;
+
+let city = "Delhi";
+city = "Patna";
+
+const country = "India";
+
+console.log(age);
+console.log(city);
+console.log(country);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def"><dfn>Important:</dfn> Use let when a variable needs to be reassigned and const when the variable binding should not be reassigned. var is mainly encountered in older JavaScript code.</p>
+        <p class="def">A const object can still have its properties updated; const does not make the entire object immutable.</p>
+        <h2>8. Data Types in JavaScript</h2>
+        <p class="def">JavaScript data types are divided into two broad categories.</p>
+        <ol>
+            <li><p class="def"><dfn>Primitive Data Types</dfn></p></li>
+            <p class="def">Primitive values represent individual values.</p>
+            <ul>
+                <li><p class="def"><dfn>Number:</dfn> Numeric values such as 10, 25.5</p></li>
+                <li><p class="def"><dfn>String:</dfn> Text such as "Hello"</p></li>
+                <li><p class="def"><dfn>Boolean:</dfn> true or false</p></li>
+                <li><p class="def"><dfn>Undefined:</dfn> A variable without an assigned value</p></li>
+                <li><p class="def"><dfn>Null:</dfn> An intentional absence of a value</p></li>
+                <li><p class="def"><dfn>BigInt:</dfn> Very large integers</p></li>
+                <li><p class="def"><dfn>Symbol:</dfn> Unique identifiers</p></li>
+            </ul>
+            <li><p class="def"><dfn>Non-Primitive Data Types</dfn></p></li>
+            <p class="def">Objects store collections of data or more complex structures.</p>
+            <ul>
+                <li><p class="def"><a href="#"><dfn>Object:</dfn></a> Stores data as key-value pairs.</p></li>
+                <li><p class="def"><a href="#"><dfn>Array:</dfn></a> Stores an ordered collection of values.</p></li>
+                <li><p class="def"><a href="jsFunction.html"><dfn>Function:</dfn></a> A reusable block of code.</p></li>
+            </ul>
+        </ol>
+        <h2>Using the typeof operator</h2>
+        <p class="def">The typeof operator tells you the type of a value.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 20;
+let name = "Ravi";
+let isStudent = true;
+let x;
+
+console.log(typeof age);       // "number"
+console.log(typeof name);      // "string"
+console.log(typeof isStudent); // "boolean"
+console.log(typeof x);         // "undefined"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def"><dfn>Note:</dfn> typeof null returns "object" because of a historical JavaScript quirk.</p>
+        <h2>9. Objects in JavaScript</h2>
+        <p class="def">An object stores related information in key-value pairs. It is useful for representing real-world entities such as students, employees, and products.</p>
+        <h2>Example: Student object</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const student = {
+    fullName: "Rahul Kumar",
+    age: 20,
+    grade: "A",
+    isPass: true
+};
+
+console.log(student);
+console.log(student.fullName);
+console.log(student.age);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Output</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+{ fullName: "Rahul Kumar", age: 20, grade: "A", isPass: true }
+Rahul Kumar
+20
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Accessing object properties</h2>
+        <p class="def">You can access object properties using dot notation or bracket notation.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(student.fullName);
+console.log(student["age"]);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Updating object properties</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+{ student.age = 21;
+student.grade = "A+";
+
+console.log(student.age);
+console.log(student.grade);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def">You can update an object's properties even when the object is declared using const.</p>
+        <p class="def">However, you cannot reassign student to an entirely different object because it was declared using const.</p>
+        <h2>10. Operators and String Concatenation</h2>
+        <p class="def">JavaScript uses operators to perform calculations and combine values.</p>
+        <dfn>Arithmetic operators</dfn>
+        <table>
+            <tr>
+                <th><dfn>Operator</dfn></th>
+                <th><dfn>Meaning</dfn></th>
+                <th><dfn>Example</dfn></th>
+                <th><dfn>Result</dfn></th>
+            </tr>
+            <tr>
+                <td><p>+</p></td>
+                <td><p>Addition</p></td>
+                <td><p>1 + 1</p></td>
+                <td><p>2</p></td>
+            </tr>
+            <tr>
+                <td><p>-</p></td>
+                <td><p>Subtraction</p></td>
+                <td><p>2 - 1</p></td>
+                <td><p>1</p></td>
+            </tr>
+            <tr>
+                <td><p>*</p></td>
+                <td><p>Multiplication</p></td>
+                <td><p></p>3 * 2</td>
+                <td><p>6</p></td>
+            </tr>
+            <tr>
+                <td><p>/</p></td>
+                <td><p>Division</p></td>
+                <td><p>6 / 2</p></td>
+                <td><p>3</p></td>
+            </tr>
+            <tr>
+                <td><p>%</p></td>
+                <td><p>Reminder</p></td>
+                <td><p>5 % 2</p></td>
+                <td><p>1</p></td>
+            </tr>
+            <tr>
+                <td><p>**</p></td>
+                <td><p>Exponentiation</p></td>
+                <td><p>2 ** 3</p></td>
+                <td><p>8</p></td>
+            </tr>
+        </table>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log("Hello " + "World");
+// Hello World
+
+console.log("123" + 1);
+// 1231
+
+console.log(123 + 1);
+// 124
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p class="def">When a string and a number are combined with +, JavaScript generally converts the number to a string. When both operands are numbers, + performs addition.</p>
+        <h2>11. Comments in JavaScript</h2>
+        <p class="def">Comments explain your code and are ignored by the JavaScript engine.</p>
+        <dfn>Single-line comment</dfn>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+// This is a single-line comment
+let age = 20;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <dfn>Multi-line comment</dfn>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+/*
+This is a multi-line comment.
+It can contain several lines of text.
+*/
+let name = "Ravi";
+</code></pre>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top">
+        <h1 class="hed">JavaScript</h1>
         <p class="def">JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, garbage-collected, dynamic language, supporting multiple paradigms such as imperative, functional, and object-oriented.</p>
         <br>
         <p class="def">JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source text and can be retrieved through toString()).</p>
@@ -86,4 +544,5 @@
         <p class="def">JavaScript frameworks are an essential part of modern front-end web development, providing developers with tried and tested tools for building scalable, interactive web applications. Many modern companies use frameworks as a standard part of their tooling, so many front-end development jobs now require framework experience. This set of articles provides a comfortable starting point to help you begin learning frameworks.</p>
     </div>
 </body>
+<script src="copy.js" defer></script>
 </html>

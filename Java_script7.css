@@ -70,6 +70,7 @@ dfn {
 .top {
     margin-top: 40px;
     margin-left: 30px;
+    width: 1250px;
 }
 
 .boxx {
@@ -115,4 +116,52 @@ text-decoration: 1.5px underline rgb(255, 79, 15);
     font-weight: bolder;
     font-size: 35px;
     color: #ccdffb;
+}
+
+/*copy for*/
+
+.code-box {
+    position: relative;          /* lets the button sit in the corner */
+    background: #040126;
+    padding: 40px 20px 20px 20px; 
+    color: white;
+    font-size: 20px;
+    border: 1.6px solid rgb(199, 139, 255);
+    border-radius: 24px;
+    
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 4px 12px;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    padding-bottom: 6px;
+}
+
+.copy-btn:active {
+    color: #ffd43b;
+    background: #ece9c9;
+    width: 155px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.copy-btn:hover {
+    background: rgba(134, 132, 249, 0.2);
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #f1f5fb;
 }

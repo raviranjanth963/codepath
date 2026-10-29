@@ -63,6 +63,7 @@ dfn {
     padding: 40px 20px 20px; 
     color: white;
     font-size: 20px;
+    border: 1.5px solid rgb(194, 129, 254);
     border-radius: 24px;
 }
 
@@ -70,6 +71,7 @@ dfn {
     position: absolute;
     top: 10px;
     left: 15px;
+    font-size: 14px;
     background: none;
     border: 1px solid white;
     color: white;
@@ -80,7 +82,7 @@ dfn {
 
 .copy-btn:active {
     color: #ffd43b;
-    background: #2ecc71;
+    background: #0e0e0e;
 }
 
 .copy-btn:hover {

@@ -210,6 +210,20 @@ dfn {
     padding: 20px;
 }
 
+.map:hover {
+    border: 1.4px solid var(--line);
+    background: #fee4e40f;
+    width: 404px;
+    height: 169px;
+}
+
+.map:active {
+    border: 1.5px solid var(--line);
+    background: #f8cbcb0f;
+    width: 405px;
+    height: 170px;
+}
+
 .htcs {
     color: #9FC0FF;
     font-size: 20px;
