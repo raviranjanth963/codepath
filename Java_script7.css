@@ -59,7 +59,7 @@ dfn {
     background: none;
     border: 0px;
     font-size: 26px;
-    color: #0547fd;
+    color: #b645ee;
     height: 40px;
     width: 150px;
     padding: 6px;
@@ -117,6 +117,63 @@ text-decoration: 1.5px underline rgb(255, 79, 15);
     font-size: 35px;
     color: #ccdffb;
 }
+
+.top2 {
+    width: 1200px;
+    border: 2px solid #f4964e;
+    background: #021060;
+    border-radius: 26px;
+    color: #b8c3e1;
+}
+
+.top2 p {
+    font-size: 20px;
+    color: #859bd8;
+}
+
+.top2 h2 {
+    font-size: 26px;
+    color: #edf1f8;
+}
+
+.top2 dfn {
+    font-size: 22px;
+    font-weight: bold;
+    color: #c7d6fe;
+}
+.top2 details {
+    width: 1200px;
+    padding: 10px;
+}
+
+.top2:hover {
+    width: 1205px;
+    border: 2.5px solid #fc7013;
+    border-radius: 28px;
+    color: #859bd8;
+}
+
+table {
+    padding: 10px;
+    border: 2px solid rgb(132, 2, 254);
+    background: #040126;
+    margin-bottom: 12px;
+}
+
+th {
+    padding: 10px;
+    font-size: 21px;
+    color: #507bf3;
+    font-weight: bold;
+    background: #f5f7fa;
+}
+
+td {
+    font-size: 20px;
+    color: #e9ebfc;
+    padding: 12px;
+}
+
 
 /*copy for*/
 

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Array</h1>
+        <p>An Array is a built-in object used to store multiple values in a single variable.</p>
+        <p>Array elements are stored in an ordered collection, and each element has an index.</p>
+        <p><dfn>Important:</dfn> JavaScript array indexing starts from 0, not 1.</p>
+        <h2>Creating an array</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const fruits = ["Apple", "Mango", "Banana", "Orange"];
+
+console.log(fruits);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Accessing array elements</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(fruits[0]); // Apple
+console.log(fruits[1]); // Mango
+console.log(fruits[2]); // Banana
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Array length</h2>
+        <p>The length property returns the number of elements in an array.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(fruits.length);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+4
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important Array methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><i>push()</i></td>
+                <td>Adds an element to the end.</td>
+            </tr>
+            <tr>
+                <td><i>pop()</i></td>
+                <td>Removes the last element.</td>
+            </tr>
+            <tr>
+                <td><i>unshift()</i></td>
+                <td>Adds an element to the beginning.</td>
+            </tr>
+            <tr>
+                <td><i>shift()</i></td>
+                <td>Removes the first element.</td>
+            </tr>
+            <tr>
+                <td><i>includes()</i></td>
+                <td>Checks whether an element exists.</td>
+            </tr>
+            <tr>
+                <td><i>ndexOf()</i></td>
+                <td>Returns the index of an element, or -1 if not found.</td>
+            </tr>
+            <tr>
+                <td><i>slice()</i></td>
+                <td>Returns a shallow copy of a selected portion.</td>
+            </tr>
+            <tr>
+                <td><i>splice()</i></td>
+                <td>Adds, removes, or replaces elements in an array.</td>
+            </tr>
+            <tr>
+                <td><i>join()</i></td>
+                <td>Joins array elements into a string.</td>
+            </tr>
+            <tr>
+                <td><i>concat()</i></td>
+                <td>Combines arrays and returns a new array</td>
+            </tr>
+            <tr>
+                <td><i>forEach()</i></td>
+                <td>Executes a function for each element.</td>
+            </tr>
+            <tr>
+                <td><i>map()</i></td>
+                <td>Creates a new array by transforming elements.</td>
+            </tr>
+            <tr>
+                <td><i>filter()</i></td>
+                <td>Creates a new array containing elements that pass a condition.</td>
+            </tr>
+            <tr>
+                <td><i>find()</i></td>
+                <td>Returns the first element that satisfies a condition.</td>
+            </tr>
+            <tr>
+                <td><i>reduce()</i></td>
+                <td>Reduces an array to a single accumulated result.</td>
+            </tr>
+            <tr>
+                <td><i>sort()</i></td>
+                <td>orts the elements of an array in place.</td>
+            </tr>
+            <tr>
+                <td><i>reverse()</i></td>
+                <td>Reverses the array in place.</td>
+            </tr>
+
+        </table>
+        <h2>Example: push()</h2>
+        <p>Adds an element to the end of an array.</p>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const fruits = ["Apple", "Mango"];
+
+fruits.push("Banana");
+
+console.log(fruits);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+["Apple", "Mango", "Banana"]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: pop()</h2>
+        <p>Removes the last element.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+fruits.pop();
+
+console.log(fruits);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+["Apple", "Mango"]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: map()</h2>
+        <p>The map() method creates a new array by performing an operation on every element.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const numbers = [1, 2, 3, 4];
+
+const result = numbers.map(num => num * 2);
+
+console.log(result);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+[2, 4, 6, 8]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: filter()</h2>
+        <p>The filter() method creates a new array containing only the elements that satisfy a given condition.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const numbers = [10, 15, 20, 25, 30];
+
+const result = numbers.filter(num => num > 20);
+
+console.log(result);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+[25, 30]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: reduce()</h2>
+        <p>The reduce() method processes array elements and combines them into one final value.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const numbers = [10, 20, 30, 40];
+
+const total = numbers.reduce(
+    (sum, num) => sum + num,
+    0
+);
+
+console.log(total);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+100
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>When should you use Array?</h2>
+        <ul>
+            <li><p>When storing a list of students.</p></li>
+            <li><p>When creating a shopping cart.</p></li>
+            <li><p>When displaying products.</p></li>
+            <li><p>When storing multiple scores or marks.</p></li>
+        </ul>
+    </div>
+
+</body>
+<script src="copy.js" defer></script>
+</html>

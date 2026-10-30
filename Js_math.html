@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Math</h1>
+        <p>The Math object provides built-in mathematical constants and methods.</p>
+        <p>It is used for calculations such as rounding numbers, finding square roots, generating random numbers, and calculating powers.</p>
+        <p><dfn>Important:</dfn> Unlike most built-in objects, Math is not a constructor. You use its properties and methods directly.</p>
+        <h2>mportant Math properties</h2>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>value</th>
+            </tr>
+            <tr>
+                <td><i>Math.PI</i></td>
+                <td>Mathematical value of pi</td>
+                <td>Approximately <i>3.14159</i></td>
+            </tr>
+            <tr>
+                <td><i>Math.E</i></td>
+                <td>Euler's number</td>
+                <td>Approximately <i>2.71828</i></td>
+            </tr>
+            <tr>
+                <td><i>Math.SQRT2</i></td>
+                <td>Square root of 2</td>
+                <td>Approximately <i>1.41421</i></td>
+            </tr>
+            <tr>
+                <td><i>Math.LN2</i></td>
+                <td>Natural logarithm of 2</td>
+                <td>Approximately <i>0.69314</i></td>
+            </tr>
+        </table>
+        <h2>Important Math methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><i>Math.round()</i></td>
+                <td>Rounds to the nearest integer.</td>
+            </tr>
+        
+            <tr>
+                <td><i>Math.floor()</i></td>
+                <td>Rounds down to the nearest integer.</td>
+            </tr>
+            <tr>
+                <td><i>Math.ceil()</i></td>
+                <td>Rounds up to the nearest integer.</td>
+            </tr>
+            <tr>
+                <td><i>Math.trunc()</i></td>
+                <td>Removes the decimal portion.</td>
+            </tr
+            <tr>
+                <td><i>Math.max()</i></td>
+                <td>Returns the largest value.</td>
+            </tr>
+            <tr>
+                <td><i>Math.min()</i></td>
+                <td>Returns the smallest value.</td>
+            </tr>
+            <tr>
+                <td><i>Math.random()</i></td>
+                <td>Returns a pseudo-random number from 0 (inclusive) to 1 (exclusive).</td>
+            </tr>
+            <tr>
+                <td><i>Math.sqrt()</i></td>
+                <td>Returns the square root.</td>
+            </tr>
+            <tr>
+                <td><i>Math.pow()</i></td>
+                <td>Raises a number to a specified power.</td>
+            </tr>
+            <tr>
+                <td><i>Math.abs()</i></td>
+                <td>Returns the absolute value.</td>
+            </tr>
+            <tr>
+                <td><i>Math.sign()</i></td>
+                <td>Returns the sign of a number.</td>
+            </tr>
+        </table>
+        <h2>Example: Math.round()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Math.round(4.6));
+console.log(Math.round(4.3));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+5
+4
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Math.floor()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Math.floor(4.9));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+4
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Math.ceil()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Math.ceil(4.1));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+5
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Math.max() and Math.min()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Math.max(10, 20, 30, 40));
+// 40
+
+console.log(Math.min(10, 20, 30, 40));
+// 10
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Math.random()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Math.random());
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This produces a pseudo-random decimal number between 0 and 1.</p>
+        <p>To generate a random integer between 1 and 10:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+
+console.log(randomNumber);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Math.sqrt()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Math.sqrt(25));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+5
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>When should you use Math?</p>
+        <ul>
+            <li><p>When creating calculators.</p></li>
+            <li><p>When generating random numbers.</p></li>
+            <li><p>When calculating percentages.</p></li>
+            <li><p>When working with game scores.</p></li>
+            <li><p>When performing scientific calculations.</p></li>
+        </ul>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>JavaScript Standard Built-in Objects</h1>
+        <h2>1. Introduction to Standard Built-in Objects in JavaScript</h2>
+        <p>JavaScript provides several <dfn>standard built-in objects</dfn> that help developers perform common programming tasks without writing everything from scratch.</p>
+        <p>These objects provide ready-made properties, methods, and functionality for working with strings, numbers, dates, arrays, mathematical calculations, errors, and more.</p>
+        <p>For example:</p>
+        <ul>
+            <li><p><a href="js_string_no.html"><i>String</i></a> helps us work with text.</p></li>
+            <li><p><a href="js_string_no.html"><i>Number</i></a> helps us work with numeric values.</p></li>
+            <li><p><a href="Js_math.html"><i>Math</i></a> provides mathematical operations.</p></li>
+            <li><p><a href="Js_date.html"><i>Date</i></a> helps us work with dates and times.</p></li>
+            <li><p><a href="Js_array.html"><i>Array</i></a> helps us store and manage collections of data.</p></li>
+            <li><p><a href="Js_std_obj.html"><i>Object</i></a> helps us create and manage objects.</p></li>
+            <li><p><a href="Json.html"><i>JSON</i></a> helps us convert JavaScript data into JSON format and back.</p></li>
+        </ul>
+        <p>Example</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let name = "Ravi Kumar";
+
+console.log(name.toUpperCase());
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+RAVI KUMAR
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here, toUpperCase() is a built-in method that converts a string into uppercase letters.</p>
+        <h2>2. What Are Built-in Objects?</h2>
+        <p>Built-in objects are objects provided by JavaScript itself. They are available to use in your JavaScript programs without installing additional libraries.</p>
+        <p>JavaScript provides built-in objects for different purposes, such as:</p>
+        <ol>
+            <li><p>Working with text.</p></li>
+            <li><p>Performing mathematical calculations.</p></li>
+            <li><p>Handling dates and times.</p></li>
+            <li><p>Managing arrays and collections.</p></li>
+            <li><p>Working with objects and properties.</p></li>
+            <li><p>Handling errors.</p></li>
+            <li><p>Managing asynchronous operations.</p></li>
+            <li><p>Working with structured data.</p></li>
+        </ol>
+        <p><dfn>Important:</dfn> Built-in objects are different from browser-specific Web APIs. For example, Array, String, and Promise are JavaScript built-ins, whereas document and localStorage are browser APIs.</p>
+        <h2>3. Categories of Standard Built-in Objects</h2>
+        <p>ccording to MDN, JavaScript standard built-in objects are organized into different categories. Each category provides functionality for a particular purpose.</p>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Purpose</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td>Value properties</td>
+                <td>Provide special values</td>
+                <td><i>Infinity, NaN, undefined</i></td>
+            </tr>
+            <tr>
+                <td>Function properties</td>
+                <td>Perform global operations</td>
+                <td><i>parseInt(), isNaN()</i></td>
+            </tr>
+            <tr>
+                <td>Fundamental objects</td>
+                <td>Basic language objects</td>
+                <td><i>Object, Function, Boolean, Symbol</i></td>
+            </tr>
+            <tr>
+                <td>Error objects</td>
+                <td>Represent programming errors</td>
+                <td><i>Error, TypeError</i></td>
+            </tr>
+            <tr>
+                <td>Numbers and dates</td>
+                <td>Handle numbers and time</td>
+                <td><i>Number, BigInt, Math, Date</i></td>
+            </tr>
+            <tr>
+                <td>Text processing</td>
+                <td>Work with text and patterns</td>
+                <td><i>String, RegExp</i></td>
+            </tr>
+            <tr>
+                <td>Indexed collections</td>
+                <td>Store ordered data</td>
+                <td><i>Array, TypedArray</i></td>
+            </tr>
+            <tr>
+                <td>Keyed collection</td>
+                <td>Store data using key</td>
+                <td><i>Map, Set, WeakMap, WeakSet</i></td>
+            </tr>
+            <tr>
+                <td>Structured data</td>
+                <td>Handle binary and JSON data</td>
+                <td><i>ArrayBuffer, DataView, JSON</i></td>
+            </tr>
+            <tr>
+                <td>Managing memory</td>
+                <td>Support memory management</td>
+                <td><i>WeakRef, FinalizationRegistry</i></td>
+            </tr>
+            <tr>
+                <td>Control abstractions</td>
+                <td>Handle asynchronous and iterative code</td>
+                <td><i>Promise, Iterator, Generator</i></td>
+            </tr>
+            <tr>
+                <td>Reflection</td>
+                <td>Inspect and customize object behavior</td>
+                <td><i>Reflect, Proxy</i></td>
+            </tr>
+            <tr>
+                <td>Internationalization</td>
+                <td>Format language-sensitive dat</td>
+                <td><i>Intl</i></td>
+            </tr>
+        </table>
+        <p>Let's understand the most commonly used built-in objects one by one.</p>
+        <h2>Part A: Fundamental Built-in Objects</h2>
+        <h2>4. Object</h2>
+        <p>The Object object is one of the most important built-in objects in JavaScript.</p>
+        <p>An object is used to store related information in the form of key-value pairs. It allows us to organize data and access or modify its properties.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const student = {
+    name: "Ravi",
+    age: 20,
+    course: "JavaScript",
+    isStudent: true
+};
+
+console.log(student);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+{
+  name: "Ravi",
+  age: 20,
+  course: "JavaScript",
+  isStudent: true
+}
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Accessing object properties</h2>
+        <p>There are two common ways to access object properties.</p>
+        <h2>1. Dot notation</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(student.name);
+console.log(student.age);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>2. Bracket notation</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(student["name"]);
+console.log(student["course"]);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important Object methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><i>Object.keys()</i></td>
+                <td>Returns an array of an object's own enumerable property names.</td>
+            </tr>
+            <tr>
+                <td><i>Object.values()</i></td>
+                <td>eturns an array of an object's own enumerable property values.</td>
+            </tr>
+            <tr>
+                <td><i>Object.entries()</i></td>
+                <td>Returns an array of key-value pairs.</td>
+            </tr>
+            <tr>
+                <td><i>Object.assign()</i></td>
+                <td>Copies properties from one or more source objects into a target object.</td>
+            </tr>
+            <tr>
+                <td><i>Object.freeze()</i></td>
+                <td>Prevents changes to an object's own properties.</td>
+            </tr>
+            <tr>
+                <td><i>Object.seal()</i></td>
+                <td>Prevents adding or removing properties, but existing writable properties can still change.</td>
+            </tr>
+            <tr>
+                <td><i>Object.hasOwn()</i></td>
+                <td>Checks whether an object has a specific own property.</td>
+            </tr>
+            <tr>
+                <td><i>Object.create()</i></td>
+                <td>Creates a new object with a specified prototype.</td>
+            </tr>
+        </table>
+        <h2>Example: Object.keys()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const student = {
+    name: "Ravi",
+    age: 20,
+    course: "JavaScript"
+};
+
+console.log(Object.keys(student));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+["name", "age", "course"]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Object.values()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Object.values(student));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+["Ravi", 20, "JavaScript"]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Object.entries()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Object.entries(student));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+[
+    ["name", "Ravi"],
+    ["age", 20],
+    ["course", "JavaScript"]
+]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Object.hasOwn()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Object.hasOwn(student, "name")); 
+// true
+
+console.log(Object.hasOwn(student, "email")); 
+// false
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>When should you use Object?</p>
+        <ul>
+            <li><p>When storing student information.</p></li>
+            <li><p>When creating user profiles.</p></li>
+            <li><p>When storing product details.</p></li>
+            <li><p>When organizing related data.</p></li>
+        </ul>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

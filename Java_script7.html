@@ -29,7 +29,7 @@
                 <div class="box">
                     <spam>JS REFERENCE.</spam>
                     <ol>
-                        <li><a href="#">Standerd built-in object</a></li>
+                        <li><a href="Js_std_obj.html">Standerd built-in object</a></li>
                         <li><a href="#">Expression & Operators</a></li>
                         <li><a href="#">Statements & declarations</a></li>
                         <li><a href="jsFunction.html">Functions</a></li>
@@ -37,6 +37,9 @@
                         <li><a href="#">Errors</a></li>
                         <li><a href="#">Regular expressions</a></li>
                         <li><a href="#">Misc</a></li>
+                        <li><a href="Js_math.html">Math</a></li>
+                        <li><a href="Js_date.html">Date</a></li>
+                        <li><a href="#">JSON</a></li>
                     </ol>
                 </div>
 
@@ -45,11 +48,11 @@
                     <ol>
                         <li><a href="#">Controlflow & error handling</a></li>
                         <li><a href="Jsloop.html">Loop and Iteration</a></li>
-                        <li><a href="#">Working with objects</a></li>
-                        <li><a href="#">Numbers & strings</a></li>
+                        <li><a href="Js_std_obj.html">Working with objects</a></li>
+                        <li><a href="js_string_no.html">Numbers & strings</a></li>
                         <li><a href="#">Using promises</a></li>
                         <li><a href="#">Using classes</a></li>
-                        <li><a href="#">JS Typed Arrays</a></li>
+                        <li><a href="Js_array.html">JS Typed Arrays</a></li>
                         <li><a href="#">Indexed collections</a></li>
                         <li><a href="#">JS Modolus</a></li><var>
                         <li><a href="#">Internationalization</a></li>
@@ -148,6 +151,107 @@ alert("Your first JavaScript lesson starts here!");
             </div>
         </div>
         <p class="def">When you open the HTML file in a browser, the JavaScript code will run.</p>
+        <div class="top2">
+            <details>
+                <summary>
+                    <h2><dfn>JavaScript Naming Conventions — Notes</dfn></h2>
+                </summary>
+                <h2>1. Camel Case</h2>
+                <p>In camelCase, the first word starts with a lowercase letter, and every following word starts with a capital letter.</p>
+                <dfn>Example</dfn>
+                <div class="box">
+                <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let fullName = "Ravi Kumar";
+let firstName = "Ravi";
+let studentAge = 18;
+</code></pre>
+               </div>
+            </div>
+        </div>
+                <p><dfn>Rule:</dfn> The first word starts with a lowercase letter; subsequent words start with uppercase letters.</p>
+                <h2>2. Snake Case</h2>
+                <p>In snake_case, words are separated by underscores (_).</p>
+                <dfn>Example</dfn>
+                <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let full_name = "Ravi Kumar";
+let first_name = "Ravi";
+let student_age = 18;
+</code></pre>
+               </div>
+            </div>
+        </div>
+                <p><dfn>Rule: </dfn> Use underscores to separate words.</p>
+                <h2>3. Kebab Case</h2>
+                <dfn>Example</dfn>
+                <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+full-name
+first-name
+student-age
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Important: Hyphens are not valid in ordinary JavaScript variable names. For example, let full-name = "Ravi"; is invalid syntax.</p>
+        <p>Kebab case is commonly used for CSS class names and HTML attributes.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+&lt;div class="full-name">Ravi Kumar&lt;/div>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>4. Pascal Case</h2>
+        <p>In PascalCase, every word starts with a capital letter, including the first word.</p>
+        <dfn>Example</dfn>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let FullName = "Ravi Kumar";
+let StudentAge = 18;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>Rule: </dfn> Capitalize the first letter of every word.</p>
+        <p>PascalCase is commonly used for class names in JavaScript.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class StudentDetails {
+    constructor(fullName) {
+        this.fullName = fullName;
+    }
+}
+</code></pre>
+               </div>
+            </div>
+        </div>
+            </details>
+        </div>
         <h2>4. Variables in JavaScript</h2>
         <p class="def">A variable is a named container used to store data in a program.</p>
         <p class="def">JavaScript provides three keywords for declaring variables: var, let, and const.</p>
@@ -313,8 +417,8 @@ console.log(country);
             <li><p class="def"><dfn>Primitive Data Types</dfn></p></li>
             <p class="def">Primitive values represent individual values.</p>
             <ul>
-                <li><p class="def"><dfn>Number:</dfn> Numeric values such as 10, 25.5</p></li>
-                <li><p class="def"><dfn>String:</dfn> Text such as "Hello"</p></li>
+                <li><p class="def"><a href="js_string_no.html"><dfn>Number:</dfn></a> Numeric values such as 10, 25.5</p></li>
+                <li><p class="def"><a href="js_string_no.html"><dfn>String:</dfn></a> Text such as "Hello"</p></li>
                 <li><p class="def"><dfn>Boolean:</dfn> true or false</p></li>
                 <li><p class="def"><dfn>Undefined:</dfn> A variable without an assigned value</p></li>
                 <li><p class="def"><dfn>Null:</dfn> An intentional absence of a value</p></li>
@@ -324,8 +428,8 @@ console.log(country);
             <li><p class="def"><dfn>Non-Primitive Data Types</dfn></p></li>
             <p class="def">Objects store collections of data or more complex structures.</p>
             <ul>
-                <li><p class="def"><a href="#"><dfn>Object:</dfn></a> Stores data as key-value pairs.</p></li>
-                <li><p class="def"><a href="#"><dfn>Array:</dfn></a> Stores an ordered collection of values.</p></li>
+                <li><p class="def"><a href="Js_std_obj.html"><dfn>Object:</dfn></a> Stores data as key-value pairs.</p></li>
+                <li><p class="def"><a href="Js_array.html"><dfn>Array:</dfn></a> Stores an ordered collection of values.</p></li>
                 <li><p class="def"><a href="jsFunction.html"><dfn>Function:</dfn></a> A reusable block of code.</p></li>
             </ul>
         </ol>
@@ -422,7 +526,7 @@ console.log(student.grade);
         <p class="def">However, you cannot reassign student to an entirely different object because it was declared using const.</p>
         <h2>10. Operators and String Concatenation</h2>
         <p class="def">JavaScript uses operators to perform calculations and combine values.</p>
-        <dfn>Arithmetic operators</dfn>
+        <h2>Arithmetic operators</h2>
         <table>
             <tr>
                 <th><dfn>Operator</dfn></th>
@@ -488,7 +592,7 @@ console.log(123 + 1);
         <p class="def">When a string and a number are combined with +, JavaScript generally converts the number to a string. When both operands are numbers, + performs addition.</p>
         <h2>11. Comments in JavaScript</h2>
         <p class="def">Comments explain your code and are ignored by the JavaScript engine.</p>
-        <dfn>Single-line comment</dfn>
+        <h2>Single-line comment</h2>
         <div class="box">
             <div class="code-box">
                <button type="button" class="copy-btn" id="copyBtn">copy</button>
@@ -501,7 +605,7 @@ let age = 20;
                </div>
             </div>
         </div>
-        <dfn>Multi-line comment</dfn>
+        <h2>Multi-line comment</h2>
         <div class="box">
             <div class="code-box">
                <button type="button" class="copy-btn" id="copyBtn">copy</button>

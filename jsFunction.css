@@ -128,3 +128,30 @@ a {
 hr {
     margin-top: 15px;
 }
+
+table {
+    padding: 10px;
+    border: 2px solid rgb(132, 2, 254);
+    background: #040126;
+}
+
+th {
+    padding: 10px;
+    font-size: 21px;
+    color: #507bf3;
+    font-weight: bold;
+    background: #f5f7fa;
+}
+
+td {
+    font-size: 20px;
+    color: #e9ebfc;
+    padding: 12px;
+}
+
+td,p i {
+    font-size: 20px;
+    color: #e1ebfa;
+    background: #011c8a;
+}
+

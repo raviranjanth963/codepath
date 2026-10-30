@@ -21,7 +21,7 @@
 
     <div class="hed">
         <h1>Loops and iteration</h1>
-        <p>Loops offer a quick and easy way to do something repeatedly. This chapter of the JavaScript Guide introduces the different iteration statements available to JavaScript.</p>
+        <p>Loops offer a quick and easy way to do something repeatedly. This chapter of the <a href="#">JavaScript Guide</a> introduces the different iteration statements available to JavaScript.</p>
         <br>
         <p>You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction, then Y steps in another. For example, the idea "Go five steps to the east" could be expressed this way as a loop:</p>
         <div class="jscod">
@@ -45,7 +45,7 @@ for (let step = 0; step < 5; step++) {
         <br>
         <p>The statements for loops provided in JavaScript are:</p>
         <br>
-        <h2>for statement</h2>
+        <h2><a href="#">for statement</a></h2>
         <p>A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop.</p>
         <br>
         <p>A for statement looks as follows:</p>
@@ -64,12 +64,12 @@ for (initialization; condition; afterthought)
         <ol>
             <li><p>The initializing expression initialization, if any, is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare variables.</p></li>
             <li><p>The condition expression is evaluated. If the value of condition is true, the loop statements execute. Otherwise, the for loop terminates. (If the condition expression is omitted entirely, the condition is assumed to be true.)</p></li>
-            <li><p>The statement executes. To execute multiple statements, use a block statement ({ }) to group those statements.</p></li>
+            <li><p>The statement executes. To execute multiple statements, use a <a href="#">block statement</a> ({ }) to group those statements.</p></li>
             <li><p>If present, the update expression afterthought is executed.</p></li>
             <li><p>Control returns to Step 2.</p></li>
         </ol>
         <h2>Example.</h2>
-        <p>In the example below, the function contains a for statement that counts the number of selected options in a scrolling list (a &lt;select> element that allows multiple selections).</p>
+        <p>In the example below, the function contains a for statement that counts the number of selected options in a scrolling list (a <a href="#">&lt;select></a> element that allows multiple selections).</p>
         <div class="jscod3">
             <div class="code-box">
                <button type="button" class="copy-btn" id="copyBtn">copy</button>
@@ -117,7 +117,7 @@ btn.addEventListener("click", () => {
            </div>
            </div>
         </div>
-        <h2>Do...While loop statement</h2>
+        <h2><a href="#">Do...While loop statement</a></h2>
         <p>The do...while statement repeats until a specified condition evaluates to false.</p>
         <br>
         <p>A do...while statement looks as follows:</p>
@@ -143,6 +143,40 @@ while (condition);
             
             <div class="cod">
 <pre><code>
+let i = 0;
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+</code></pre>
+            </div>
+            </div>
+        </div>
+        <h2><a href="#">While loop statement</a></h2>
+        <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+        <div class="jscod">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+            
+            <div class="cod">
+<pre><code>
+while (condition)
+  statement
+</code></pre>
+            </div>
+            </div>
+        </div>
+        <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
+        <p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops, and control is passed to the statement following while.</p>
+        <p>To execute multiple statements, use a block statement ({ }) to group those statements.</p>
+        <h2>Example</h2>
+        <p>The following while loop iterates as long as n is less than 3:</p>
+        <div class="jscod">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+            
+            <div class="cod">
+<pre><code>
 let n = 0;
 let x = 0;
 while (n < 3) {
@@ -160,7 +194,7 @@ while (n < 3) {
             <li><p>After the third pass: n = 3 and x = 6</p></li>
         </ul>
         <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
-        <h2>Labeled statement</h2>
+        <h2><a href="#">Labeled statement</a></h2>
         <p>A label provides a statement with an identifier that lets you refer to it elsewhere in your program. For example, you can use a label to identify a loop, and then use the break or continue statements to indicate whether a program should interrupt the loop or continue its execution.</p>
         <br>
         <p>The syntax of the labeled statement looks like the following:</p>
@@ -176,7 +210,7 @@ label:
             </div>
         </div>
         <p>The value of label may be any JavaScript identifier that is not a reserved word. The statement that you identify with a label may be any statement. For examples of using labeled statements, see the examples of break and continue below.</p>
-        <h2>Break statement</h2>
+        <h2><a href="#">Break statement</a></h2>
         <p>Use the break statement to terminate a loop, switch, or in conjunction with a labeled statement.</p>
         <ul>
             <li><p>When you use break without a label, it terminates the innermost enclosing while, do-while, for, or switch immediately and transfers control to the following statement.</p></li>
@@ -242,7 +276,7 @@ labelCancelLoops: while (true) {
             </div>
             </div>
         </div>
-        <h2>continue statement.</h2>
+        <h2><a href="#">continue statement.</a></h2>
         <p>The continue statement can be used to restart a while, do-while, for, or label statement.</p>
         <ul>
             <li><p>When you use continue without a label, it terminates the current iteration of the innermost enclosing while, do-while, or for statement and continues execution of the loop with the next iteration. In contrast to the break statement, continue does not terminate the execution of the loop entirely. In a while loop, it jumps back to the condition. In a for loop, it jumps to the increment-expression.</p></li>
@@ -313,7 +347,7 @@ checkIandJ: while (i < 4) {
            </div>
            </div>
         </div>
-        <h2>for...in statement</h2>
+        <h2><a href="#">for...in statement</a></h2>
         <p>The for...in statement iterates a specified variable over all the enumerable properties of an object. For each distinct property, JavaScript executes the specified statements. A for...in statement looks as follows:</p>
         <div class="jscod2">
             <div class="code-box">
@@ -348,12 +382,12 @@ function dumpProps(obj, objName) {
         <p>For an object car with properties make and model, result would be:</p>
         <p>car.make = Ford<br>
         car.model = Mustang</p>
-        <h2>Array</h2>
+        <h2><a href="Js_array.html">Array</a></h2>
         <p>Although it may be tempting to use this as a way to iterate over Array elements, the for...in statement will return the name of your user-defined properties in addition to the numeric indexes.</p>
         <br>
-        <p>Therefore, it is better to use a traditional for loop with a numeric index when iterating over arrays, because the for...in statement iterates over user-defined properties in addition to the array elements, if you modify the Array object (such as adding custom properties or methods).</p>
-        <h2>for...of statement</h2>
-        <p>The for...of statement creates a loop Iterating over iterable objects (including Array, Map, Set, arguments object and so on), invoking a custom iteration hook with statements to be executed for the value of each distinct property.</p>
+        <p>Therefore, it is better to use a traditional <a href="#">for</a> loop with a numeric index when iterating over arrays, because the for...in statement iterates over user-defined properties in addition to the array elements, if you modify the Array object (such as adding custom properties or methods).</p>
+        <h2><a href="#">for...of statement</a></h2>
+        <p>The for...of statement creates a loop Iterating over iterable objects (including <a href="Js_array.html">Array</a>, <a href="#">Map</a>, <a href="#">Set</a>, <a href="#">arguments</a> object and so on), invoking a custom iteration hook with statements to be executed for the value of each distinct property.</p>
         <div class="jscod2">
             <div class="code-box">
                <button type="button" class="copy-btn" id="copyBtn">copy</button>

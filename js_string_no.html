@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>String</h1>
+        <p>The String object provides methods and properties for working with text.</p>
+        <p>A string is a sequence of characters enclosed in quotation marks.</p>
+        <h2>Creating strings</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let firstName = "Ravi";
+let lastName = 'Kumar';
+
+console.log(firstName);
+console.log(lastName);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>You can also create a string using the String() function:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = String(20);
+
+console.log(age);
+console.log(typeof age);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+20
+string
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important String properties and methods</h2>
+        <table>
+            <tr>
+                <th>Method / Property</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><i>length</i></td>
+                <td>Returns the number of UTF-16 code units in a string.</td>
+            </tr>
+            <tr>
+                <td><i>toUpperCase()</i></td>
+                <td>Converts text to uppercase.</td>
+            </tr>
+            <tr>
+                <td><i>toLowerCase()</i></td>
+                <td>Converts text to lowercase.</td>
+            </tr>
+            <tr>
+                <td><i>trim()</i></td>
+                <td>Removes whitespace from both ends.</td>
+            </tr>
+            <tr>
+                <td><i>trimStart()</i></td>
+                <td>Removes whitespace from the beginning.</td>
+            </tr>
+            <tr>
+                <td><i>trimEnd()</i></td>
+                <td>Removes whitespace from the end.</td>
+            </tr>
+            <tr>
+                <td><i>includes()</i></td>
+                <td>Checks whether a string contains specified text.</td>
+            </tr>
+            <tr>
+                <td><i>indexOf()</i></td>
+                <td>Finds the first occurrence of specified text.</td>
+            </tr>
+            <tr>
+                <td><i>slice()</i></td>
+                <td>Extracts a portion of a string.</td>
+            </tr>
+            <tr>
+                <td><i>replace()</i></td>
+                <td>Replaces the first matching occurrence.</td>
+            </tr>
+            <tr>
+                <td><i>replaceAll()</i></td>
+                <td>Replaces all matching occurrences.</td>
+            </tr>
+            <tr>
+                <td><i>split()</i></td>
+                <td>Splits a string into an array.</td>
+            </tr>
+            <tr>
+                <td><i>charAt()</i></td>
+                <td>Returns the character at a specified position.</td>
+            </tr>
+            <tr>
+                <td><i>startsWith()</i></td>
+                <td>Checks whether a string starts with specified text.</td>
+            </tr>
+            <tr>
+                <td><i>endsWith()</i></td>
+                <td>Checks whether a string ends with specified text.</td>
+            </tr>
+            <tr>
+                <td><i>repeat()</i></td>
+                <td>Repeats a string a specified number of times.</td>
+            </tr>
+        </table>
+        <h2>Example: toUpperCase()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let message = "hello world";
+
+console.log(message.toUpperCase());
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+HELLO WORLD
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: toLowerCase()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let message = "HELLO WORLD";
+
+console.log(message.toLowerCase());
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+hello world
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: trim()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let name = "   Ravi Kumar   ";
+
+console.log(name.trim());
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Ravi Kumar
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: includes()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let message = "Welcome to JavaScript";
+
+console.log(message.includes("JavaScript"));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Oputut:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+true
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: slice()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let text = "JavaScript";
+
+console.log(text.slice(0, 4));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Java
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: split()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let fruits = "Apple, Mango, Banana";
+
+console.log(fruits.split(", "));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Oputut:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+["Apple", "Mango", "Banana"]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>Important:</dfn> Strings are immutable in JavaScript. This means string methods return new strings rather than changing the original string.</p>
+        <br>
+        <hr>
+        <br>
+        <h1>Number</h1>
+        <p>The Number object provides properties and methods for working with numeric values.</p>
+        <p>JavaScript uses the Number type for ordinary integer and floating-point numbers.</p>
+        <h2>Example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let price = 99.99;
+let age = 20;
+
+console.log(price);
+console.log(age);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important Number methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><i>Number()</i></td>
+                <td>Converts a value into a number where possible.</td>
+            </tr>
+             <tr>
+                <td><i>Number.isInteger()</i></td>
+                <td>Checks whether a value is an integer.</td>
+            </tr>
+             <tr>
+                <td><i>Number.isNaN()</i></td>
+                <td>Checks whether a value is the numeric NaN.</td>
+            </tr>
+             <tr>
+                <td><i>Number.isFinite()</i></td>
+                <td>Checks whether a value is a finite number.</td>
+            </tr>
+             <tr>
+                <td><i>Number.parseInt()</i></td>
+                <td>Parses an integer from a string.</td>
+            </tr>
+             <tr>
+                <td><i>Number.parseFloat()</i></td>
+                <td>Parses a floating-point number from a string.</td>
+            </tr>
+             <tr>
+                <td><i>toFixed()</i></td>
+                <td>Formats a number using a specified number of decimal places.</td>
+            </tr>
+            <tr>
+                <td><i>toString()</i></td>
+                <td>Converts a number into a string.</td>
+            </tr>
+            <tr>
+                <td><i>toPrecision()</i></td>
+                <td>Formats a number to a specified number of significant digits.</td>
+            </tr>
+        </table>
+        <h2>Example: Number()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let value = "100";
+
+console.log(Number(value));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+100
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Number.isInteger()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Number.isInteger(20)); 
+// true
+
+console.log(Number.isInteger(20.5)); 
+// false
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Number.isNaN()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Number.isNaN(NaN)); 
+// true
+
+console.log(Number.isNaN("Hello")); 
+// false
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: toFixed()</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let price = 99.5678;
+
+console.log(price.toFixed(2));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+99.57
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>When should you use Number?</h2>
+        <ul>
+            <li><p>When calculating prices.</p></li>
+            <li><p>When checking marks and scores.</p></li>
+            <li><p>When converting user input into numbers.</p></li>
+            <li><p>When formatting decimal values.</p></li>
+        </ul>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

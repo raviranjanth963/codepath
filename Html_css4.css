@@ -87,7 +87,7 @@ summary {
 
 .boxx {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-evenly;
     border: 1px solid #0143a5;
 }
