@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>JavaScript Expressions and Operators</h1>
+        <h2>1. Introduction to Expressions and Operators</h2>
+        <p>Expressions and operators are fundamental concepts in JavaScript. They are used to perform calculations, compare values, assign data to variables, make decisions, and manipulate information.</p>
+        <p>Almost every JavaScript program uses expressions and operators.</p>
+        <h2>Exampe</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+let b = 20;
+
+let sum = a + b;
+
+console.log(sum);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+30
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>In this example:</p>
+        <ul>
+            <li><p>a and b are variables.</p></li>
+            <li><p>10 and 20 are values.</p></li>
+            <li><p>+ is an arithmetic operator.</p></li>
+            <li><p>a + b is an expression.</p></li>
+            <li><p>sum stores the result of the expression.</p></li>
+        </ul>
+        <h2>2. What Is an Expression in JavaScript?</h2>
+        <p>An <i>expression</i> is a valid combination of values, variables, operators, and function calls that evaluates to a value.</p>
+        <p>Expressions can be simple or complex.</p>
+        <h2>Example 1: Literal expression</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+10
+<p> <i>The expression age evaluates to:</i> 10 </p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example 2: Arithmetic expression</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+10 + 20
+<p><i>Output:</i> 30 </p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example 3: Variable expression</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 25;
+
+age
+<p> <i>The expression age evaluates to:</i> 25 </p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example 4: Assignment expression</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let x = 10;
+
+x = 20;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here, x = 20 is an assignment expression. It assigns 20 to x and itself evaluates to 20.</p>
+        <h2>Example 5: Function call expression</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+function add(a, b) {
+    return a + b;
+}
+
+add(10, 20);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+30
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The function call add(10, 20) is an expression because it produces a value.</p>
+        <h2>Example 6: Conditional expression</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 20;
+
+let result = age >= 18 ? "Adult" : "Minor";
+
+console.log(result);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Adult
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The conditional expression evaluates to either "Adult" or "Minor"</p>
+        <h2>3. Types of Expressions</h2>
+        <p>avaScript expressions can be grouped according to what they do.</p>
+        <h2>A. Arithmetic Expressions</h2>
+        <p>Arithmetic expressions perform mathematical calculations.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let result = 10 + 20 * 2;
+
+console.log(result);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+50
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>B. Assignment Expressions</h2>
+        <p>Assignment expressions assign values to variables.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 20;
+
+age = 25;
+
+console.log(age);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+25
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>C. Comparison Expressions</h2>
+        <p>Comparison expressions compare two values and return a Boolean result (true or false).</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+let b = 20;
+
+console.log(a < b);
+<p> <i>output:</i> true </p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>D. Logical Expressions</h2>
+        <p>Logical expressions combine or invert conditions.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 25;
+let hasID = true;
+
+console.log(age >= 18 && hasID);
+<p> <i>output:</i> true </p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>E. String Expressions</h2>
+        <p>String expressions combine or manipulate text.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let firstName = "Ravi";
+let lastName = "Kumar";
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName);
+<p> <i>output:</i> Ravi Kumar </p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>F. Conditional Expressions</h2>
+        <p>Conditional expressions return a value based on a condition.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 17;
+
+let status = age >= 18 ? "Eligible" : "Not eligible";
+
+console.log(status);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Not eligible
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>4. What Is an Operator in JavaScript?</h2>
+        <p>An <i>operator</i> is a special symbol or keyword that performs an operation on one or more values.</p>
+        <p>The values on which an operator performs an operation are called <i>operands</i>.</p>
+        <h2>Example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let result = 10 + 20;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here</p>
+        <ul>
+            <li><p>10 is the first operand.</p></li>
+            <li><p>20 is the second operand.</p></li>
+            <li><p>+ is the operator.</p></li>
+            <li><p>10 + 20 is the expression.</p></li>
+        </ul>
+        <h2>5. Types of Operators Based on the Number of Operands</h2>
+        <p>JavaScript operators can also be classified according to how many operands they require.</p>
+        <h2>A. Unary Operators</h2>
+        <p>A unary operator works with only one operand</p>
+        <p>example</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+
+console.log(-a);
+<p><i>Output:</i> -10</p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here, the unary minus (-) operator works on one operand, a.</p>
+        <p>Other unary operators include:</p>
+        <ul>
+            <li><p>++ – Increment</p></li>
+            <li><p>-- – Decrement</p></li>
+            <li><p>! – Logical NOT</p></li>
+            <li><p>typeof – Checks the type of a value</p></li>
+            <li><p>delete – Deletes an object property</p></li>
+        </ul>
+        <h2>B. Binary Operators</h2>
+        <p>binary operator works with two operands.</p>
+        <p>Example</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+let b = 20;
+
+console.log(a + b);
+<p><i>Output:</i> 30</p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here, + operates on two operands, a and b.</p>
+        <p>Other binary operators include:</p>
+        <ul>
+            <li><p><i>-</i></p></li>
+            <li><p><i>*</i></p></li>
+            <li><p><i>/</i></p></li>
+            <li><p><i>%</i></p></li>
+            <li><p><i>**</i></p></li>
+            <li><p><i>==</i></p></li>
+            <li><p><i>===</i></p></li>
+            <li><p><i>></i></p></li>
+            <li><p><i><</i></p></li>
+            <li><p><i>&&</i></p></li>
+            <li><p><i>||</i></p></li>
+        </ul>
+        <h2>C. Ternary Operator</h2>
+        <p>A ternary operator works with three operands.</p>
+        <p>JavaScript has one conditional operator, written as ? :.</p>
+        <p>Example</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let age = 20;
+
+let result = age >= 18 ? "Adult" : "Minor";
+
+console.log(result);
+<p><i>Output:</i> Adult</p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+
+        <h1>Example of All :--</h1>
+        <p>When one operand is a string, the + operator generally performs string concatenation rather than numeric addition.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log("10" + 20); // "1020"
+console.log(10 + 20);   // 30
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Multiplication Operator (*)</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+let b = 5;
+
+console.log(a * b);
+<p><i>Output:</i> 50</p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Division Operator (/)</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 100;
+let b = 10;
+
+console.log(a / b);
+<p><i>Output:</i> 10</p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(10 / 0);
+<p><i>Output:</i> Infinity</p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Remainder Operator (%)</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+let b = 3;
+
+console.log(a % b);
+<p><i>Output:</i> 1</p>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Practical example: Check whether a number is even or odd.</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let number = 10;
+
+if (number % 2 === 0) {
+    console.log("Even Number");
+} else {
+    console.log("Odd Number");
+}
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Even Number
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Exponentiation Operator (**)</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(5 ** 2); // 25
+console.log(3 ** 3); // 27
+console.log(10 ** 2); // 100
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Increment and Decrement Operators</h2>
+        <p>Increment and decrement operators are unary operators used to increase or decrease a numeric value by one.</p>
+        <h2>Increment Operator (++)</h2>
+        <p>The increment operator increases a variable's value by 1.</p>
+        <p>There are two types of increment operators:</p>
+        <h2>A. Pre-increment (++variable)</h2>
+        <p>The variable is increased first, and then its updated value is used in the expression.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+
+console.log(++a);
+console.log(a);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+11
+11
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>B. Post-increment (variable++)</h2>
+        <p>The current value is used in the expression first, and then the variable is increased by 1.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+
+console.log(a++);
+console.log(a);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+10
+11
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Difference between pre-increment and post-increment</h2>
+        <table>
+            <tr>
+                <th>Pre-increment</th>
+                <th>Post-increment</th>
+            </tr>
+            <tr>
+                <td><i>++a</i></td>
+                <td><i>a++</i></td>
+            </tr>
+            <tr>
+                <td>Increments before producing the expression's value.</td>
+                <td>Produces the old value before incrementing.</td>
+            </tr>
+            <tr>
+                <td>Returns the updated value.</td>
+                <td>Returns the previous value.</td>
+            </tr>
+        </table>
+        <h2>Decrement Operator (--)</h2>
+        <p>The decrement operator decreases a variable's value by 1.</p>
+        <p>It also has two types.</p>
+        <h2>A. Pre-decrement (--variable)</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+
+console.log(--a);
+console.log(a);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+9
+9
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>B. Post-decrement (variable--)</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let a = 10;
+
+console.log(a--);
+console.log(a);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+10
+9
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Practical example</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let score = 100;
+
+score++;
+
+console.log(score); // 101
+
+score--;
+
+console.log(score); // 100
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Important: Increment and decrement operators work with variables that can be modified, not with literal values such as 10++.</p>
+        <h2>Summary of Assignment Operators</h2>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Equivalent expression</th>
+                <th>Example result</th>
+            </tr>
+            <tr>
+                <td><i>=</i></td>
+                <td><i>a = 5</i></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><i>+=</i></td>
+                <td><i>a = a + 5</i></td>
+                <td>15 (if a = 10)</td>
+            </tr>
+            <tr>
+                <td><i>-=</i></td>
+                <td><i>a = a - 5</i></td>
+                <td>5 (if a = 10)</td>
+            </tr>
+            <tr>
+                <td><i>*=</i></td>
+                <td><i>a = a * 5</i></td>
+                <td>50 (if a = 10)</td>
+            </tr>
+            <tr>
+                <td><i>/=</i></td>
+                <td><i>a = a / 5</i></td>
+                <td>2 (if a = 10)</td>
+            </tr>
+            <tr>
+                <td><i>%=</i></td>
+                <td><i>a = a % 3</i></td>
+                <td>1 (if a = 10)</td>
+            </tr>
+            <tr>
+                <td><i></i>**=</td>
+                <td><i>a = a ** 3</i></td>
+                <td>1000 (if a = 10)</td>
+            </tr>
+        </table>
+        <p>JavaScript also provides bitwise and logical assignment operators, which are covered in their respective sections.</p>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>RegExp (Regular Expressions)</h1>
+        <p>RegExp stands for <dfn>Regular Expression</dfn>>.</p>
+        <p>It is used to define patterns for searching, matching, and replacing text.</p>
+        <p>Regular expressions are useful for validating email addresses, checking phone numbers, and finding specific words in text.</p>
+        <h2>Creating a regular expression</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const pattern = /hello/i;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here:</p>
+        <ul>
+            <li><p>/hello/ is the pattern.</p></li>
+            <li><p>i is a flag that makes the matching case-insensitive.</p></li>
+        </ul>
+            <h2>Important RegExp methods</h2>
+        
+            <table>
+                <tr>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><i>test()</i></td>
+                    <td>Checks whether a pattern exists in a string.</td>
+                </tr>
+                <tr>
+                    <td><i>exect()</i></td>
+                    <td>Returns matching information or null.</td>
+                </tr>
+            </table>
+            <p>Strings also provide regular-expression methods such as match(), replace(), and search().</p>
+            <h2>Example: test()</h2>
+            <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const pattern = /javascript/i;
+
+console.log(pattern.test("I love JavaScript"));
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+true
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: Checking digits</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const pattern = /^[0-9]+$/;
+
+console.log(pattern.test("12345"));
+// true
+
+console.log(pattern.test("Hello123"));
+// false
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Explanation:</p>
+        <ul>
+            <li><p>^ represents the beginning of the string.</p></li>
+            <li><p>[0-9] matches digits from 0 to 9.</p></li>
+            <li><p>+ means one or more occurrences.</p></li>
+            <li><p>$ represents the end of the string.</p></li>
+        </ul>
+        <h2>When should you use RegExp?</h2>
+        <ul>
+            <li><p>When validating form inputs.</p></li>
+            <li><p>When searching for specific words.</p></li>
+            <li><p>When checking phone number patterns.</p></li>
+            <li><p>When finding and replacing text.</p></li>
+        </ul>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

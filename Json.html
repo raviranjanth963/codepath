@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>JSON</h1>
+        <p>JSON stands for <dfn>JavaScript Object Notation.</dfn></p>
+        <p>It is a lightweight text-based data format used to store and exchange information between applications, websites, and servers.</p>
+        <p>JSON looks similar to JavaScript object syntax, but it follows stricter rules.</p>
+        <h2>Example of JSON data</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+{
+    "name": "Ravi",
+    "age": 20,
+    "course": "JavaScript",
+    "isStudent": true
+}
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important JSON methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Descrition</th>
+            </tr>
+            <tr>
+                <td><i>JSON.stringify()</i></td>
+                <td>Converts a JavaScript value into a JSON string.</td>
+            </tr>
+            <tr>
+                <td><i>JSON.parse()</i></td>
+                <td>Converts a valid JSON string into a JavaScript value.</td>
+            </tr>
+        </table>
+        <h2>Example: JSON.stringify()</h2>
+        <p>It converts a JavaScript object into a JSON string.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const student = {
+    name: "Ravi",
+    age: 20
+};
+
+const jsonData = JSON.stringify(student);
+
+console.log(jsonData);
+console.log(typeof jsonData);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+{"name":"Ravi","age":20}
+string
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Example: JSON.parse()</h2>
+        <p>It converts a JSON string into a JavaScript value.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const jsonData = '{"name":"Ravi","age":20}';
+
+const student = JSON.parse(jsonData);
+
+console.log(student.name);
+console.log(student.age);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Ravi
+20
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important JSON rules:</h2>
+        <ol>
+            <li><p>Property names must be written using double quotes.</p></li>
+            <li><p>String values must use double quotes.</p></li>
+            <li><p>JSON does not support functions.</p></li>
+            <li><p>JSON does not support undefined.</p></li>
+            <li><p>JSON does not allow comments.</p></li>
+        </ol>
+
+        <h2>When should you use JSON?</h2>
+        <ul>
+            <li><p>When sending data between a frontend and backend.</p></li>
+            <li><p>When working with APIs.</p></li>
+            <li><p>When storing structured data.</p></li>
+            <li><p>When exchanging information between applications.</p></li>
+        </ul>
+        
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

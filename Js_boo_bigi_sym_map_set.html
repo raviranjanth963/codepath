@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="jsFunction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Other Important Built-in Objects</h1>
+        <h1>Boolean</h1>
+        <p>The Boolean object represents a logical value: true or false.</p>
+        <p>Most JavaScript programs use Boolean values for conditions and decision-making.</p>
+        <h2>example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+let isLoggedIn = true;
+let isAdmin = false;
+
+console.log(isLoggedIn);
+console.log(isAdmin);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Boolean() function</h2>
+        <p>The Boolean() function converts a value into either true or false.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+console.log(Boolean(1));        // true
+console.log(Boolean(0));        // false
+console.log(Boolean("Hello"));  // true
+console.log(Boolean(""));       // false
+console.log(Boolean(null));     // false
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>Important:</dfn> Values such as false, 0, -0, 0n, "", null, undefined, and NaN are falsy. Most other values are truthy, including empty arrays and empty objects.</p>
+        <p>Use primitive Boolean values in normal programming rather than creating Boolean wrapper objects with <i>new Boolean()</i>.</p>
+        <br>
+        <hr>
+        <br>
+        <h1>BigInt</h1>
+        <p><i>BigInt</i> is a JavaScript built-in type used to represent integers larger than the maximum safe integer supported by the ordinary <i>Number</i> type.</p>
+        <h2>example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const bigNumber = 123456789012345678901234567890n;
+
+console.log(bigNumber);
+console.log(typeof bigNumber);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+123456789012345678901234567890n
+bigint
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>BigInt calculations</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const a = 100n;
+const b = 200n;
+
+console.log(a + b); // 300n
+console.log(a * b); // 20000n
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important rules:</h2>
+        <ul>
+            <li><p>Add n at the end of an integer literal to create a BigInt.</p></li>
+            <li><p>BigInt and Number values cannot be mixed directly in arithmetic operations.</p></li>
+            <li><p>BigInt is used for very large integer calculations.</p></li>
+            <li><p>BigInt does not support decimal values.</p></li>
+        </ul>
+        <p>Example of converting a BigInt into a Number:</p>
+        <br>
+        <hr>
+        <br>
+        <h1>Symbol</h1>
+        <p><i>Symbol</i> is a built-in primitive type used to create unique identifiers.</p>
+        <p>Every Symbol created using <i>Symbol()</i> is unique, even if the same description is provided.</p>
+        <h2>Example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const id1 = Symbol("id");
+const id2 = Symbol("id");
+
+console.log(id1 === id2);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+false
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Using Symbol as an object property</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const id = Symbol("studentId");
+
+const student = {
+    name: "Ravi",
+    [id]: 101
+};
+
+console.log(student.name);
+console.log(student[id]);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Ravi
+101
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>When should you use Symbol?</h2>
+        <ul>
+            <li><p>When creating unique property keys.</p></li>
+            <li><p>When avoiding accidental property-name conflicts.</p></li>
+            <li><p>When implementing special object behaviors using well-known Symbols.</p></li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h1>Map</h1>
+        <p>A <i>Map</i> is a built-in collection that stores data in key-value pairs.</p>
+        <p>Unlike ordinary objects, Map keys can be values of any type, including objects and functions.</p>
+        <h2>Creating a Map</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const student = new Map();
+
+student.set("name", "Ravi");
+student.set("age", 20);
+student.set("course", "JavaScript");
+
+console.log(student);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important Map methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><i>set()</i></td>
+                <td>Adds or updates a key-value pair.</td>
+            </tr>
+            <tr>
+                <td><i>get()</i></td>
+                <td>Returns the value associated with a key.</td>
+            </tr>
+            <tr>
+                <td><i>has()</i></td>
+                <td>Checks whether a key exists.</td>
+            </tr>
+            <tr>
+                <td><i>delete()</i></td>
+                <td>Removes a key-value pair.</td>
+            </tr>
+            <tr>
+                <td><i>clear()</i></td>
+                <td>Removes all entries.</td>
+            </tr>
+            <tr>
+                <td><i>keys()</i></td>
+                <td>Returns an iterator of keys.</td>
+            </tr>
+            <tr>
+                <td><i>values()</i></td>
+                <td>Returns an iterator of values.</td>
+            </tr>
+            <tr>
+                <td><i>entries()</i></td>
+                <td>Returns an iterator of key-value pairs.</td>
+            </tr>
+            <tr>
+                <td><i>size</i></td>
+                <td>Returns the number of entries.</td>
+            </tr>
+        </table>
+        <h2>Example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const student = new Map();
+
+student.set("name", "Ravi");
+student.set("age", 20);
+
+console.log(student.get("name"));
+console.log(student.has("age"));
+console.log(student.size);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Ravi
+true
+2
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Set</h1>
+        <p>A <i>Set</i> is a built-in collection used to store unique values.</p>
+        <p>It automatically prevents duplicate values from being stored.</p>
+        <h2>Creating a Set</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const numbers = new Set([10, 20, 20, 30, 30, 40]);
+
+console.log(numbers);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Set(4) {10, 20, 30, 40}
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Important Set methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>description</th>
+            </tr>
+            <tr>
+                <td><i>add()</i></td>
+                <td>Adds a new value.</td>
+            </tr>
+            <tr>
+                <td><i>has()</i></td>
+                <td>Checks whether a value exists.</td>
+            </tr>
+            <tr>
+                <td><i>delete()</i></td>
+                <td>Removes a value.</td>
+            </tr>
+            <tr>
+                <td><i>clear()</i></td>
+                <td>Removes all values.</td>
+            </tr>
+            <tr>
+                <td><i>size</i></td>
+                <td>Returns the number of unique values.</td>
+            </tr>
+            <tr>
+                <td><i>values()</i></td>
+                <td>Returns an iterator of values.</td>
+            </tr>
+        </table>
+        <h2>Example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+const fruits = new Set();
+
+fruits.add("Apple");
+fruits.add("Mango");
+fruits.add("Banana");
+fruits.add("Apple");
+
+console.log(fruits);
+console.log(fruits.size);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Set(3) {"Apple", "Mango", "Banana"}
+3
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>When should you use Set?</h2>
+        <ul>
+            <li><p>When removing duplicate values.</p></li>
+            <li><p>When storing unique user IDs.</p></li>
+            <li><p>When checking whether a value exists in a collection.</p></li>
+        </ul>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>
