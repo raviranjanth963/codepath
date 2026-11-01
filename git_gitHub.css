@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  --navy: #080f35;
+  --purple: #a63cff;
+  --blue: #237bff;
+  --muted: #b8c3e1;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--navy);
+  color: #fff;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.web_logo {
+  display: flex;
+  margin-top: 18px;
+  margin-left: 24px;
+}
+
+.logo {
+    font-size: clamp(25px, 3vw, 39px);
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo1 {
+    font-size: clamp(25px, 3vw, 39px);
+  color: #cbfad8;
+  display: flex;
+  font-weight: bold;
+}
+
+.logo1 div {
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+dfn {
+    font-weight: bolder;
+}
+
+/*copy for*/
+
+.code-box {
+    position: relative;          /* lets the button sit in the corner */
+    background: #013410;
+    padding: 40px 20px 20px 20px; 
+    color: white;
+    font-size: 20px;
+    border: 1.6px solid rgb(139, 255, 158);
+    border-radius: 24px;
+    
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 4px 12px;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    padding-bottom: 6px;
+}
+
+.copy-btn:active {
+    color: #eafed9;
+    background: #01f33a;
+    width: 155px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.copy-btn:hover {
+    background: rgba(134, 132, 249, 0.2);
+}
+
+.head {
+    width: 1300px;
+    margin-top: 100px;
+
+    margin-left: 35px;
+}
+
+p {
+    font-size: 20px;
+    color: #d5eedc;
+    width: 1300px;
+}
+h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #c3fac9;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #acfc80;
+}
+
+a {
+    font-size: 20px;
+}
+
+hr {
+    margin-top: 15px;
+}
+
+table {
+    padding: 10px;
+    border: 2px solid rgb(2, 254, 2);
+    background: #022d01;
+}
+
+th {
+    padding: 10px;
+    font-size: 21px;
+    color: #167703;
+    font-weight: bold;
+    background: #f5f7fa;
+}
+
+td {
+    font-size: 20px;
+    color: #e9ebfc;
+    padding: 12px;
+}
+
+td,p i {
+    font-size: 20px;
+    color: #e1ebfa;
+    background: #018a01;
+}
+
+.head i {
+    color: #e7efe5;
+    font-size: 21px;
+    background: #036219;
+    margin-top: 10px;
+}
+
+li i {
+    font-size: 20px;
+    color: #ebfef1;
+    background: #018a01;
+}
+
+li {
+    font-size: 20px;
+    color: #598259;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #056205;
+}
+
+.git {
+    display: flex;
+    width: 550px;
+    height: 160px;
+    border: 1.5px solid #012901;
+    border-radius: 24px;
+    background: #011a01;
+}
+
+.img {
+    padding: 14px;
+
+}
+
+.link {
+    padding: 12px;
+}
+
+.link u {
+    margin-top: 10px;
+}
+
+.img2 {
+    display: flex;
+    padding: 15px;
+}
+
+.im {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.im2 {
+    padding: 10px;
+    border-radius: 24px;
+}
+
+.im2:active {
+    width: 1005px;
+}
+
+.im:active {
+    width: 255px;
+}
+
+.head {
+    width: 1250px;
+}
+
+body {
+    width: 1250px;
+}
+
+.hub {
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    height: 50px;
+    width: 170px;
+    border: 0px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    color: #598259;
+    border-radius: 45px;
+    background: linear-gradient(105deg, #2fff6d, #14ffe4);
+}
+
+.bu {
+    text-decoration: none;
+}
+
+.hub:hover { transform: translateY(-3px); filter: brightness(1.12); }
+.hub:active { transform: translateY(0) scale(.98); }
+.hub:focus-visible { outline: 3px solid white; outline-offset: 5px; }

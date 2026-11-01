@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="git_gitHub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <a class="bu" href="github.html"><div class="hub">GitHub</div></a>
+
+    <div class="head">
+        <h2>CodePath – Complete Git & GitHub Tutorial</h2>
+        <h1>Learn Git and GitHub from Zero to Advanced</h1>
+        <p>Complete educational content for your <i>CodePath website | Beginner to Advanced | Windows and macOS.</i></p>
+        <br>
+        <p>This notes cover almost all the important Git and GitHub fundamentals, including:</p>
+        <ul>
+            <li>Introduction to Git and GitHub</li>
+            <li>Installing Git on Windows and MacBook</li>
+            <li>Git commands and configuration</li>
+            <li>Creating repositories</li>
+            <li>Clone and status</li>
+            <li>Add, commit and push</li>
+            <li>Pull and fetch</li>
+            <li>Branches and merging</li>
+            <li>Pull requests</li>
+            <li>Merge conflicts</li>
+            <li>Undoing changes</li>
+            <li>Forking repositories</li>
+        </ul>
+        <p>One important distinction before starting:</p>
+        <ul>
+            <li><dfn>Git</dfn> is a version control system. It tracks changes in your code on your computer.</li>
+            <li><dfn>GitHub</dfn> is an online platform where you can store Git repositories, collaborate with other developers, and share your projects.</li>
+        </ul>
+        <p>Think of Git as a tool that tracks your project's history and GitHub as a place where you can store and share that history online.</p>
+        <h2>Introduction to Git and GitHub</h2>
+        <h3>What is Version Control?</h3>
+        <p>Version control is a system that helps developers track changes made to files over time.</p>
+        <p>Imagine you are creating a website. You make changes to your HTML, CSS and JavaScript files every day.</p>
+        <p>After some time:</p>
+        <ul>
+            <li>You accidentally delete some important code.</li>
+            <li>Your new design does not work.</li>
+            <li>You want to return to the previous version.</li>
+            <li>You want to know who changed a particular part of the code.</li>
+        </ul>
+        <p>Version control helps you manage these situations.</p>
+        <h3>Main benefits:</h3>
+        <ol>
+            <li>Tracks changes in your code.</li>
+            <li>Allows you to return to previous versions.</li>
+            <li>Helps multiple developers work together.</li>
+            <li>Maintains a history of project changes.</li>
+            <li>Makes it easier to recover lost or incorrect code.</li>
+        </ol>
+        <h2>What is Git?</h2>
+        <a href="https://images.openai.com/static-rsc-4/VXEliLgLy3V6TOSl1m8U8Y0W-gBcK9QM1hzCouhVEzBU0p_gzBNYVeRwjN3UFGcnQcCDb_Z7M_S5xTgZAOaYIBeP7HAg2qzgVLlMhP1Yis9xSyQBtuvLMYpZoH3KSVvGmuZdk-0xk6Z7o2S6CaAdsKbb1F0_vmHD4SgxUddJAkelfpF_LyT1gvbLPBl3BVF1?purpose=fullsize"><img class="im" src="https://images.openai.com/static-rsc-4/VXEliLgLy3V6TOSl1m8U8Y0W-gBcK9QM1hzCouhVEzBU0p_gzBNYVeRwjN3UFGcnQcCDb_Z7M_S5xTgZAOaYIBeP7HAg2qzgVLlMhP1Yis9xSyQBtuvLMYpZoH3KSVvGmuZdk-0xk6Z7o2S6CaAdsKbb1F0_vmHD4SgxUddJAkelfpF_LyT1gvbLPBl3BVF1?purpose=fullsize" width="200px"></a>
+        <p>Git is a free and open-source distributed version control system.</p>
+        <p>It allows developers to track changes, save project versions, create branches, and combine code changes.</p>
+        <h3>Example:</h3>
+        <p>Suppose you create a website named CodePath.</p>
+        <ul>
+            <li>Day 1: You create the homepage.</li>
+            <li>Day 2: You add a login page.</li>
+            <li>Day 3: You add a registration page.</li>
+            <li>Day 4: You change the website design.</li>
+        </ul>
+        <p>Git can record these changes so that you can see the project's history and return to an earlier version when necessary.</p>
+        <h2>What is GitHub?</h2>
+        <a href="https://images.openai.com/static-rsc-4/MQxBAceGnrUEa4aVYtruFN9023LDri6zwP0riUdkhozgQlDZr5pSjhV80Bw7bGSRJbX3q8HIL-_DEnJVkQp0R8Uc_BE_R-LJUvdgSIVU0wUUviW6N-SykoKlMvY_cSkwsPRwaeCKImnN-Rn-5r80G6ZcC9MFlmuAI2dkxWTMrpjpoOccSANo_rLDTpqgRwGH?purpose=fullsize"><img class="im" src="https://images.openai.com/static-rsc-4/MQxBAceGnrUEa4aVYtruFN9023LDri6zwP0riUdkhozgQlDZr5pSjhV80Bw7bGSRJbX3q8HIL-_DEnJVkQp0R8Uc_BE_R-LJUvdgSIVU0wUUviW6N-SykoKlMvY_cSkwsPRwaeCKImnN-Rn-5r80G6ZcC9MFlmuAI2dkxWTMrpjpoOccSANo_rLDTpqgRwGH?purpose=fullsize" width="200px"></a>
+        <p>GitHub is an online platform for hosting Git repositories.</p>
+        <p>Developers use GitHub to:</p>
+        <ul>
+            <li>Upload and store projects.</li>
+            <li>Share code with others.</li>
+            <li>Work with teams.</li>
+            <li>Review code changes.</li>
+            <li>Report bugs.</li>
+            <li>Manage project development.</li>
+            <li>Contribute to open-source projects.</li>
+        </ul>
+        <h2>Download and Install Git</h2>
+        <p>You can install Git on Windows, macOS (MacBook), and Linux.</p>
+        <h3>Where to download Git?</h3>
+        <div class="git">
+            <div class="img">
+                <a href="https://git-scm.com/downloads?utm_source=chatgpt.com"><img src="https://images.openai.com/static-rsc-4/VXEliLgLy3V6TOSl1m8U8Y0W-gBcK9QM1hzCouhVEzBU0p_gzBNYVeRwjN3UFGcnQcCDb_Z7M_S5xTgZAOaYIBeP7HAg2qzgVLlMhP1Yis9xSyQBtuvLMYpZoH3KSVvGmuZdk-0xk6Z7o2S6CaAdsKbb1F0_vmHD4SgxUddJAkelfpF_LyT1gvbLPBl3BVF1?purpose=fullsize" width="140px"></a>
+            </div>
+            <div class="link">
+                <p>Official Git website</p>
+                <a href="https://git-scm.com/downloads?utm_source=chatgpt.com">Download Git from git-scm.com</a><br>
+                <u>Always download Git from its official website.</u>
+            </div>
+        </div>
+        <h2>How to install Git on Windows</h2>
+        <div class="img2">
+            <a href="https://images.openai.com/static-rsc-4/zBTZCZ8IhyTLHqqSMlEkVziT2-w0cKOBXruQrNDYCrwDr4jk0uwRhf0BrlA1sAyFlCK8_lqdr9wW1Hek19ABRBEwZbCa0L4Y7Hv50qWyu0ny-D_Kpc3FH6pf37v8wLJrML2qSGh8IUsRN4SgZfY5FccYC-Sx3YOVZkqh7nnAeZp7S2V9t-JrQyXqPfqyIUzy?purpose=fullsize"><img class="im" src="https://images.openai.com/static-rsc-4/zBTZCZ8IhyTLHqqSMlEkVziT2-w0cKOBXruQrNDYCrwDr4jk0uwRhf0BrlA1sAyFlCK8_lqdr9wW1Hek19ABRBEwZbCa0L4Y7Hv50qWyu0ny-D_Kpc3FH6pf37v8wLJrML2qSGh8IUsRN4SgZfY5FccYC-Sx3YOVZkqh7nnAeZp7S2V9t-JrQyXqPfqyIUzy?purpose=fullsize" width="250px"></a>
+            <a href="https://images.openai.com/static-rsc-4/BlHw6xzvDPr7Uz2doDT1mXW_uFV2PB7Wq_u3KKUCu6u-V_M8sQqr5BLKHPeCeNokKCkjWw_D0bIFClI5ypsXEpWHcBRmeH-lPXgqagpspCIm91FE7hqQtTkvRxupkVXoTgrPJVRXREaCKO6xxxFDzOJRIvZFeDtlN5wviQsfw5jVjZEF1_mqBVfOOCe-nBHt?purpose=fullsize"><img class="im" src="https://images.openai.com/static-rsc-4/BlHw6xzvDPr7Uz2doDT1mXW_uFV2PB7Wq_u3KKUCu6u-V_M8sQqr5BLKHPeCeNokKCkjWw_D0bIFClI5ypsXEpWHcBRmeH-lPXgqagpspCIm91FE7hqQtTkvRxupkVXoTgrPJVRXREaCKO6xxxFDzOJRIvZFeDtlN5wviQsfw5jVjZEF1_mqBVfOOCe-nBHt?purpose=fullsize" width="250px"></a>
+            <a href="https://images.openai.com/static-rsc-4/Ue4vDmbmR1D5kxY1QNOmo3rLEF5IMRQ6jb04KZbZ__poXTEp9aRxoJb5jdYXoSe_DbKuqqmuciEIXIHT81c61FwWKG79jP2TRJKBBlGpgwtzYh-4aFSO6aK2f5ltVmWcSS9aWjEXBEvXDnLH0GyYLZ-GOgPpcSLo8e_tcEo2p2_mghUzDCyAtAQPcUw6uH5N?purpose=fullsize"><img class="im" src="https://images.openai.com/static-rsc-4/Ue4vDmbmR1D5kxY1QNOmo3rLEF5IMRQ6jb04KZbZ__poXTEp9aRxoJb5jdYXoSe_DbKuqqmuciEIXIHT81c61FwWKG79jP2TRJKBBlGpgwtzYh-4aFSO6aK2f5ltVmWcSS9aWjEXBEvXDnLH0GyYLZ-GOgPpcSLo8e_tcEo2p2_mghUzDCyAtAQPcUw6uH5N?purpose=fullsize" width="250px"></a>
+        </div>
+        <p>Follow these steps:</p>
+        <h3>Step 1: Open the official website</h3>
+        <a href="Step 1: Open the official website">Visit https://git_scm.com/downlodes</a>
+        <h3>Step 2: Select Windows</h3>
+        <p>Click the Windows download option.</p>
+        <h3>Step 3: Download the installer</h3>
+        <p>Double-click the <i>.exe</i> installer.</p>
+        <h3>Step 5: Complete installation</h3>
+        <ul>
+            <li>Click Next.</li>
+            <li>Read the installation options.</li>
+            <li>Keep the default options unless you have a specific reason to change them.</li>
+            <li>Click Install.</li>
+            <li>Wait for the installation to finish.</li>
+            <li>Click Finish.</li>
+        </ul>
+        <h3>Step 6: Open Git Bash</h3>
+        <p>Search for Git Bash in the Windows Start menu and open it.</p>
+        <p>Git Bash provides a terminal where you can execute Git commands.</p>
+        <h3>Step 7: Verify installation</h3>
+        <p>Type:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git --version
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ggit version 2.x.x
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Your version number may be different.</p>
+        <hr>
+        <h2>How to install Git on MacBook</h2>
+        <div class="img2">
+            <a href="https://images.openai.com/static-rsc-4/5FhMw1L1zNpILWvJ6kHQXEAWtHQWRnAJNCnle02J7Ol0oWLFgViW3pKE7nk_vwoiW2uvnoHFk09QoeKgbT0q6JjmDyV-9JcPwCimusgqSWc7trbGTCsf1XiE8p0fZhOneZdPIIt7izmi63kenf5U3GD30wkE0-TSgs5_YPb2v2w?purpose=inline"><img class="im" src="https://images.openai.com/static-rsc-4/5FhMw1L1zNpILWvJ6kHQXEAWtHQWRnAJNCnle02J7Ol0oWLFgViW3pKE7nk_vwoiW2uvnoHFk09QoeKgbT0q6JjmDyV-9JcPwCimusgqSWc7trbGTCsf1XiE8p0fZhOneZdPIIt7izmi63kenf5U3GD30wkE0-TSgs5_YPb2v2w?purpose=inline" width="250px"></a>
+            <a href="https://images.openai.com/static-rsc-4/Ddg4RFgrx3IZ22jMHyvjxuu-ZiCdZaxi99LaZOfIPDHBFT3DpBMox3AboIlAm_5NFQ6mw-on1StFvfr5ijtYxTkyuJ5LwFCDPixbTDdfJC4T2afpwrmZAe08BQduPMOaDj1cZMqSIb55LsS6g0XJlFTlW42MEj5EBJIySwANOng?purpose=inline"><img class="im" src="https://images.openai.com/static-rsc-4/Ddg4RFgrx3IZ22jMHyvjxuu-ZiCdZaxi99LaZOfIPDHBFT3DpBMox3AboIlAm_5NFQ6mw-on1StFvfr5ijtYxTkyuJ5LwFCDPixbTDdfJC4T2afpwrmZAe08BQduPMOaDj1cZMqSIb55LsS6g0XJlFTlW42MEj5EBJIySwANOng?purpose=inline" width="250px"></a>
+            <a href="https://images.openai.com/static-rsc-4/msMqIdM_YguHTy7z28jhny3QLLtsNnkYASTrLdNiuvEv8zrgSXuuH31T56NqiOKS65dDRZSnUaemttIpAlL_J9VJVPnYI1_dDd-tJ8JoGJpE5NPoEkAFJnRyoQdYSLqsuYWKe-7hgU6r6-PZDAyG5FkFdD620U0amn21Yd3bi3M?purpose=inline"><img class="im" src="https://images.openai.com/static-rsc-4/msMqIdM_YguHTy7z28jhny3QLLtsNnkYASTrLdNiuvEv8zrgSXuuH31T56NqiOKS65dDRZSnUaemttIpAlL_J9VJVPnYI1_dDd-tJ8JoGJpE5NPoEkAFJnRyoQdYSLqsuYWKe-7hgU6r6-PZDAyG5FkFdD620U0amn21Yd3bi3M?purpose=inline" width="250px"></a>
+        </div>
+        <p>There are multiple ways to install Git on macOS.</p>
+        <h3>Method 1: Install using Terminal</h3>
+        <p>Step 1: Open Terminal.</p>
+        <p>You can open it by pressing:</p>
+        <p><i>Command + Space</i></p>
+        </p>Then search for <i>Terminal</i>>.</div>
+        <p>Step 2: Type:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git --version
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Step 3: If Git is not installed, macOS may offer to install Apple's Command Line Developer Tools</p>
+        <p>Follow the installation prompt.</p>
+        <p>Step 4: After installation, verify:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git --version
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Method 2: Download Git from the official website</h3>
+        <ol>
+            <li><a href="https://git-scm.com/downloads?utm_source=chatgpt.com">Visit https://git-scm.com/downloads.</a></li>
+            <li>Select macOS.</li>
+            <li>Choose a suitable installation method.</li>
+            <li>Follow the installation instructions.</li>
+        </ol>
+        <h3>Method 3: Install using Homebrew</h3>
+        <p>If you already have Homebrew installed, run:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+brew install git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Then verify:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git --version
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <u>Note: Homebrew is a package manager for macOS. You need to install it separately if it is not already available.</u>
+        <hr>
+        <h2>How to install Git on Linux</h2>
+        <p>For Ubuntu or Debian:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+sudo apt update
+sudo apt install git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Verify:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git --version
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <hr>
+        <h2>Module 3: Set Up Git for the First Time</h2>
+        <p>After installing Git, you need to configure your identity.</p>
+        <p>Git uses your name and email address to identify who created each commit.</p>
+        <h3>1. Configure your username</h3>
+        <p>Open Git Bash on Windows or Terminal on Mac.</p>
+        <p>Type:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git config --global user.name "Your Name"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example:</p>
+        <p>Type:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git config --global user.name "Raviranjan"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>2. Configure your email</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git config --global user.email "your-email@example.com"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Use the email address associated with your GitHub account if you want your commits linked to that account.</p>
+        <h3>3. Check Git configuration</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git config --list
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This displays your Git configuration.</p>
+        <h3>4. Set the default branch name</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git config --global init.defaultBranch main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This makes main the default initial branch when you create new repositories.</p>
+        <h3>5. Other useful terminal commands</h3>
+        <p>These commands are useful when working with Git.</p>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td><i>pwd</i></td>
+                <td>Shows your current directory</td>
+            </tr>
+            <tr>
+                <td><i>ls</i></td>
+                <td>Lists files and folders</td>
+            </tr>
+            <tr>
+                <td><i>ls -a</i></td>
+                <td>Shows hidden files and folders</td>
+            </tr>
+            <tr>
+                <td><i>cd folder-name</i></td>
+                <td>Enters a folder</td>
+            </tr>
+            <tr>
+                <td><i>cd ..</i></td>
+                <td>Goes back one directory</td>
+            </tr>
+            <tr>
+                <td><i>mkdir folder-name</i></td>
+                <td>Creates a new folder</td>
+            </tr>
+            <tr>
+                <td><i>clear</i></td>
+                <td>Clears the terminal screen</td>
+            </tr>
+        </table>
+        <p>ExampleL:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+mkdir CodePath
+cd CodePath
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This creates a folder called CodePath and enters it.</p>
+        <hr>
+
+        <h2>Difference Between Git and GitHub</h2>
+        <table>
+            <tr>
+                <th>Git</th>
+                <th>GitHub</th>
+            </tr>
+            <tr>
+                <td>Version control tool</td>
+                <td>Online code hosting platform</td>
+            </tr>
+            <tr>
+                <td>Works locally on your computer</td>
+                <td>Works online</td>
+            </tr>
+            <tr>
+                <td>Tracks code changes</td>
+                <td>Hosts Git repositories</td>
+            </tr>
+            <tr>
+                <td>Uses Git commands</td>
+                <td>Provides a graphical interface and collaboration tools</td>
+            </tr>
+            <tr>
+                <td>Created by Linus Torvalds</td>
+                <td>Launched by GitHub, Inc</td>
+            </tr>
+        </table>
+        <p><dfn>Remember:</dfn>> Git and GitHub are different, but they work together.</p>
+        <h2>What is a Repository?</h2>
+        <p>A repository (also called a repo) is a place where your project's files and their version history are stored.</p>
+        <p>A repository can contain:</p>
+        <ul>
+            <li>HTML files</li>
+            <li>CSS files</li>
+            <li>JavaScript files</li>
+            <li>Images</li>
+            <li>Python files</li>
+            <li>Documentation</li>
+            <li>Other project resources</li>
+        </ul>
+        <p>There are two common types:</p>
+        <ol>
+            <li><i>Local repository:</i> Stored on your computer.</li>
+            <li><i>Remote repository:</i> Stored on an online platform such as GitHub.</li>
+        </ol>
+        <h2>Module 4: Understanding the Git Workflow</h2>
+        <p>Before learning commands, understand how Git saves changes.</p>
+        <a href="https://images.openai.com/static-rsc-4/40dtdarM72a0yrUwHB_bg9WUb_nVlkAhzaFgk9tfxpASoWxO5uBJkru3OucmIBp1UoVcSD__fRMg8i2xB9-kj_MbS4Cdc7O1BrmYVGtZEDcE-rNX8Q6K3KGajpSqgjO1u5qaI3yYJeimPIE54m3tglatl5q3MI0zByGrCDKYtpI?purpose=inline"><img class="im2" src="https://images.openai.com/static-rsc-4/40dtdarM72a0yrUwHB_bg9WUb_nVlkAhzaFgk9tfxpASoWxO5uBJkru3OucmIBp1UoVcSD__fRMg8i2xB9-kj_MbS4Cdc7O1BrmYVGtZEDcE-rNX8Q6K3KGajpSqgjO1u5qaI3yYJeimPIE54m3tglatl5q3MI0zByGrCDKYtpI?purpose=inline" width="1000px"></a>
+        <p>Git has three important local areas:</p>
+        <h3>1. Working Directory</h3>
+        <p>This is where you create and edit your project files.</p>
+        <p>Example;</p>
+        <ul>
+            <li>index.html</li>
+            <li>style.css</li>
+            <li>script.js</li>
+        </ul>
+        <h3>2. Staging Area</h3>
+        <p>This is where you select the changes you want to include in your next commit.</p>
+        <h3>3. Local Repository</h3>
+        <p>This is where Git stores your committed project history.</p>
+        <p>There is also a fourth destination:</p>
+        <h3>4. Remote Repository</h3>
+        <p>This is an online repository, such as GitHub, where you can upload your commits and collaborate with other developers.</p>
+        <p>Remember these three main commands:</p>
+        <ul>
+            <li><i>git add</i> – Select changes.</li>
+            <li><i>git commit</i> – Save changes in Git history.</li>
+            <li><i>git push</i> – Upload commits to GitHub.</li>
+        </ul>
+        <h2>Git Commands – Basic Commands</h2>
+        <h3>1. What is a Git Command?</h3>
+        <p>A Git command is an instruction entered into a terminal to perform an operation on a Git repository.</p>
+        <h3>2. Check Git version</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git --version
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Displays the installed Git version.</p>
+        <h3>3. Clear the terminal</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+clear
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Clears the terminal screen. This is a shell command, not a Git command.</p>
+        <h3>4. List files and folders</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ls
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Displays files and folders in the current directory.</p>
+        <p>To display hidden files:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ls -a
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Git repositories contain a hidden .git folder, which stores repository data.</p>
+        <h3>5. Check Git configuration</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git config --list
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Displays configured Git settings.</p>
+        <h3>6. Check Git help</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git help
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Displays general Git help.</p>
+        <p>To get help for a particular command:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git help commit
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <hr>
+        <h2>Module 6: Git Repository – Init and Clone</h2>
+        <h3>1. What is git init?</h3>
+        <p><i>git init</i> is used to create a new Git repository inside an existing project folder.</p>
+        <p>In simple words, it tells Git to start tracking a project's history.</p>
+        <h3>Example:</h3>
+        <p>Suppose you have a folder called <i>CodePath</i>.</p>
+        <p>Step 1: Open the folder in your terminal.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+cd CodePath
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Step 2: Initialize Git.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git init
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example output:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Initialized empty Git repository
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Git creates a hidden .git directory.</p>
+        <p>Your project is now a Git repository.</p>
+        <a href="https://images.openai.com/static-rsc-4/cyUYxSbN6Hf7ZG7CzgttOm_KZrcWmiU1cg02GwUMCM_pUVTDh1Mi831V3ipciwWDJcG2gvYIjrQ9Y1_V6wMXscbNytCz8MXhidEWx-ZBMYgWvRNnbhKZUlrTmZTNrtxvx9bZ7Fukw_ufCu3zRy5KHvz1Yx9Hoez0o-9mGc0QYA4?purpose=inline"><img class="im2" src="https://images.openai.com/static-rsc-4/cyUYxSbN6Hf7ZG7CzgttOm_KZrcWmiU1cg02GwUMCM_pUVTDh1Mi831V3ipciwWDJcG2gvYIjrQ9Y1_V6wMXscbNytCz8MXhidEWx-ZBMYgWvRNnbhKZUlrTmZTNrtxvx9bZ7Fukw_ufCu3zRy5KHvz1Yx9Hoez0o-9mGc0QYA4?purpose=inline" width="1000px"></a>
+        <h2>2. What is git clone?</h2>
+        <p><i>git clone</i> is used to download an existing remote repository to your computer.</p>
+        <p>It creates a local copy of the repository, including its Git history.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git clone https://github.com/username/project-name.git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Replace the URL with the actual GitHub repository URL.</p>
+        <p>After cloning, enter the project folder:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+cd project-name
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>When should you use it?</h3>
+        <ul>
+            <li>When downloading your own GitHub project to another computer.</li>
+            <li>When working on another developer's project.</li>
+            <li>When contributing to open-source projects.</li>
+        </ul>
+        <h2>3. Difference between git init and git clone</h2>
+        <table>
+            <tr>
+                <th>git init</th>
+                <th>git clone</th>
+            </tr>
+            <tr>
+                <td>Creates a new local repository</td>
+                <td>Copies an existing repository</td>
+            </tr>
+            <tr>
+                <td>Starts tracking a folder</td>
+                <td>Downloads project files and history</td>
+            </tr>
+            <tr>
+                <td>Used for a new project</td>
+                <td>Used for an existing project</td>
+            </tr>
+            <tr>
+                <td>Does not automatically connect to GitHub</td>
+                <td>Normally configures the original remote</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Git Status, Add and Commit</h2>
+        <p>hese three commands are among the most important commands in Git.</p>
+        <h3>1. What is git status?</h3>
+        <p><i>git status</i> displays the current state of your working directory and staging area.</p>
+        <p>It tells you:</p>
+        <ul>
+            <li>Which files are new.</li>
+            <li>Which files have been modified.</li>
+            <li>Which files are staged.</li>
+            <li>Which branch you are currently using.</li>
+            <li>Whether your working directory is clean.</li>
+        </ul>
+        <p>Command</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git status
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Four important file states</h3>
+        <h3>Untracked</h3>
+        <p>A new file that Git is not currently tracking.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Untracked files:
+    index.html
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Modified</h3>
+        <p>A file that Git already knows about but that has been changed.</p>
+        <h3>Staged</h3>
+        <p>A file whose changes have been selected for the next commit.</p>
+        <h3>Unmodified</h3>
+        <p>tracked file that has not changed since its last commit.</p>
+        <h2>2. What is git add?</h2>
+        <p><i>git add</i> moves changes into the staging area.</p>
+        <p>It tells Git which changes you want to include in your next commit.</p>
+        <p>Add one file:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git add index.html
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Add multiple files:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git add index.html style.css
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Add all changes in the current directory:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git add .
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Another commonly used option:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git add -A
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This stages additions, modifications and deletions across the working tree.</p>
+        <h2>3. What is git commit?</h2>
+        <p>A commit is a saved snapshot of staged changes in the Git repository.</p>
+        <p>It records what changed and includes information such as the author, date and commit message.</p>
+        <p>Command:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git commit -m "Initial commit"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here</p>
+        <ul>
+            <li><p><i>git commit</i></p> creates a commit.</li>
+            <li><p><i>-m</i></p> allows you to provide a message.</li>
+            <li><p><i>"Initial commit"</i></p> describes the changes.</li>
+        </ul>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git add .
+git commit -m "Created CodePath homepage"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>4. Why are commit messages important?</h2>
+        <p>Commit messages help developers understand the history of a project.</p>
+        <p>Good examples:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Added login page
+Fixed navigation bar
+Updated homepage design
+Added registration form
+Fixed mobile responsive layout
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Avoid unclear messages such as:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+hello
+abc
+changes
+new
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>5. Difference between git add and git commit</h2>
+        <table>
+            <tr>
+                <th>git add</th>
+                <th>git commit</th>
+            </tr>
+            <tr>
+                <td>Selects changes</td>
+                <td>Records selected changes</td>
+            </tr>
+            <tr>
+                <td>Sends changes to staging area</td>
+                <td>Saves them in local repository</td>
+            </tr>
+            <tr>
+                <td>Does not create a commit</td>
+                <td>Creates a commit</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Push Command – Upload Code to GitHub</h2>
+        <h3>1. What is git push?</h3>
+        <p><i>git push</i> uploads your local commits to a remote repository such as GitHub.</p>
+        <p>It allows other people to access the latest committed version of your project.</p>
+        <p>Command:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git push origin main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Meaning:</p>
+        <ul>
+            <li><i>git push</i>> – Upload commits.</li>
+            <li><i>origin</i> – The conventional name for a remote repository.</li>
+            <li><i>main</i> – The branch you want to push.</li>
+        </ul>
+        <h3>2. What is origin?</h3>
+        <p><i>origin</i> is a commonly used nickname for the remote repository from which your local repository was cloned, or the remote you configured yourself.</p>
+        <p>It is not a special GitHub account or a separate repository.</p>
+        <h3>3. What is main?</h3>
+        <p><i>main</i> is commonly used as the default branch name.</p>
+        <p>It is the branch that many projects use for their primary development history.</p>
+        <h3>4. What is git push -u origin main?</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git push -u origin main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The -u option sets the upstream tracking relationship between your local branch and the remote branch.</p>
+        <p>After configuring it, you can often use:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git push
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>nstead of typing the full command every time.</p>
+        <h2>5. Complete example</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git status
+git add .
+git commit -m "Added homepage"
+git push -u origin main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Your committed changes are now uploaded to GitHub.</p>
+        <a href="https://images.openai.com/static-rsc-4/5kVcuGLLm_0v5l6g_kcOh_ElSUiZoqHQ0j3fKdYBqPXToG6UkAj44lRO2ge9nsJeSVKvfCMrG52qRyMTD9IsMxJM54UxHRLpwoxp_ufJ-0fl3w8cofzFjRolqWqoGfe2CN5WerdBKsaJ8yGoLn-zZ-DIa7s_qfjplZNBZerB864?purpose=inline"><img class="im2" src="https://images.openai.com/static-rsc-4/5kVcuGLLm_0v5l6g_kcOh_ElSUiZoqHQ0j3fKdYBqPXToG6UkAj44lRO2ge9nsJeSVKvfCMrG52qRyMTD9IsMxJM54UxHRLpwoxp_ufJ-0fl3w8cofzFjRolqWqoGfe2CN5WerdBKsaJ8yGoLn-zZ-DIa7s_qfjplZNBZerB864?purpose=inline" width="1000px"></a>
+        <br>
+        <hr>
+        <br>
+
+    </div>
+    <a class="bu" href="github.html"><div class="hub">GitHub</div></a>
+</body>
+<script src="copy.js" defer></script>
+</html>
