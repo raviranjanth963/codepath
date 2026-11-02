@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  --navy: #080f35;
+  --purple: #a63cff;
+  --blue: #237bff;
+  --muted: #b8c3e1;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--navy);
+  color: #fff;
+  background-image: url("Neon SQL Database Cyber Wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.web_logo {
+  display: flex;
+  margin-top: 18px;
+  margin-left: 24px;
+}
+
+.logo {
+    font-size: clamp(36px, 6vw, 46px);
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo1 {
+    font-size: clamp(36px, 6vw, 46px);
+  color: white;
+  display: flex;
+  font-weight: bold;
+}
+
+.logo1 div {
+    background: linear-gradient(100deg, #b84bff, #7a61ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+dfn {
+    font-weight: bolder;
+}
