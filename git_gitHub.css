@@ -256,3 +256,31 @@ body {
 .hub:hover { transform: translateY(-3px); filter: brightness(1.12); }
 .hub:active { transform: translateY(0) scale(.98); }
 .hub:focus-visible { outline: 3px solid white; outline-offset: 5px; }
+
+.ghub {
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    height: 50px;
+    width: 290px;
+    border: 0px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    color: #598259;
+    border-radius: 45px;
+    background: linear-gradient(105deg, #2fff6d, #14ffe4);
+}
+
+.but {
+    text-decoration: none;
+}
+
+.ghub:hover { transform: translateY(-3px); filter: brightness(1.12); }
+.ghub:active { transform: translateY(0) scale(.98); }
+.ghub:focus-visible { outline: 3px solid white; outline-offset: 5px; }
+
+.top {
+    display: flex;
+}

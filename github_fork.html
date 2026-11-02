@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="git_gitHub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="top">
+        <a class="bu" href="github.html"><div class="hub">GitHub</div></a>
+        <a class="bu" href="git_gitHub.html"><div class="hub">Git & Basic</div></a>
+    </div>
+
+    <div class="head">
+        <h1>Forking in GitHub</h1>
+        <h2>1. What is a Fork?</h2>
+        <p>A fork is your own GitHub copy of another user's repository.</p>
+        <p>It allows you to make changes without directly modifying the original repository.</p>
+        <p>The original repository is often called the <i>upstream repository</i>.</p>
+        <p>Your fork is a separate repository under your GitHub account.</p>
+        <a href="https://images.openai.com/static-rsc-4/jY-h_p7d4kbMmpU82mlF0DBNKuuFsBQVg18GLG2Ad-TAp92rUsslbOg9xvwChdHURstp9RM8PFOGrHY-a9zKBUNXc4gxlNMznvQ1g2xfDPzbU_IR1ZguRHxKWHzSVB0q5wbJi0WmJz01w6-QJfUmLdxT6rRLNCxbzw_FJVaOVvs?purpose=inline"><img class="im2" src="https://images.openai.com/static-rsc-4/jY-h_p7d4kbMmpU82mlF0DBNKuuFsBQVg18GLG2Ad-TAp92rUsslbOg9xvwChdHURstp9RM8PFOGrHY-a9zKBUNXc4gxlNMznvQ1g2xfDPzbU_IR1ZguRHxKWHzSVB0q5wbJi0WmJz01w6-QJfUmLdxT6rRLNCxbzw_FJVaOVvs?purpose=inline" width="1000px"></a>
+        <h2>2. Why do we use forks?</h2>
+        <ul>
+            <li>To contribute to open-source projects.</li>
+            <li>To experiment with another developer's code.</li>
+            <li>To make modifications independently.</li>
+            <li>To propose changes to the original project.</li>
+            <li>To maintain your own version of a project.</li>
+        </ul>
+        <h2>3. How to fork a repository</h2>
+        <p><i>Step 1:</i> Open another developer's GitHub repository.</p>
+        <p><i>Step 2:</i> Click the Fork button.</p>
+        <p><i>Step 3:</i> Select your GitHub account as the owner.</p>
+        <p><i>Step 4:</i> Enter a repository name if you want to change it.</p>
+        <p><i>Step 5:</i> Click Create fork.</p>
+        <p>GitHub creates a copy of the repository under your account.</p>
+        <h2>4. How to clone your fork</h2>
+        <p>Copy the URL of your fork and run:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git clone https://github.com/your-username/project-name.git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Enter the folder:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+cd project-name
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>5. What is upstream?</h2>
+        <p><i>upstream</i> is a conventional nickname for the original repository from which you forked.</p>
+        <p>You can connect the original repository using:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git remote add upstream https://github.com/original-owner/project-name.git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Check your remotes:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git remote -v
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>You should see your fork as origin and the original project as <i>upstream</i>.</p>
+        <h2>6. How to update your fork</h2>
+        <p>Fetch changes from the original repository:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git fetch upstream
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Switch to your main branch:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git switch main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>git switch main</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git merge upstream/main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Upload the updated branch to your fork:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git push origin main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>7. How to contribute to the original project</h2>
+        <ol>
+            <li>Fork the original repository.</li>
+            <li>Clone your fork.</li>
+            <li>Create a feature branch.</li>
+            <li>Make your changes.</li>
+            <li>Commit your changes.</li>
+            <li>Push the branch to your fork.</li>
+            <li>Create a Pull Request from your fork to the original repository.</li>
+            <li>Respond to review feedback.</li>
+            <li>Wait for the project maintainers to merge your contribution.</li>
+        </ol>
+        <h2>8. Fork vs Clone</h2>
+        <table>
+            <tr>
+                <th>fork</th>
+                <th>Clone</th>
+            </tr>
+            <tr>
+                <td>Creates a separate GitHub repository under your account</td>
+                <td>Creates a local copy on your computer</td>
+            </tr>
+            <tr>
+                <td>Performed on GitHub</td>
+                <td>Performed using Git</td>
+            </tr>
+            <tr>
+                <td>Useful for contributing to other projects</td>
+                <td>Useful for working locally</td>
+            </tr>
+            <tr>
+                <td>Original repository remains separate</td>
+                <td>Local copy is connected to a remote repository</td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <h1>Important Git Commands – Remote Repositories</h1>
+        <p>Remote repositories allow developers to connect their local projects with online repositories.</p>
+        <h2>1. What is git remote?</h2>
+        <p><i>git remote</i> manages connections to remote repositories.</p>
+        <p>Check remote repositories:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git remote
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Display remote names and URLs:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git remote -v
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>2. What is git remote add?</h2>
+        <p>This command connects your local repository to a remote repository.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git remote add origin https://github.com/username/project-name.git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here:</p>
+        <ul>
+            <li><i>remote add</i> – Adds a remote connection.</li>
+            <li><i>origin</i> – Remote nickname.</li>
+            <li>URL – Address of the GitHub repository.</li>
+        </ul>
+        <h2>3. What is git remote remove?</h2>
+        <p>Removes a remote connection from your local repository.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git remote remove origin
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>It does not delete the actual GitHub repository.</p>
+        <h2>4. What is git remote set-url?</h2>
+        <p>Changes the URL of an existing remote.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git remote set-url origin https://github.com/username/new-project.git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>5. What is git push -u?</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git push -u origin main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Uploads the branch and sets its upstream tracking relationship.</p>
+        <h2>6. What is git fetch origin?</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git fetch origin
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Downloads new information from the remote repository without automatically merging it into your current branch.</p>
+        <h3>7. What is git pull origin main?</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git pull origin main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Fetches and integrates changes from the remote main branch into your current branch.</p>
+        <br><hr><br>
+        <h1>Git Stash</h1>
+        <h2>1. What is git stash?</h2>
+        <p><i>git stash</i> temporarily stores changes that you have not committed yet.</p>
+        <p>Imagine you are working on the CodePath login page.</p>
+        <p>Suddenly, your teammate asks you to fix an urgent bug on another branch.</p>
+        <p>You are not ready to commit your login page changes.</p>
+        <p>Instead of losing those changes, you can use Git stash.</p>
+        <h2>2. How to stash changes</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git stash
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This saves supported tracked-file changes and returns your working directory to a clean state.</p>
+        <h2>3. Save a stash with a message</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git stash push -m "Login page work"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>4. View all stashes</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git stash list
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+stash@{0}: On main: Login page work
+stash@{1}: On main: Updated homepage
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>5. Apply the latest stash</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git stash apply
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Restores the latest stash but keeps it in the stash list.</p>
+        <h2>6. Pop the latest stash</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git stash pop
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Applies the latest stash and removes it from the stash list if the application succeeds.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git stash drop
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Deletes the latest stash.</p>
+        <p>To delete all stashes:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git stash clear
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Be careful: deleting stashes can remove your only saved copy of uncommitted work.</p>
+        <br><hr><br>
+        <h1>Git Rebase</h1>
+        <h2>1. What is git rebase?</h2>
+        <p>Rebase is a Git operation that moves or reapplies commits from one branch onto another base commit.</p>
+        <p>It is used to maintain a cleaner and more linear project history.</p>
+        <p>Example:</p>
+        <p>You have two branches:</p>
+        <ul>
+            <li><i>Main</i></li>
+            <li><i>login-page</i></li>
+        </ul>
+        <p>While you are working on the login page, another developer adds new commits to main.</p>
+        <p>You can rebase your feature branch on top of the updated main branch.</p>
+        <a href="https://images.openai.com/static-rsc-4/kMy3KuyfEUK1uR2_MKyAkO1iyVyUZzKVkLOZD5xparZAaAmJBkCFl0SajZfbNJX-qdLCdQglAE231fxZEO53gYMUTcOy77ELfxhvQMk8mKMTCkjEFpnuYmsKCAGAh07-U5hwqCxHmYK5PWxpTyJO8MePks9-RXbu8dUO14bdIjY?purpose=inline"><img class="im2" src="https://images.openai.com/static-rsc-4/kMy3KuyfEUK1uR2_MKyAkO1iyVyUZzKVkLOZD5xparZAaAmJBkCFl0SajZfbNJX-qdLCdQglAE231fxZEO53gYMUTcOy77ELfxhvQMk8mKMTCkjEFpnuYmsKCAGAh07-U5hwqCxHmYK5PWxpTyJO8MePks9-RXbu8dUO14bdIjY?purpose=inline" width="1000px"></a>
+        <h2>2. How to use git rebase</h2>
+        <p>First, switch to your feature branch:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git switch login-page
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Then update your knowledge of the remote repository:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git fetch origin
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Rebase your branch:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git rebase origin/main
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Git reapplies your feature branch commits on top of the latest <i>origin/main</i>.</p>
+        <h2>3. What if a rebase conflict happens?</h2>
+        <ol>
+            <li>Open the conflicted file.</li>
+            <li>Resolve the conflict.</li>
+            <li>Stage the resolved file.</li>
+        
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git add index.html
+</code></pre>
+               </div>
+            </div>
+        </div>
+            <li>Continue the rebase.</li>
+        </ol>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git rebase --continue
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>To cancel the rebase and return to the original state:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git rebase --abort
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <br>
+        <i>Important</i>
+        <p>Avoid rebasing commits that other developers are already using unless your team has agreed on that workflow. Rebasing changes commit history.</p>
+        <h2>4. Difference between merge and rebase</h2>
+        <table>
+            <tr>
+                <th>Mergo</th>
+                <th>Rebase</th>
+            </tr>
+            <tr>
+                <td>Combines branch histories</td>
+                <td>Reapplies commits onto a new base</td>
+            </tr>
+            <tr>
+                <td>Can create a merge commit</td>
+                <td>Usually creates a linear history</td>
+            </tr>
+            <tr>
+                <td>Preserves the original branch history structure</td>
+                <td>Creates new commit IDs for reapplied commits</td>
+            </tr>
+            <tr>
+                <td>Useful for integrating branches</td>
+                <td>seful for organizing feature-branch history</td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <h1>More Important Git Commands</h1>
+        <h2>1. git show</h2>
+        <p>Displays information about a particular commit or Git object.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git show
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>To view a specific commit:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git show commit-hash
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>2. git restore</h2>
+        <p>Restores files in the working directory or staging area.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git restore style.css
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>3. git rm</h2>
+        <p>Removes a tracked file from your working directory and staging area.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git rm old-file.html
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>4. git mv</h2>
+        <p>Renames or moves a tracked file.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git mv old-name.html new-name.html
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>5. git tag</h2>
+        <p>A tag is used to mark a specific point in your project's history.</p>
+        <p>For example, developers use tags to mark software releases.</p>
+        <p>Create a tag:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git tag v1.0
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>List tags:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git tag
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Push a tag to GitHub:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git push origin v1.0
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Push all tags:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git push origin --tags
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>6. git cherry-pick</h2>
+        <p>Applies the changes introduced by a specific commit to your current branch.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+    git cherry-pick commit-hash
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This is useful when you need one particular commit without merging an entire branch.</p>
+        <h2>7. git blame</h2>
+        <p>Shows which commit last changed each line of a file.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git blame index.html
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>It helps developers investigate when and by whom a particular line was changed.</p>
+        <h2>8. git reflog</h2>
+        <p>Displays the history of changes to references such as HEAD.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git reflog
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>It can help recover commits after mistakes such as resetting a branch.</p>
+        <h2>9. git clean</h2>
+        <p>Removes untracked files from the working directory.</p>
+        <p>Preview what would be removed:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git clean -n
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Remove untracked files:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git clean -f
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Be careful: this can permanently remove untracked files.</p>
+        <br><hr><br>
+        <h1>Git Ignore (.gitignore)</h1>
+        <h2>1. What is .gitignore?</h2>
+        <p><i>.gitignore</i> is a special file that tells Git which untracked files or directories it should ignore.</p>
+        <p>For example, a project may contain:</p>
+        <ul>
+            <li>Temporary files.</li>
+            <li>Build folders.</li>
+            <li>Log files</li>
+            <li>Dependency folders.</li>
+            <li>Local environment settings.</li>
+        </ul>
+        <p>These files may not need to be uploaded to GitHub.</p>
+        <h2>2. How to create a .gitignore file</h2>
+        <p>Create a file in your project folder named:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+.gitignore
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example content:</p>
+         <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+# Dependency folders
+node_modules/
+
+# Environment files
+.env
+
+# Log files
+*.log
+
+# Python cache
+__pycache__/
+
+# Build folder
+dist/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>3. Why should we use .gitignore?</h2>
+        <ol>
+            <li>Keeps the repository clean.</li>
+            <li>Prevents unnecessary files from being tracked.</li>
+            <li>Avoids uploading local configuration files.</li>
+            <li>Makes collaboration easier.</li>
+            <li>Reduces unnecessary repository size.</li>
+        </ol>
+        <br>
+        <i>Security warning</i>
+        <p>Never upload passwords, API keys, private tokens or other secrets to GitHub. Adding a file to .gitignore does not remove it from Git if it was already committed. If a secret was exposed, revoke or rotate it immediately and remove it from the repository history when necessary.</p>
+        <br><hr><br>
+        <h1>README.md</h1>
+        <h2>1. What is README.md?</h2>
+        <p>A README file explains what a project is about and how people can use it.</p>
+        <p>It is commonly written in Markdown format.</p>
+        <p>GitHub automatically displays a repository's README on its main page when the file is in the appropriate location.</p>
+        <h2>2. What should a README contain?</h2>
+        <p>A good README may include:</p>
+        <ul>
+            <li>Project name.</li>
+            <li>Project description.</li>
+            <li>Features.</li>
+            <li>Technologies used.</li>
+            <li>Installation instructions.</li>
+            <li>How to run the project.</li>
+            <li>Screenshots.</li>
+            <li>Contribution instructions.</li>
+            <li>License information.</li>
+        </ul>
+        <h2>3. Example README for CodePath</h2>
+        <p>Create a file named <i>README.md</i>.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+# </> CodePath
+
+Welcome to CodePath!
+
+CodePath is a beginner-friendly platform
+for learning programming and web development.
+
+## Features
+
+- Learn HTML
+- Learn CSS
+- Learn JavaScript
+- Learn Git and GitHub
+- Practice coding
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Installation
+
+1. Clone the repository.
+2. Open the project folder.
+3. Open index.html in your browser.
+
+## Author
+
+Your Name
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <br><hr><br>
+        <h1>GitHub Collaboration</h1>
+        <p>1. What is collaboration?</p>
+        <p>Collaboration means multiple developers working together on the same project.</p>
+        <p>GitHub provides tools to make this possible.</p>
+        <p>For example, imagine three developers are building CodePath.</p>
+        <ul>
+            <li>Developer A works on the homepage.</li>
+            <li>Developer B works on the login page.</li>
+            <li>Developer C works on the registration page.</li>
+        </ul>
+        <p>Each developer can create a separate branch, commit their work and open a Pull Request.</p>
+        <p>The team can review and merge the changes.</p>
+        <h2>2. What is a GitHub Issue?</h2>
+        <p>An Issue is used to report bugs, suggest features, ask questions or track tasks in a repository.</p>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+Title: Login button is not working
+
+Description:
+The login button does not respond
+when users click it.
+
+Task:
+Check the JavaScript event listener.
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>3. What is a GitHub Discussion?</h2>
+        <p>GitHub Discussions is a feature for conversations within a repository or organization.</p>
+        <p>It can be used for:</p>
+        <ul>
+            <li>Questions and answers.</li>
+            <li>Ideas.</li>
+            <li>Announcements.</li>
+            <li>Community conversations.</li>
+        </ul>
+        <h2>4. What is a GitHub Organization?</h2>
+        <p>An Organization is a shared GitHub account for managing repositories, teams and permissions across a company or group.</p>
+        <h2>5. What is a Code Review?</h2>
+        <p>Code review is the process of checking another developer's code before accepting it.</p>
+        <p>Reviewers may:</p>
+        <ul>
+            <li>Find bugs.</li>
+            <li>Suggest improvements.</li>
+            <li>Check code quality.</li>
+            <li>Recommend better approaches.</li>
+            <li>Approve changes.</li>
+        </ul>
+        <br><hr><br>
+        <h1>Git Authentication – Connecting Your Computer to GitHub</h1>
+        <h2>1. What is authentication?</h2>
+        <p>Authentication verifies your identity when you access a service.</p>
+        <p>When you push code to a private GitHub repository, GitHub needs to verify that you have permission to upload the changes.</p>
+        <p>Two commonly used methods are HTTPS and SSH.</p>
+        <h2>2. HTTPS authentication</h2>
+        <p>A typical remote URL looks like:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+https://github.com/username/project-name.git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Git can use a credential manager or browser-based authentication to securely authenticate you.</p>
+        <p>For command-line Git over HTTPS, your normal GitHub account password is not accepted as a Git password. Follow GitHub's supported authentication process, such as browser authentication or a personal access token where appropriate.</p>
+        <h2>3. SSH authentication</h2>
+        <p>SSH allows you to connect to GitHub using an SSH key pair.</p>
+        <p>The two parts are:</p>
+        <ul>
+            <li>Public key: Added to your GitHub account.</li>
+            <li>Private key: Kept securely on your computer.</li>
+        </ul>
+        <p>Generate an SSH key:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ssh-keygen -t ed25519 -C "your-email@example.com"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Start the SSH agent and add your key using the operating system's supported instructions.</p>
+        <p>Test the connection:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ssh -T git@github.com
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Once SSH is configured, an SSH remote URL looks like:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+git@github.com:username/project-name.git
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><i>Important:</i> Never share your private SSH key with anyone.</p>
+        <br><hr><br>
+        <h1>GitHub Pages – Host Your Website for Free</h1>
+        <h2>1. What is GitHub Pages?</h2>
+        <p>GitHub Pages is a GitHub service that can publish static websites directly from a repository.</p>
+        <p>You can use it to publish HTML, CSS and JavaScript websites.</p>
+        <p>For example, you can publish your CodePath learning website.</p>
+        <a href="https://images.openai.com/static-rsc-4/WFlED6dssYmRMXDyH9JtBZrEIEjJ5I7FIFVTCR942z5ofkxyJvHZZzfocM3WKs48VLP4TVVarkwE3Bi6LhGScDss5zVV35RKUpAMdIxoxTIe3PRjwiEWn0JbVT3Jn-TtXD8-LcZgCFy7ZGPGzcPGkR8TYhxGgdNf754Rsy_prgGy4Gj3-BZCEmxbnkIgK8Mh?purpose=fullsize"><img class="im2" src="https://images.openai.com/static-rsc-4/WFlED6dssYmRMXDyH9JtBZrEIEjJ5I7FIFVTCR942z5ofkxyJvHZZzfocM3WKs48VLP4TVVarkwE3Bi6LhGScDss5zVV35RKUpAMdIxoxTIe3PRjwiEWn0JbVT3Jn-TtXD8-LcZgCFy7ZGPGzcPGkR8TYhxGgdNf754Rsy_prgGy4Gj3-BZCEmxbnkIgK8Mh?purpose=fullsize" width="1000px"></a>
+        <h2>2. How to publish a website using GitHub Pages</h2>
+        <p><i>Step 1:</i> Create a GitHub repository.</p>
+        <p><i>Step 2:</i> Upload your website files.</p>
+        <p>For example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CodePath/
+│
+├── index.html
+├── style.css
+├── script.js
+└── images/
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><i>Step 3:</i> Open your repository on GitHub.</p>
+        <p><i>Step 4:</i> Go to Settings.</p>
+        <p><i>Step 5:</i> Select Pages.</p>
+        <p><i>Step 6:</i> Under Build and deployment, select the appropriate deployment source, commonly Deploy from a branch.</p>
+        <p><i>Step 7:</i> Select your branch, usually <i>main</i>.</p>
+        <p><i>Step 8:</i> Select the folder containing your website files, often <i>/ (root)</i>.</p>
+        <p><i>Step 9:</i> Save your settings.</p>
+        <p><i>Step 10:</i> Wait for GitHub Pages to publish your website.</p>
+        <p>Your website will have a URL similar to:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+https://username.github.io/repository-name/
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The actual URL depends on your GitHub username and repository configuration.</p>
+        <p>Note: GitHub Pages is intended for static websites. It does not directly run server-side Python or PHP applications.</p>
+        <br><hr><br>
+        <h1>GitHub Actions – Introduction to Automation</h1>
+        <h2>1. What is GitHub Actions?</h2>
+        <p>GitHub Actions is a platform that automates workflows in your GitHub repository.</p>
+        <p>For example, whenever a developer pushes code, GitHub Actions can automatically:</p>
+        <ul>
+            <li>Run tests.</li>
+            <li>Check code quality.</li>
+            <li>Build a website.</li>
+            <li>Deploy an application.</li>
+            <li>Run scheduled workflows.</li>
+        </ul>
+        <h2>2. What is a workflow?</h2>
+        <p>A workflow is an automated process defined in a YAML file.</p>
+        <p>Example file:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+.github/workflows/hello.yml
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example content:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+name: CodePath Workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome
+        run: echo "Welcome to CodePath!"
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This example runs a simple command when code is pushed to the main branch.</p>
+        <br><hr><br>
+        <h1>GitHub Desktop – An Alternative to Terminal Commands</h1>
+        <h2>1. What is GitHub Desktop?</h2>
+        <a href="https://images.openai.com/static-rsc-4/62ho5ptD6D-If-gtV9dtTdy8v4ztfxL0HCvTFNUJntoyUMIhLkXLJDuQXQev6bjdrmqUSCMD8clI_BtU4pWNd3WbRINRIB_0rgAyAfHCYe3-s3vpX8IfCc5HRKobgjiLYLsGwlwTQ9cjZgoANU8aXgeaYSiV1ja4WQa7NScjbM4?purpose=inline"><img class="im2" src="https://images.openai.com/static-rsc-4/62ho5ptD6D-If-gtV9dtTdy8v4ztfxL0HCvTFNUJntoyUMIhLkXLJDuQXQev6bjdrmqUSCMD8clI_BtU4pWNd3WbRINRIB_0rgAyAfHCYe3-s3vpX8IfCc5HRKobgjiLYLsGwlwTQ9cjZgoANU8aXgeaYSiV1ja4WQa7NScjbM4?purpose=inline" width="1000px"></a>
+        <p>GitHub Desktop is a graphical application that allows you to use Git without typing every command in a terminal.</p>
+        <p>It helps beginners manage repositories visually.</p>
+        <p>You can:</p>
+        <ul>
+            <li>Create repositories.</li>
+            <li>Clone repositories.</li>
+            <li>View changed files.</li>
+            <li>Stage changes.</li>
+            <li>Write commit messages.</li>
+            <li>Push and pull changes.</li>
+            <li>Create branches.</li>
+            <li>Publish repositories to GitHub.</li>
+        </ul>
+        Download: <a href="https://desktop.github.com/?utm_source=chatgpt.com">GitHub Desktop Official website.</a>
+        <h2>2. Git vs GitHub Desktop</h2>
+        <table>
+            <tr>
+                <th>Git</th>
+                <th>GitHub Desktop</th>
+            </tr>
+            <tr>
+                <td>Command-line version control tool</td>
+                <td>Graphical Git application</td>
+            </tr>
+            <tr>
+                <td>Uses terminal commands</td>
+                <td>Uses buttons and menus</td>
+            </tr>
+            <tr>
+                <td>Works with many remote hosting services</td>
+                <td>Designed to work closely with GitHub</td>
+            </tr>
+            <tr>
+                <td>Suitable for command-line workflows</td>
+                <td>Beginner-friendly visual workflow</td>
+            </tr>
+        </table>
+        <p><i>Remember:</i> GitHub Desktop does not replace Git. It provides a graphical way to perform many Git operations.</p>
+        <br><hr><br>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>
