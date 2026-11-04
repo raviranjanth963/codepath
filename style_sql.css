@@ -300,3 +300,7 @@ summary i{
 #sym6 {
     background: linear-gradient(100deg, #b4c2fa, #2489fb);
 }
+
+a {
+    text-decoration: none;
+}

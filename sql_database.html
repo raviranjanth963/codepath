@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="sql_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Database Operations</h1>
+        <i>Core SQL commands</i>
+        <p><dfn>Goal:</dfn> Teach students how to create databases, make tables, insert data, retrieve records, filter information and manage existing records.</p>
+        <p>This should be one of the largest sections of your SQL course because it covers the daily work of a database developer.</p>
+        <h2>1. CREATE DATABASE</h2>
+        <p>Creates a new database.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE DATABASE codepath;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Check available databases:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SHOW DATABASES;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Select your database:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+USE codepath;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>2. CREATE TABLE</h2>
+        <p>A table stores information in rows and columns.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE TABLE students (
+    id INT,
+    name VARCHAR(100),
+    age INT,
+    city VARCHAR(50)
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Display the table structure:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+DESCRIBE students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>3. INSERT Command</h2>
+        <p>Adds new records to a table.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+INSERT INTO students
+(id, name, age, city)
+VALUES
+(1, 'Rahul', 20, 'Delhi'),
+(2, 'Priya', 19, 'Mumbai'),
+(3, 'Aman', 21, 'Patna'),
+(4, 'Sneha', 20, 'Jaipur');
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>4. SELECT Command</h2>
+        <p>Retrieves records from a table.</p>
+        <p>All columns:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Selected columns:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT name, age FROM students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Unique cities:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT DISTINCT city FROM students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>5. WHERE Clause</h2>
+        <p>Filters records based on a condition.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT *
+FROM students
+WHERE city = 'Delhi';
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>6. SQL Operators</h2>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td><i>=</i></td>
+                <td>Equal</td>
+            </tr>
+            <tr>
+                <td><i>!=</i></td>
+                <td>Not equal</td>
+            </tr>
+            <tr>
+                <td><i>></i></td>
+                <td>Greater than</td>
+            </tr>
+            <tr>
+                <td><i><</i></td>
+                <td>Less than</td>
+            </tr>
+            <tr>
+                <td><i>>=</i></td>
+                <td>Greater than or equal</td>
+            </tr>
+            <tr>
+                <td><i><=</i></td>
+                <td>Less than or equal</td>
+            </tr>
+            <tr>
+                <td><i>AND</i></td>
+                <td>Both conditions must be true</td>
+            </tr>
+            <tr>
+                <td><i>OR</i></td>
+                <td>At least one condition must be true</td>
+            </tr>
+            <tr>
+                <td><i>NOT</i></td>
+                <td>Reverse a condition</td>
+            </tr>
+            <tr>
+                <td><i>BETWEEN</i></td>
+                <td>Check a range</td>
+            </tr>
+            <tr>
+                <td><i>IN</i></td>
+                <td>Match values in a list</td>
+            </tr>
+            <tr>
+                <td><i>LIKE</i></td>
+                <td>Pattern matching</td>
+            </tr>
+            <tr>
+                <td><i>IS NULL</i></td>
+                <td>Check missing values</td>
+            </tr>
+        </table>
+        <p>Examples:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students
+WHERE age >= 20 AND city = 'Delhi';
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <br>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students
+WHERE city IN ('Delhi', 'Mumbai');
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <br>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students
+WHERE name LIKE 'A%';
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>7. ORDER BY</h2>
+        <p>Sort records:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students
+ORDER BY age ASC;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Descending order:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students
+ORDER BY age DESC;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>8. LIMIT</h2>
+        <p>Display only the first three records:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students
+LIMIT 3;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Pagination example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students
+LIMIT 10 OFFSET 10;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>9. UPDATE</h2>
+        <p>Modify existing records:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+UPDATE students
+SET city = 'Bangalore'
+WHERE id = 1;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>10. DELETE</h2>
+        <p>Delete selected records:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+DELETE FROM students
+WHERE id = 4;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>11. SQL Functions</h2>
+        <p>String functions:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT UPPER('codepath');
+SELECT LOWER('CODEPATH');
+SELECT LENGTH('CodePath');
+SELECT CONCAT('Code', 'Path');
+SELECT TRIM('   CodePath   ');
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Numeric functions:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT ROUND(12.567, 2);
+SELECT ABS(-25);
+SELECT CEIL(12.3);
+SELECT FLOOR(12.9);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Date functions:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT NOW();
+SELECT CURDATE();
+SELECT CURTIME();
+SELECT YEAR('2026-11-04');
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>NULL functions:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT IFNULL(NULL, 'Not Available');
+
+SELECT COALESCE(NULL, 'CodePath');
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>12. Aggregate Functions</h2>
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><i>COUNT()</i></td>
+                <td>Count records</td>
+            </tr>
+            <tr>
+                <td><i>SUM()</i></td>
+                <td>Calculate total</td>
+            </tr>
+            <tr>
+                <td><i>AVG()</i></td>
+                <td>Calculate average</td>
+            </tr>
+            <tr>
+                <td><i>MAX()</i></td>
+                <td>Find highest value</td>
+            </tr>
+            <tr>
+                <td><i>MIN()</i></td>
+                <td>Find lowest value</td>
+            </tr>
+        </table>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT COUNT(*) FROM students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>13. GROUP BY</h2>
+        <p>Groups records with matching values.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT city, COUNT(*) AS total_students
+FROM students
+GROUP BY city;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>14. HAVING</h2>
+        <p>Filters grouped results.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT city, COUNT(*) AS total_students
+FROM students
+GROUP BY city
+HAVING COUNT(*) > 1;
+</code></pre>
+               </div>
+            </div>
+        </div>
+
+        <h2>15. ALTER TABLE</h2>
+        <p>Add a new column:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ALTER TABLE students
+ADD email VARCHAR(100);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Remove a column:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ALTER TABLE students
+DROP COLUMN email;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Modify a column:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ALTER TABLE students
+MODIFY COLUMN name VARCHAR(150);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Rename a column:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ALTER TABLE students
+CHANGE COLUMN name full_name VARCHAR(150);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Rename a table:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ALTER TABLE students
+RENAME TO learners;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>16. TRUNCATE</h2>
+        <p>Removes all records from a table without removing its structure.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+TRUNCATE TABLE students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>17. Important differences</h2>
+        <table>
+            <tr>
+                <th>Commands</th>
+                <th>Difference</th>
+            </tr>
+            <tr>
+                <td><i>DELETE vs TRUNCATE</i></td>
+                <td>DELETE can filter rows; TRUNCATE removes all rows</td>
+            </tr>
+            <tr>
+                <td><i>DELETE vs DROP</i></td>
+                <td>DELETE removes rows; DROP removes the table</td>
+            </tr>
+            <tr>
+                <td><i>WHERE vs HAVING</i></td>
+                <td>WHERE filters rows; HAVING filters groups</td>
+            </tr>
+            <tr>
+                <td><i>ORDER BY vs GROUP BY</i></td>
+                <td>ORDER BY sorts; GROUP BY groups</td>
+            </tr>
+        </table>
+        <p><dfn>Important</dfn>
+ Always verify conditions before running UPDATE or DELETE. TRUNCATE and DROP are structural operations in MySQL that cause implicit commits.</p>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

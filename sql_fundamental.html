@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="sql_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>SQL Fundamentals </h1>
+        <i>Start here · Beginner level </i>
+        <p><dfn>Goal:</dfn> Understand what SQL is, how databases work and how information is organized.</p>
+        <p>This section should explain all the basic concepts before students start writing queries.</p>
+        <h2>Lessons to include</h2>
+        <table>
+            <tr>
+                <th>Lesson</th>
+                <th>What to teach</th>
+            </tr>
+            <tr>
+                <td>1. <a> Introduction to SQL</a></td>
+                <td>Meaning, purpose and uses of SQL</td>
+            </tr>
+            <tr>
+                <td>2. <a> What is Data?</a></td>
+                <td>Meaning and examples of data</td>
+            </tr>
+            <tr>
+                <td>3. <a> What is a Database?</a></td>
+                <td>How information is stored</td>
+            </tr>
+            <tr>
+                <td>4. <a> What is DBMS?</a></td>
+                <td>Database Management System</td>
+            </tr>
+            <tr>
+                <td>5. <a> What is RDBMS?</a></td>
+                <td>Relational Database Management System</td>
+            </tr>
+            <tr>
+                <td>6. <a> What is MySQL?</a></td>
+                <td>Introduction to MySQL</td>
+            </tr>
+            <tr>
+                <td>7. <a> SQL vs MySQL</a></td>
+                <td>Difference between the language and software</td>
+            </tr>
+            <tr>
+                <td>8. <a> Types of Databases</a></td>
+                <td>Hierarchical, Network, Relational and NoSQL</td>
+            </tr>
+            <tr>
+                <td>9. <a> Database Structure</a></td>
+                <td>Database, tables, rows, columns and fields</td>
+            </tr>
+            <tr>
+                <td>10. <a> SQL Command Categories</a></td>
+                <td>DDL, DML, DQL, DCL and TCL</td>
+            </tr>
+            <tr>
+                <td>11. <a> SQL Data Types</a></td>
+                <td>INT, VARCHAR, CHAR, DECIMAL, DATE, TIME and others</td>
+            </tr>
+            
+        </table>
+    
+
+        <h2>1. What is SQL?</h2>
+        <p>SQL stands for <dfn>Structured Query Language</dfn>.</p>
+        <p>It is used to communicate with relational databases. It allows us to create tables, insert records, retrieve data, update information and delete records.</p>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This retrieves all records from the students table.</p>
+        <h2>2. What is a Database?</h2>
+        <p>A database is an organized collection of data.</p>
+        <p>Example:</p>
+        <table>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>20</td>
+                <td>delhi</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>19</td>
+                <td>Mumbai</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Aman</td>
+                <td>21</td>
+                <td>Patna</td>
+            </tr>
+        </table>
+        <p>A college can use a database to store student records, course information, attendance and examination results.</p>
+        <h2>3. What are DBMS and RDBMS?</h2>
+        <p><i>DBMS:</i> Software used to create, manage and access databases.</p>
+        <p><i>RDBMS:</i> A database management system that stores information in relational tables and supports relationships between them.</p>
+        <p>Examples of RDBMS:</p>
+        <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>Oracle Database</li>
+            <li>Microsoft SQL Server</li>
+        </ul>
+        <h2>4. What are the five SQL command categories?</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Full form</th>
+                <th>Commands</th>
+            </tr>
+            <tr>
+                <td>DDL</td>
+                <td>Data Definition Language</td>
+                <td>CREATE, ALTER, DROP, TRUNCATE</td>
+            </tr>
+            <tr>
+                <td>DML</td>
+                <td>Data Manipulation Language</td>
+                <td>INSERT, UPDATE, DELETE</td>
+            </tr>
+            <tr>
+                <td>DQL</td>
+                <td>Data Query Language</td>
+                <td>SELECT</td>
+            </tr>
+            <tr>
+                <td>DCL</td>
+                <td>Data Control Language</td>
+                <td>GRANT, REVOKE</td>
+            </tr>
+            <tr>
+                <td>TCL</td>
+                <td>Transaction Control Language</td>
+                <td>COMMIT, ROLLBACK, SAVEPOINT</td>
+            </tr>
+        </table>
+        <h2>5. Important SQL Data Types</h2>
+        <table>
+            <tr>
+                <th>Data type</th>
+                <th>Purpose</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>INT</td>
+                <td>Whole numbers</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>BIGINT</td>
+                <td>Large whole numbers</td>
+                <td>9876543210</td>
+            </tr>
+            <tr>
+                <td>VARCHAR(100)</td>
+                <td>Variable-length text</td>
+                <td>Rahul</td>
+            </tr>
+            <tr>
+                <td>CHAR(10)</td>
+                <td>Fixed-length text</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>DECIMAL(10,2)</td>
+                <td>Exact decimal values</td>
+                <td>45000.50</td>
+            </tr>
+            <tr>
+                <td>FLOATFLOAT</td>
+                <td>Approximate decimal values</td>
+                <td>12.5</td>
+            </tr>
+            <tr>
+                <td>FLOAT</td>
+                <td>Approximate decimal values</td>
+                <td>12.5</td>
+            </tr>
+            <tr>
+                <td>DATE</td>
+                <td>Date</td>
+                <td>2026-11-04</td>
+            </tr>
+            <tr>
+                <td>TIME</td>
+                <td>Time</td>
+                <td>10:30:00</td>
+            </tr>
+            <tr>
+                <td>DATETIME</td>
+                <td>Date and time</td>
+                <td>2026-11-04 10:30:00</td>
+            </tr>
+            <tr>
+                <td>TEXT</td>
+                <td>Longer text</td>
+                <td>Description</td>
+            </tr>
+        </table>
+        <p><dfn>At the end of this topic:</dfn> Include a short revision section with definitions of SQL, MySQL, database, DBMS, RDBMS, tables, rows, columns and data types.</p>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

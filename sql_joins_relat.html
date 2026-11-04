@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function.</title>
+    <link rel="stylesheet" href="sql_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Joins & Relationships</h1>
+        <i>Relational database concepts</i>
+        <p><dfn>Goal:</dfn> Understand how tables connect to each other and how to retrieve information from multiple tables.</p>
+        <h2>1. What is a Primary Key?</h2>
+        <p>A Primary Key is used to uniquely identify each record in a table.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The primary key must be unique and cannot contain NULL.</p>
+        <h2>2. What is a Foreign Key?</h2>
+        <p>A Foreign Key connects two related tables.</p>
+        <p>Parent table:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE TABLE departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(100)
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Child table:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(100),
+    department_id INT,
+    FOREIGN KEY (department_id)
+        REFERENCES departments(department_id)
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The employee's department ID must reference an existing department unless the column is NULL and allows it.</p>
+        <h2>3. SQL Constraints</h2>
+        <table>
+            <tr>
+                <th>Constraint</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>PRIMARY KEY</td>
+                <td>Unique identification</td>
+            </tr>
+            <tr>
+                <td>FOREIGN KEY</td>
+                <td>Maintain relationships</td>
+            </tr>
+            <tr>
+                <td>NOT NULL</td>
+                <td>Prevent NULL</td>
+            </tr>
+            <tr>
+                <td>UNIQUE</td>
+                <td>Prevent duplicate non-NULL values</td>
+            </tr>
+            <tr>
+                <td>CHECK</td>
+                <td>Validate a condition</td>
+            </tr>
+            <tr>
+                <td>DEFAULT</td>
+                <td>Provide a default value</td>
+            </tr>
+            <tr>
+                <td>AUTO_INCREMENT</td>
+                <td>Generate numeric IDs</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>
