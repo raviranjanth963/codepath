@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Practice & Projects.</title>
+    <link rel="stylesheet" href="sql_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Interview Ready</h1>
+        <i>Placement preparation</i>
+        <p><dfn>Goal:</dfn> Prepare students to answer theoretical and practical SQL interview questions.</p>
+
+       <p>Divide this section into three levels.</p>
+       <h2>Beginner Interview Questions</h2>
+       <h3>Q1. What is SQL?</h3>
+
+       <p>SQL stands for Structured Query Language. It is used to communicate with relational databases.</p>
+
+       <h3>Q2. What is MySQL?</h3>
+
+       <p>MySQL is a relational database management system that uses SQL.</p>
+
+       <h3>Q3. What is DBMS?</h3>
+
+       <p>DBMS is software used to create, access and manage databases.</p>
+
+       <h3>Q4. What is RDBMS?</h3>
+       <p>RDBMS is a database system that stores information in relational tables and supports relationships between tables.</p>
+
+       <h3>Q5. What is a Primary Key?</h3>
+
+       <p>A primary key uniquely identifies every record in a table.</p>
+
+       <h3>Q6. What is a Foreign Key?</h3>
+
+       <p>A foreign key references a key in another table to establish a relationship.</p>
+
+       <h3>Q7. What is NULL?</h3>
+
+       <p>NULL represents a missing or unknown value.</p>
+
+       <h3>Q8. What is the difference between CHAR and VARCHAR?</h3>
+
+       <p>CHAR is fixed-length, whereas VARCHAR is variable-length.</p>
+       <h3>Intermediate Interview Questions</h3>
+       <h3>Q9. What is the difference between DELETE, TRUNCATE and DROP?</h3>
+
+       <p>DELETE removes rows, TRUNCATE removes all rows while retaining table structure, and DROP removes the table itself.</p>
+
+       <h3>Q10. What is the difference between WHERE and HAVING?</h3>
+
+       <p>WHERE filters rows before grouping, whereas HAVING filters grouped results.</p>
+
+       <h3>Q11. What is JOIN?</h3>
+
+       <p>JOIN combines records from related tables using a join condition.</p>
+
+       <h3>Q12. What is the difference between INNER JOIN and LEFT JOIN?</h3>
+
+       <p>INNER JOIN returns matching rows. LEFT JOIN returns every row from the left table and matching rows from the right table.</p>
+
+       <h3>Q13. What is the difference between UNION and UNION ALL?</h3>
+
+       <p>UNION removes duplicate result rows. UNION ALL keeps them.</p>
+
+       <h3>Q14. What is a Subquery?</h3>
+
+       <p>A subquery is a query written inside another query.</p>
+
+       <h3>Q15. What is Normalization?</h3>
+       <p>Normalization organizes tables to reduce unnecessary data duplication and improve integrity.</p>
+
+       <h3>Q16. What is an Index?</h3>
+
+       <p>An index is a data structure that can help improve data retrieval performance.</p>
+       <h3>Advanced Interview Questions</h3>
+       <h3>Q17. What are ACID properties?</h3>
+
+       <p>Atomicity, Consistency, Isolation and Durability.</p>
+
+       <h3>Q18. What is a View?</h3>
+
+       <p>A view is a virtual table created from a stored SELECT query.</p>
+
+       <h3>Q19. What is a CTE?</h3>
+
+       <p>A Common Table Expression is a named temporary result set defined using WITH.</p>
+
+       <h3>Q20. What is a Window Function?</h3>
+
+       <p>A window function calculates values across related rows without collapsing the rows into a grouped result.</p>
+       <h3>Q21. What is a Trigger?</h3>
+
+       <p>A trigger is a database object that automatically executes when a specified event occurs.</p>
+
+       <h3>Q22. What is a Stored Procedure?</h3>
+
+       <p>A stored procedure is a collection of SQL statements stored in a database and executed when called.</p>
+
+       <h3>Q23. What is a Composite Key?</h3>
+
+       <p>A composite key uses two or more columns together to uniquely identify a record.</p>
+
+       <h3>Q24. What is a Correlated Subquery?</h3>
+
+       <p>A correlated subquery refers to columns from the outer query.</p>
+       <h2>Practical interview queries</h2>
+       <h3>Question 1: Find the second-highest salary.</h3>
+       <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT MAX(salary) AS second_highest_salary
+FROM employees
+WHERE salary < (
+    SELECT MAX(salary)
+    FROM employees
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Question 2: Find employees earning more than the average salary.</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT *
+FROM employees
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employees
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Question 3: Count employees in each department.</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT department_id, COUNT(*) AS total_employees
+FROM employees
+GROUP BY department_id;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Question 4: Find duplicate email addresses.</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT email, COUNT(*) AS total
+FROM employees
+GROUP BY email
+HAVING COUNT(*) > 1;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Question 5: Find the highest-paid employee in each department.</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT e.*
+FROM employees e
+JOIN (
+    SELECT department_id, MAX(salary) AS highest_salary
+    FROM employees
+    GROUP BY department_id
+) d
+ON e.department_id = d.department_id
+AND e.salary = d.highest_salary;
+</code></pre>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

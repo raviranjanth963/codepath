@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Advanced Topics.</title>
+    <link rel="stylesheet" href="sql_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>Advanced Topics</h1>
+        <i>Intermediate to advanced</i>
+        <p><dfn>Goal</dfn> Introduce concepts that help learners write more powerful queries, design better databases and understand how professional database systems work.</p>
+        <h2>1. UNION</h2>
+        <p>Combines the results of two or more SELECT statements and removes duplicate rows.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT city FROM students
+UNION
+SELECT city FROM employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>2. UNION ALL</h2>
+        <p>Combines query results without removing duplicate rows.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT city FROM students
+UNION ALL
+SELECT city FROM employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>3. Subqueries</h2>
+        <p>A subquery is a query inside another query.</p>
+        <p>Example: Find employees who earn more than the average salary.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT *
+FROM employees
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employees
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Important subquery operators</h3>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><i>IN</i></td>
+                <td>Check whether a value matches a list</td>
+            </tr>
+            <tr>
+                <td><i>EXISTS</i></td>
+                <td>Check whether a subquery returns rows</td>
+            </tr>
+            <tr>
+                <td><i>ANY</i></td>
+                <td>Compare against at least one returned value</td>
+            </tr>
+            <tr>
+                <td><i>ALL</i></td>
+                <td>Compare against every returned value</td>
+            </tr>
+        </table>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT *
+FROM employees
+WHERE department_id IN (
+    SELECT department_id
+    FROM departments
+    WHERE location = 'Delhi'
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>4. Views</h2>
+        <p>A View is a virtual table based on a stored SELECT query.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE VIEW employee_details AS
+SELECT name, salary
+FROM employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Display the view:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT * FROM employee_details;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Delete the view:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+DROP VIEW employee_details;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>5. Indexes</h2>
+        <p>An Index helps MySQL find records more efficiently.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE INDEX idx_employee_name
+ON employees(name);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>View indexes:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SHOW INDEX FROM employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Delete an index:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+DROP INDEX idx_employee_name
+ON employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Remember that indexes use storage and can make INSERT, UPDATE and DELETE operations more expensive.</p>
+        <h2>6. Transactions</h2>
+        <p>A transaction is a group of database operations treated as one logical unit.</p>
+        <p>Important commands:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+START TRANSACTION;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <br>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+COMMIT;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <br>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+ROLLBACK;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+START TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 1000
+WHERE account_id = 1;
+
+UPDATE accounts
+SET balance = balance + 1000
+WHERE account_id = 2;
+
+COMMIT;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This example transfers ₹1,000 between two accounts.</p>
+        <h2>7. ACID Properties</h2>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>Atomicity</td>
+                <td>All operations succeed or the transaction is rolled back</td>
+            </tr>
+            <tr>
+                <td>Consistency</td>
+                <td>Database rules remain valid</td>
+            </tr>
+            <tr>
+                <td>Isolation</td>
+                <td>Concurrent transactions are controlled</td>
+            </tr>
+            <tr>
+                <td>Durability</td>
+                <td>Committed changes persist</td>
+            </tr>
+        </table>
+        <h2>8. Normalization</h2>
+        <p>Normalization organizes database tables to reduce unnecessary data duplication and improve data consistency.</p>
+        <p>Important forms:</p>
+        <ul>
+            <li>1NF – First Normal Form.</li>
+            <li>2NF – Second Normal Form.</li>
+            <li>3NF – Third Normal Form.</li>
+        </ul>
+        <p>Example of a poorly structured table:</p>
+        <table>
+            <tr>
+                <th>student_id</th>
+                <th>name</th>
+                <th>courses</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rahul</td>
+                <td>HTML, CSS, SQL</td>
+            </tr>
+        </table>
+        <p>A better approach is to keep separate student and course tables and use an enrollment table to connect them.</p>
+        <h2>9. CTE – Common Table Expressions</h2>
+        <p>A CTE is a named temporary result set defined using <i>WITH</i>.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+WITH adult_students AS (
+    SELECT *
+    FROM students
+    WHERE age >= 18
+)
+SELECT *
+FROM adult_students;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>CTEs make complex queries easier to understand.</p>
+        <h2>10. Window Functions</h2>
+        <p>Window functions calculate values across related rows without combining those rows into a single grouped row.</p>
+        <h3>ROW_NUMBER():</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT
+    name,
+    salary,
+    ROW_NUMBER() OVER (
+        ORDER BY salary DESC
+    ) AS row_num
+FROM employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>RANK():</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT
+    name,
+    salary,
+    RANK() OVER (
+        ORDER BY salary DESC
+    ) AS employee_rank
+FROM employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>DENSE_RANK():</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT
+    name,
+    salary,
+    DENSE_RANK() OVER (
+        ORDER BY salary DESC
+    ) AS employee_rank
+FROM employees;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>ROW_NUMBER</td>
+                <td>Unique sequential row number</td>
+            </tr>
+            <tr>
+                <td>RANK</td>
+                <td>Ranking with gaps after ties</td>
+            </tr>
+            <tr>
+                <td>DENSE_RANK</td>
+                <td>Ranking without gaps after ties</td>
+            </tr>
+        </table>
+        <h2>11. Stored Procedures</h2>
+        <p>A stored procedure is a collection of SQL statements stored in the database.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+DELIMITER //
+
+CREATE PROCEDURE GetStudents()
+BEGIN
+    SELECT * FROM students;
+END //
+
+DELIMITER ;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Execute it:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CALL GetStudents();
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>12. Triggers</h2>
+        <p>A trigger automatically executes when a specified event occurs on a table.</p>
+        <p>For example, record a log when a new student is added.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+CREATE TABLE student_logs (
+    log_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(100),
+    action_time DATETIME
+);
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Create a trigger:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+DELIMITER //
+
+CREATE TRIGGER after_student_insert
+AFTER INSERT ON students
+FOR EACH ROW
+BEGIN
+    INSERT INTO student_logs
+        (student_name, action_time)
+    VALUES
+        (NEW.name, NOW());
+END //
+
+DELIMITER ;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>At the end of this topic: </dfn>Include a comparison table of UNION, JOIN and subqueries, and a short introduction to how indexes and transactions work in real applications.</p>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

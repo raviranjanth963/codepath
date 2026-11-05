@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Function.</title>
+    <title>SQL Joins & Relationships.</title>
     <link rel="stylesheet" href="sql_all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
@@ -111,6 +111,142 @@ CREATE TABLE employees (
                 <td>Generate numeric IDs</td>
             </tr>
         </table>
+        <h2>4. Types of Relationships</h2>
+        <div class="img2">
+            <a href="https://images.openai.com/static-rsc-4/xhpVjRFf27FJeKAys-WGDz--eNvgcGHZ9JhzspxHJQ4MvzoBB1tBh53MjX3xUtp6m1cvgTfcRm3rTlN8TmutXSW5cvwG0T5_MxlAuU60cp3ZtfhXc86riSqxXZwcZb5l-WJYuPfVo2dpvtYU-QXfG48eZPgGi76JYaCkvgvPVd45gzsQ9SoUGsO5YbknG8cN?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/xhpVjRFf27FJeKAys-WGDz--eNvgcGHZ9JhzspxHJQ4MvzoBB1tBh53MjX3xUtp6m1cvgTfcRm3rTlN8TmutXSW5cvwG0T5_MxlAuU60cp3ZtfhXc86riSqxXZwcZb5l-WJYuPfVo2dpvtYU-QXfG48eZPgGi76JYaCkvgvPVd45gzsQ9SoUGsO5YbknG8cN?purpose=fullsize" width="360px"></a>
+            <a href="https://images.openai.com/static-rsc-4/oFCarV7Yh5x0Rw_WdUdbn8qOGrZ2wCKiMANqhK1oXdxClQXLHlUomhF8eDnZKiOZeMWFfjMEi0LaW-0KU8UoAG0DaXzX5XLUvct840_pGliLSnqzw9u8hoFA1Q00PQijILOlThC2VzEJbaEiJXDIoQAFho-5vmaY7BI_BE5OtKwIAuK4Amnz5p9orXlx5N66?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/oFCarV7Yh5x0Rw_WdUdbn8qOGrZ2wCKiMANqhK1oXdxClQXLHlUomhF8eDnZKiOZeMWFfjMEi0LaW-0KU8UoAG0DaXzX5XLUvct840_pGliLSnqzw9u8hoFA1Q00PQijILOlThC2VzEJbaEiJXDIoQAFho-5vmaY7BI_BE5OtKwIAuK4Amnz5p9orXlx5N66?purpose=fullsize" width="360px"></a>
+            <a href="https://images.openai.com/static-rsc-4/YuoGsuHGGSuwpfHWS2_FP96QuiaS7vR_l_jCbg5xWQ8gdNcr005cfB4urIKR5e42uWxG6R4NDafrBWaSmKKiwE7EVjptvNzSgM8yu1sLHF5_5fKZDFe9xEWe2P0dj2eS5r6QnIJayK1SXM-dpfraSjZ-LbKn-Bj3hJXkR9RWKS4?purpose=inline"><img src="https://images.openai.com/static-rsc-4/YuoGsuHGGSuwpfHWS2_FP96QuiaS7vR_l_jCbg5xWQ8gdNcr005cfB4urIKR5e42uWxG6R4NDafrBWaSmKKiwE7EVjptvNzSgM8yu1sLHF5_5fKZDFe9xEWe2P0dj2eS5r6QnIJayK1SXM-dpfraSjZ-LbKn-Bj3hJXkR9RWKS4?purpose=inline" width="360px"></a>
+        </div>
+        <p><i>One-to-One:</i> One record is connected to one record.</p>
+        <p>Example: One person and one passport.</p>
+        <p><i>One-to-Many:</i> One record is connected to multiple records.</p>
+        <p>Example: One department and many employees.</p>
+        <p><i>Many-to-Many:</i> Multiple records in one table can connect with multiple records in another table.</p>
+        <p>Example: Students and courses, connected through an enrollment table.</p>
+        <h2>5. INNER JOIN</h2>
+        <p>Returns matching records from both tables.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT students.name, courses.course_name
+FROM students
+INNER JOIN enrollments
+    ON students.student_id = enrollments.student_id
+INNER JOIN courses
+    ON enrollments.course_id = courses.course_id;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>6. LEFT JOIN</h2>
+        <p>Returns every record from the left table and matching records from the right table.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT students.name, enrollments.course_id
+FROM students
+LEFT JOIN enrollments
+ON students.student_id = enrollments.student_id;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>7. RIGHT JOIN</h2>
+        <p>Returns every record from the right table and matching records from the left table.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT students.name, enrollments.course_id
+FROM students
+RIGHT JOIN enrollments
+ON students.student_id = enrollments.student_id;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>8. FULL OUTER JOIN</h2>
+        <p>MySQL does not have a direct FULL OUTER JOIN keyword.</p>
+        <p>It can be emulated using LEFT JOIN and RIGHT JOIN with UNION.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT students.name, enrollments.course_id
+FROM students
+LEFT JOIN enrollments
+ON students.student_id = enrollments.student_id
+
+UNION
+
+SELECT students.name, enrollments.course_id
+FROM students
+RIGHT JOIN enrollments
+ON students.student_id = enrollments.student_id;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>9. CROSS JOIN</h2>
+        <p>Combines every record in the first table with every record in the second table.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT *
+FROM students
+CROSS JOIN courses;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>10. SELF JOIN</h2>
+        <p>Joins a table to itself.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+SELECT
+    e.name AS employee,
+    m.name AS manager
+FROM employees e
+LEFT JOIN employees m
+ON e.manager_id = m.employee_id;
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>11. Cascading</h2>
+        <p><i>ON DELETE CASCADE</i> automatically deletes child records when the referenced parent record is deleted.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+FOREIGN KEY (department_id)
+REFERENCES departments(department_id)
+ON DELETE CASCADE
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><i>ON UPDATE CASCADE</i> automatically updates matching foreign-key values when the referenced parent key changes.</p>
+        <p><dfn>At the end of this topic:</dfn> Add a visual comparison of JOIN types, an ER diagram and a practical exercise connecting students, courses and enrollments.</p>
     </div>
 </body>
 <script src="copy.js" defer></script>
