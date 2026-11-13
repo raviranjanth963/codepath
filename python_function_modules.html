@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array.</title>
+    <link rel="stylesheet" href="python_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="lo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="button">Notes</button>
+            <button class="btn" type="button">Practices</button>
+            <button class="btn" type="button">Resources</button>
+            <button class="btn" type="button">About</button>
+        </div>
+
+        <div class="login">
+        <a href="login.html">
+            <button class="button">Log in/Sign in</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="syll">
+        <details>
+            <summary>Course Syllabus.</summary>
+            <div class="course">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Topic</th>
+                        <th>Chapter</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="topi"><a href="python_fundamental.html">Python Fundamentals</a></td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td class="topi"><a href="python_loop.html">Conditions & Loops</a></td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td class="topi"><a href="python_datastr.html">Data Structures</a></td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td class="topi">Object-Oriented Python</td>
+                        <td>04</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td class="topi">Files & Error Handling</td>
+                        <td>05</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td class="topi">Libraries & Projects</td>
+                        <td>06</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td class="topi">Practice & Final Quiz</td>
+                        <td>07</td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="head">
+        <h1>Functions & Modules</h1>
+        <a href="https://images.openai.com/static-rsc-4/Hnc8l42GGW8cIWDkFHCYaSQO881BJUHfXzENVKDn1H3hUxN0YqkxA8KgjgYI2kEOyvg3e3AXhEaKw2m1PsNsg5aDk5i2afeq9fc6eBWx4Cokn4-zOESLFGYfAftd7jhU9dO42tXQz155ZgJSoaCT6S8eMdTn4nKwuCO0b1WP5O7GY0AT3LTeNJgkO4PXbyXW?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/Hnc8l42GGW8cIWDkFHCYaSQO881BJUHfXzENVKDn1H3hUxN0YqkxA8KgjgYI2kEOyvg3e3AXhEaKw2m1PsNsg5aDk5i2afeq9fc6eBWx4Cokn4-zOESLFGYfAftd7jhU9dO42tXQz155ZgJSoaCT6S8eMdTn4nKwuCO0b1WP5O7GY0AT3LTeNJgkO4PXbyXW?purpose=fullsize" width="100%"></a>
+        <h2>Introduction to Functions</h2>
+        <p>A function is a reusable block of code designed to perform a particular task.</p>
+        <p>Functions help:</p>
+        <ul>
+            <li>Reduce repeated code.</li>
+            <li>Improve readability.</li>
+            <li>Organize programs.</li>
+            <li>Make debugging easier.</li>
+            <li>Divide large programs into smaller tasks.</li>
+        </ul>
+        <h2>Defining a Function</h2>
+        <p>Python uses the def keyword to define a function.</p>
+        <h3>Syntax:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>function_name():
+    statements</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Example:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>greet():
+    print(<u>"Welcome to CodePath"</u>)
+
+greet()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Welcome to CodePath
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Function Parameters and Arguments</h2>
+        <p>Parameters are variables defined in the function definition. Arguments are the actual values passed when calling the function.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>greet(name):
+    print(<u>"Hello"</u>, name)
+
+greet(<u>"Aman"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Hello Aman
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Return Statement</h2>
+        <p>The return statement sends a result back to the calling code.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>add(a, b):</b>
+    return <b>a + b</b>
+
+<b>result = add</b>(10, 20)
+
+<b>print(result)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+30
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Difference:</p>
+        <ul>
+            <li><i>print()</i> displays a value.</li>
+            <li><i>return</i> sends a value back from a function.</li>
+        </ul>
+        <h2>Types of Function Arguments</h2>
+        <h3>A. Positional arguments</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>student(name, age):
+    print(name, age)
+
+student(<u>"Aman"</u>, 18)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>B. Keyword arguments</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>student(age=18, name=<u>"Aman"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>C. Default arguments</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>greet(name=<u>"Student"</u>):
+    print(<u>"Hello"</u>, name)
+
+greet()
+greet(<u>"Aman"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>D. Variable-length positional arguments (*args)</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>total(*numbers):
+    print(sum(numbers))
+
+total</b>(10, 20, 30, 40)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>E. Variable-length keyword arguments (**kwargs)</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>details(**info):
+    for key, value in info.items():
+        print(key, value)
+
+details(name=<u>"Aman"</u>, age=18, branch=<u>"AI&DS"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Scope of Variables</h2>
+        <p>Scope determines where a variable can be accessed.</p>
+        <h3>Local variable:</h3>
+        <p>A variable created inside a function.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>show():
+    message = <u>"Hello"</u>
+    print(message)
+
+show()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Global variable:</h3>
+        <p>A variable defined outside a function.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>name</b>> = <u>"CodePath"</u>
+
+def <b>show():
+    print(name)
+
+show()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The global keyword allows a function to reassign a global variable.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>count</b> = 10
+
+def <b>update()</b>:
+    global <b>count</b>
+    <b>count</b> = 20
+
+<b>update()</b>
+<b>print(count)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Lambda Functions</h2>
+        <p>A lambda function is a small anonymous function written using the lambda keyword.</p>
+        <h3>Syntax:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+lambda <b>arguments: expression</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Example:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>square</b> = lambda <b>x: x * x
+
+print(square(5))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+25
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Recursion</h2>
+        <p>Recursion occurs when a function calls itself.</p>
+        <p>Every recursive function should have a base case to stop the recursive calls.</p>
+        <h3>Example – Factorial:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>factorial(n):</b>
+    if <b>n</b> == 0 or <b>n</b> == 1:
+        return 1
+
+    return n * <b>factorial(n - 1)
+
+print(factorial(5))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+120
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Modules in Python</h2>
+        <p>A module is a Python file containing reusable functions, variables and classes.</p>
+        <p>ython provides built-in modules and also allows users to create their own modules.</p>
+        <h3>Using a built-in module:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>math
+
+print(math.sqrt(25))
+print(math.factorial(5))
+print(math.pi)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Different Ways to Import Modules</h2>
+        <h3>Import the complete module:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>math
+
+print(math.sqrt(16))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Import a specific function:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+from <b>math</b> import <b>sqrt
+
+print(sqrt(16))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Using an alias:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>math as m
+
+print(m.sqrt(36))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Useful Python Modules</h2>
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><i>math</i></td>
+                <td>Mathematical operations</td>
+            </tr>
+            <tr>
+                <td><i>random</i></td>
+                <td>Random number generation</td>
+            </tr>
+            <tr>
+                <td><i>datetime</i></td>
+                <td>Date and time operations</td>
+            </tr>
+            <tr>
+                <td><i>os</i></td>
+                <td>Operating system interaction</td>
+            </tr>
+            <tr>
+                <td><i>statistics</i></td>
+                <td>Statistical calculations</td>
+            </tr>
+            <tr>
+                <td><i>json</i></td>
+                <td>JSON data handling</td>
+            </tr>
+            <tr>
+                <td><i>time</i></td>
+                <td>Time-related operations</td>
+            </tr>
+            <tr>
+                <td><i>collections</i></td>
+                <td>Specialized data structures</td>
+            </tr>
+        </table>
+        <h2>Creating Your Own Module</h2>
+        <p>Create a file called calculator.py:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>add(a, b):</b>
+    return <b>a + b</b>
+
+def <b>subtract(a, b):</b>
+    return <b>a - b</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Create another file called main.py:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>calculator
+
+print(calculator.add(10, 5))
+print(calculator.subtract(10, 5))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+15
+5
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Packages in Python</h2>
+        <p>A package is a way of organizing related Python modules into a directory structure.</p>
+        <p>For example:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+my_package/
+    __init__.py
+    calculator.py
+    greetings.py
+
+main.py
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Packages help organize larger applications.</p>
+        <h1>Practice Questions</h1>
+        <ol>
+            <li>Create a function to add two numbers.</li>
+            <li>Write a function to check even and odd numbers.</li>
+            <li>Create a function to calculate factorial.</li>
+            <li>Write a function that returns the largest of three numbers.</li>
+            <li>Create a lambda function to calculate the square.</li>
+            <li>Create your own calculator module.</li>
+            <li>Use the math module to calculate square roots.</li>
+            <li>Write a recursive function to calculate the sum of natural numbers.</li>
+        </ol>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

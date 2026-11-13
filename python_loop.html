@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array.</title>
+    <link rel="stylesheet" href="python_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="lo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="button">Notes</button>
+            <button class="btn" type="button">Practices</button>
+            <button class="btn" type="button">Resources</button>
+            <button class="btn" type="button">About</button>
+        </div>
+
+        <div class="login">
+        <a href="login.html">
+            <button class="button">Log in/Sign in</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="syll">
+        <details>
+            <summary>Course Syllabus.</summary>
+            <div class="course">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Topic</th>
+                        <th>Chapter</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="topi"><a href="python_fundamental.html">Python fundamentals.</a></td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td class="topi"><a href="python_datastr.html">Data Structures</a></td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td class="topi"><a href="python_function_modules.html">Functions & Modules</a></td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td class="topi">Object-Oriented Python</td>
+                        <td>04</td>
+                    tr>
+                    <tr>
+                        <td>5.</td>
+                        <td class="topi">Files & Error Handling</td>
+                        <td>05</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td class="topi">Libraries & Projects</td>
+                        <td>06</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td class="topi">Practice & Final Quiz</td>
+                        <td>07</td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="head">
+        <h1>Conditions & Loops</h1>
+        <a href="https://images.openai.com/static-rsc-4/-TWJbli26dn4agiZsR-Ommx4HoCeBaeBJSD5w7JM1pfzldirfrcUTfMePHn_JxZjYrBTTul42LtNMw2lZqRdPlvJIWZuztV1Pf8c3CehQMMx9Ix_u9EHnyMIXqotk0f1Jb5vJU0BHEqehm8oTsIR4ieyVkd3c0mlNfjEwVBwr6Q?purpose=inline"><img src="https://images.openai.com/static-rsc-4/-TWJbli26dn4agiZsR-Ommx4HoCeBaeBJSD5w7JM1pfzldirfrcUTfMePHn_JxZjYrBTTul42LtNMw2lZqRdPlvJIWZuztV1Pf8c3CehQMMx9Ix_u9EHnyMIXqotk0f1Jb5vJU0BHEqehm8oTsIR4ieyVkd3c0mlNfjEwVBwr6Q?purpose=inline" width="100%"></a>
+        <h2>Introduction to Conditional Statements</h2>
+        <p>Conditional statements allow a program to make decisions based on conditions.</p>
+        <p>Python provides:</p>
+        <ul>
+            <li><i>if</i></li>
+            <li><i>if-else</i></li>
+            <li><i>if-elif-else</i></li>
+            <li>Nested if statements</li>
+        </ul>
+        <h2>The if Statement</h2>
+        <p>The if statement executes a block of code only when its condition is True.</p>
+        <h3>Sy</ntax:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+if <b>condition:
+      statement
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Example:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>age</b> = 20
+
+if <b>age</b> >= 18:
+    <b>print</b>(<u>"You are eligible to vote."</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+You are eligible to vote.
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>The if-else Statement</h2>
+        <p>The <i>else</i> block executes when the <i>if</i> condition is False.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>age</b> = 16
+
+if <b>age</b> >= 18:
+    <b>print</b>(<u>"Adult"</u>)
+else:
+    <b>print</b>(<u>"Minor"</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Minor
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>The if-elif-else Statement</h2>
+        <p>Use <i>elif</i> when multiple conditions need to be checked.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>marks</b> = 82
+
+if <b>marks</b> >= 90:
+    <b>print</b>(<u>"Grade A+"</u>)
+elif <b>marks</b> >= 80:
+    <b>print</b>(<u>"Grade A"</u>)
+elif <b>marks</b> >= 70:
+    <b>print</b>(<u>"Grade B"</u>)
+elif <b>marks</b> >= 60:
+    <b>print</b>(<u>"Grade C"</u>)
+else:
+    <b>print</b>(<u>"Needs Improvement"</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Grade A
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Nested if Statements</h2>
+        <p>An if statement written inside another if statement is called a nested if statement.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>age</b> = 20
+<b>has_id</b> = True
+
+if <b>age</b> >= 18:
+    if <b>has_id</b>:
+        <b>print</b>(<u>"Entry allowed"</u>)
+    else:
+        <b>print</b>(<u>"ID required"</u>)
+else:
+    <b>print</b>(<u>"Entry not allowed"</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Introduction to Loops</h2>
+        <p>Loops are used to execute a block of code repeatedly.</p>
+        <p>Python has two main types of loops:</p>
+        <ol>
+            <li><i>for</i> loop</li>
+            <li><i>while</i> loop</li>
+        </ol>
+        <h2>The for Loop</h2>
+        <p>A for loop is used to iterate over a sequence such as a string, list, tuple or range.</p>
+        <h3>Syntax:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for <b>variable</b> in <b>sequence:</b>
+    <b>statement</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for <b></b> in <b>range</b>(1, 6):
+    <b>print(i)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+1
+2
+3
+4
+5
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Understanding the range() Function</h3>
+        <p>The range() function generates a sequence of integers.</p>
+        <p>Three common forms:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>range</b>(5)
+<b>range</b>(1, 6)
+<b>range</b>(1, 10, 2)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Expression</th>
+                <th>Generated values</th>
+            </tr>
+            <tr>
+                <td><i>range(5)</i></td>
+                <td>0, 1, 2, 3, 4</td>
+            </tr>
+            <tr>
+                <td><i>range(1, 6)</i></td>
+                <td>1, 2, 3, 4, 5</td>
+            </tr>
+            <tr>
+                <td><i>range(1, 10, 2)</i></td>
+                <td>1, 3, 5, 7, 9</td>
+            </tr>
+        </table>
+        <h2>The while Loop</h2>
+        <p>A while loop executes as long as its condition remains True.</p>
+        <h3>Syntax:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+while <b>condition:
+    statement</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>i</b> = 1
+
+wh<b>i</b>le i <= 5:
+    <b>print(i)</b>
+    <b>i </b> += 1
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+1
+2
+3
+4
+5
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Important: Update the loop variable when necessary. Otherwise, a loop may continue indefinitely.</p>
+        <h2>break Statement</h2>
+        <p>The <i>break</i> statement immediately terminates the nearest enclosing loop.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for i in <b>range</b>(1, 10):
+    if <b>i</b> == 5:
+        break
+    <b>print(i)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+1
+2
+3
+4
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>continue Statement</h2>
+        <p>The <i>continue</i> statement skips the current iteration and moves to the next iteration.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for i in <b>range</b>(1, 6):
+    if <b>i</b> == 3:
+        continue
+    <b>print(i)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+1
+2
+3
+4
+5
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>pass Statement</h2>
+        <p>The <i>pass</i> statement is a placeholder. It does nothing when executed.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for i in <b>range</b>(5):
+    if <b>i</b> == 2:
+        pass
+    <b>print(i)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Nested Loops</h2>
+        <p>A loop inside another loop is called a nested loop.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for i in <b>range</b>(1, 4):
+    for j in <b>range</b>(1, 4):
+    <b>print(i, j)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Pattern Programming</h2>
+        <p>Loops can be used to print different patterns.</p>
+        <h3>Example 1:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for i in <b>range</b>(1, 6):
+    <b>print("*" * j)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+*
+**
+***
+****
+*****
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Example 2:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+for i in <b>range</b>(1, 0, -1):
+    <b>print("*" * i)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+*****
+****
+***
+**
+*
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Practical Example – Even and Odd Numbers</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>num = int(input</b>(<u>"Enter a number: "</u>))
+
+if <b>num</b> % 2 == 0:
+    <b>print</b>(<u>"Even number"</u>)
+else:
+    <b>print</b>(<u>"Odd number"</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Practical Example – Multiplication Table</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>num = int(input</b>(<u>"Enter a number: "</u>))
+
+for <b>i</b> in <b>range</b>(1, 11):
+    <b>print</b>(<u>f"{num} x {i} = {num * i}"</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h1>Practice Questions</h1>
+        <ol>
+            <li>Check whether a number is positive, negative or zero.</li>
+            <li>Find the greatest of three numbers.</li>
+            <li>Check whether a number is even or odd.</li>
+            <li>Print numbers from 1 to 100.</li>
+            <li>Print the multiplication table of a number.</li>
+            <li>Calculate the sum of the first 100 natural numbers.</li>
+            <li>Find the factorial of a number.</li>
+            <li>Print all even numbers between 1 and 50.</li>
+            <li>Check whether a number is prime.</li>
+            <li>Print a right-angled star pattern.</li>
+        </ol>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

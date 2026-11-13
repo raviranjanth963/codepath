@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array.</title>
+    <link rel="stylesheet" href="python_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="lo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="button">Notes</button>
+            <button class="btn" type="button">Practices</button>
+            <button class="btn" type="button">Resources</button>
+            <button class="btn" type="button">About</button>
+        </div>
+
+        <div class="login">
+        <a href="login.html">
+            <button class="button">Log in/Sign in</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="syll">
+        <details>
+            <summary>Course Syllabus.</summary>
+            <div class="course">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Topic</th>
+                        <th>Chapter</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="topi"><a href="python_fundamental.html">Python fundamentals.</a></td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td class="topi"><a href="python_loop.html">Conditions & Loops</a></td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td class="topi"><a href="python_function_modules.html">Functions & Modules</td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td class="topi">Object-Oriented Python</td>
+                        <td>04</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td class="topi">Files & Error Handling</td>
+                        <td>05</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td class="topi">Libraries & Projects</td>
+                        <td>06</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td class="topi">Practice & Final Quiz</td>
+                        <td>07</td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="head">
+        <h1>Data Structures</h1>
+        <a href="https://images.openai.com/static-rsc-4/R1PbIXWlcUaKIx5IuqBNT5EGgFAwEZoai0AkG064zQkmFN_VIuggNiaVVZCmxfQKlxlN-vX_lu8ZU_9DdZB7Vquf90-Wd6-ZfjTh48xan6f3d_7jvnfgHXElUdgkqdqxkc75I4DY6aIhf1mpRf3WMglEaflAU9wBLndgbpx_MV4R4utuM2HM1I3bzWiaCA0V?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/R1PbIXWlcUaKIx5IuqBNT5EGgFAwEZoai0AkG064zQkmFN_VIuggNiaVVZCmxfQKlxlN-vX_lu8ZU_9DdZB7Vquf90-Wd6-ZfjTh48xan6f3d_7jvnfgHXElUdgkqdqxkc75I4DY6aIhf1mpRf3WMglEaflAU9wBLndgbpx_MV4R4utuM2HM1I3bzWiaCA0V?purpose=fullsize" width="100%"></a>
+        <h2>Introduction to Data Structures</h2>
+        <p>Data structures are ways of organizing and storing data so that it can be accessed and modified efficiently.</p>
+        <p>Python provides four important built-in collection data types:</p>
+        <ol>
+            <li>List</li>
+            <li>Tuple</li>
+            <li>Set</li>
+            <li>Dictionary</li>
+        </ol>
+        <h2>Lists in Python</h2>
+        <p>A list is an ordered and mutable collection that allows duplicate values.</p>
+        <h3>Creating a list:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+fruits = [<u>"Apple", "Banana", "Mango"</u>]
+
+print(fruits)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Accessing list elements:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>fruits = [<u>"Apple", "Banana", "Mango"</u>]
+
+print(fruits[0])
+print(fruits[1])
+print(fruits[-1])</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Changing list elements:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>fruits = [<u>"Apple", "Banana", "Mango"</u>]
+
+fruits[1] = <u>"Orange"</u>
+
+print(fruits)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Important list methods:</h3>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><i>append()</i></td>
+                <td>Adds an item at the end</td>
+            </tr>
+            <tr>
+                <td><i>insert()</i></td>
+                <td>Adds an item at a specified position</td>
+            </tr>
+            <tr>
+                <td><i>extend()</i></td>
+                <td>Adds multiple items</td>
+            </tr>
+            <tr>
+                <td><i>remove()</i></td>
+                <td>Removes a specified item</td>
+            </tr>
+            <tr>
+                <td><i>pop()</i></td>
+                <td>Removes and returns an item</td>
+            </tr>
+            <tr>
+                <td><i>sort()</i></td>
+                <td>Sorts the list</td>
+            </tr>
+            <tr>
+                <td><i>reverse()</i></td>
+                <td>Reverses the list</td>
+            </tr>
+            <tr>
+                <td><i>clear()</i></td>
+                <td>Removes all elements</td>
+            </tr>
+            <tr>
+                <td><i>index()</i></td>
+                <td>Returns an item's position</td>
+            </tr>
+            <tr>
+                <td><i>count()</i></td>
+                <td>Counts occurrences</td>
+            </tr>
+        </table>
+        <h3>Example:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>numbers = [<u>10, 20, 30</u>]
+
+numbers.append(<u>40</u>)
+numbers.insert(<u>1, 15</u>)
+numbers.remove(<u>30</u>)
+
+print(numbers)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+[10, 15, 20, 40]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>List Slicing</h2>
+        <p>A tuple is an ordered and immutable collection.</p>
+        <p>Once a tuple is created, its elements cannot be reassigned.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>numbers = (<u>10, 20, 30, 40</u>)
+
+print(numbers)
+print(numbers[<u>0</u>])
+print(numbers[<u>2</u>])</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Important tuple methods:</h3>
+        <ul>
+            <li><i>count()</i></li>
+            <li><i>index()</i></li>
+        </ul>
+        <h3>Single-element tuple:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>value = (<u>10</u>,)
+print(type(value))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The comma is necessary to create a single-element tuple.</p>
+        <h2>Sets in Python</h2>
+        <p>A set is an unordered collection of unique elements.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>numbers = {<u>10, 20, 30, 10</u>}
+
+print(numbers)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output contains only one occurrence of 10. Set display order is not guaranteed.</p>
+        <h3>Important set methods:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>numbers = {<u>10, 20, 30</u>}
+
+numbers.add(<u>40</u>)
+numbers.update([<u>50, 60</u>])
+numbers.remove(<u>20</u>)
+
+print(numbers)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Other methods include discard(), pop(), clear() and copy().</p>
+        <h2>Set Operations</h2>
+        <p>Suppose:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>A</b>= {1, 2, 3, 4}
+<b>B</b> = {3, 4, 5, 6}
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>Union:</dfn> Combines all unique elements.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>print(A | B)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>Intersection:</dfn> Returns common elements.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>print(A & B)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>Difference:</dfn> Returns elements in A that are not in B.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>print(A - B)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>Symmetric difference:</dfn> Returns elements present in either set, but not both.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>print(A ^ B)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Dictionaries in Python</h2>
+        <p>A dictionary stores information in key-value pairs.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>student</b> = {
+    <u>"name": "Aman"</u>,
+    <u>"age"</u>: 18,
+    <u>"branch": "AI&DS"</u>
+}
+
+<b>print(student[<u>"name"</u>])
+print(student[<u>"age"</u>])</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Adding and updating values:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>student</b>[<u>"college"</u>] = <u>"ADGITM"</u>
+<b>student</b>[<u>"age"</u>] = 19
+
+<b>print(student)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Important dictionary methods:</h3>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><i>keys()</i></td>
+                <td>Returns all keys</td>
+            </tr>
+            <tr>
+                <td><i>values()</i></td>
+                <td>Returns all values</td>
+            </tr>
+            <tr>
+                <td><i>items()</i></td>
+                <td>Returns key-value pairs</td>
+            </tr>
+            <tr>
+                <td><i>get()</i></td>
+                <td>Safely retrieves a value</td>
+            </tr>
+            <tr>
+                <td><i>update()</i></td>
+                <td>Updates dictionary</td>
+            </tr>
+            <tr>
+                <td><i>pop()</i></td>
+                <td>Removes a key</td>
+            </tr>
+            <tr>
+                <td><i>clear()</i></td>
+                <td>Removes all entries</td>
+            </tr>
+            <tr>
+                <td><i>copy()</i></td>
+                <td>Creates a shallow copy</td>
+            </tr>
+        </table>
+        <h2>Iterating Through Dictionaries</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>student</b> = {
+    <u>"name": "Aman"</u>,
+    <u>"age"</u>: 18,
+    <u>"branch": "AI&DS"</u>
+}
+
+for <b>key, value</b> in <b>student.items():
+    print(key, ":", value)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>List Comprehension</h2>
+        <p>List comprehension provides a shorter way to create a list.</p>
+        <h3>Normal method:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>squares</b> = []
+
+for <b>i</b> in <b>range</b>(1, 6):
+    <b>squares.append</b>(i * i)
+
+<b>print(squares)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Using list comprehension:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>squares</b> = [<b>i</b> * <b>i</b> for <b>i</b> in <b>range</b>(1, 6)]
+
+<b>print(squares)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+[1, 4, 9, 16, 25]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>With a condition:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>even</b> = [<b>i</b> for <b>i</b> in <b>range</b>(1, 11) if <b>i</b> % 2 == 0]
+
+<b>print(even)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Nested Data Structures</h2>
+        <p>A data structure can contain another data structure.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>students</b> = [
+    {<u>"name": "Aman", "marks"</u>: 85},
+    {<u>"name": "Ravi", "marks"</u>: 90},
+    {<u>"name": "Neha", "marks"</u>: 88}
+]
+
+for <b>student</b> in <b>students</b>:
+    <b>print(student[<u>"name"</u>], student[<u>"marks"</u>])</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Choosing the Right Data Structure</h2>
+        <table>
+            <tr>
+                <th>Structure</th>
+                <th>Ordered</th>
+                <th>Mutable</th>
+                <th>Duplicates</th>
+            </tr>
+            <tr>
+                <td>List</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Tuple</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Set</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Dictionary</td>
+                <td>Yes*</td>
+                <td>Yes</td>
+                <td>Keys must be unique</td>
+            </tr>
+        </table>
+        <h1>Practice Questions</h1>
+        <ol>
+            <li>Create a list of 10 numbers and calculate their sum.</li>
+            <li>Find the largest and smallest number in a list.</li>
+            <li>Remove duplicate values from a list using a set.</li>
+            <li>Create a tuple containing five student names.</li>
+            <li>Find common elements between two sets.</li>
+            <li>Create a student dictionary containing name, roll number and marks.</li>
+            <li>Count the frequency of each element in a list using a dictionary.</li>
+            <li>Create a list of squares using list comprehension.</li>
+        </ol>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

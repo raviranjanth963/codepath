@@ -16,3 +16,22 @@ for (var i = 0; i < buttons.length; i++) {
         }, 2000);
     };
 }
+
+var buttons = document.querySelectorAll(".copy-btn2");
+
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+
+        // find the code that is in the same box as this button
+        var box = this.parentElement;
+        var text = box.querySelector("code").textContent;
+
+        navigator.clipboard.writeText(text);
+
+        var btn = this;
+        btn.textContent = "copied!";
+        setTimeout(function () {
+            btn.textContent = "copy";
+        }, 2000);
+    };
+}

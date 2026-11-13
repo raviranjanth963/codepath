@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array.</title>
+    <link rel="stylesheet" href="python_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="lo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="button">Notes</button>
+            <button class="btn" type="button">Practices</button>
+            <button class="btn" type="button">Resources</button>
+            <button class="btn" type="button">About</button>
+        </div>
+
+        <div class="login">
+        <a href="login.html">
+            <button class="button">Log in/Sign in</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="syll">
+        <details>
+            <summary>Course Syllabus.</summary>
+            <div class="course">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Topic</th>
+                        <th>Chapter</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="topi"><a href="python_loop.html">Conditions & Loops</a></td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td class="topi"><a href="python_datastr.html">Data Structures</a></td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td class="topi"><a href="python_function_modules.html">Functions & Modules</a></td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td class="topi">Object-Oriented Python</td>
+                        <td>04</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td class="topi">Files & Error Handling</td>
+                        <td>05</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td class="topi">Libraries & Projects</td>
+                        <td>06</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td class="topi">Practice & Final Quiz</td>
+                        <td>07</td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="head">
+        <h1>Python Fundamentals</h1>
+        <a href="https://images.openai.com/static-rsc-4/0B-7W5u6xEwxx8hZ-LYw1k_psz9IhWgcjC1TFzcGK5oxfp9UvtYR5y4NoCwzRKIXi56SICf0so2LVTqlV1wWRUwX2gJbeRQoMXnNTZ249stsPeid9HtiP54TIt2Z0_lo7oFLoypOUxXJ1Ffkog5XIJQlGK-inQSv1itcJZYJ_4Yz7IsPDMP1V0006vbn5lCx?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/0B-7W5u6xEwxx8hZ-LYw1k_psz9IhWgcjC1TFzcGK5oxfp9UvtYR5y4NoCwzRKIXi56SICf0so2LVTqlV1wWRUwX2gJbeRQoMXnNTZ249stsPeid9HtiP54TIt2Z0_lo7oFLoypOUxXJ1Ffkog5XIJQlGK-inQSv1itcJZYJ_4Yz7IsPDMP1V0006vbn5lCx?purpose=fullsize" width="100%"></a>
+        <h2>1.1 Introduction to Python</h2>
+        <h3>What is Python?</h3>
+        <p>Python is a high-level, interpreted, general-purpose programming language. It is known for its simple syntax and readability.</p>
+        <p>Python is used in:</p>
+        <ul>
+            <li>Web development</li>
+            <li>Artificial intelligence (AI)</li>
+            <li>Machine learning</li>
+            <li>Data science</li>
+            <li>Automation</li>
+            <li>Software development</li>
+            <li>Game development</li>
+        </ul>
+        <h3>Example: First Python program</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>print</b>(<u>"Hello, World!""</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Hello, World!
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Explanation:</h3>
+        <ul>
+            <li><i>print()</i> is a built-in Python function.</li>
+            <li>It displays information on the screen.</li>
+            <li>Text is written inside quotation marks.</li>
+        </ul>
+        <h2>1.2 Features of Python</h2>
+        <ol>
+            <li>Easy to learn and understand.</li>
+            <li>Free and open-source.</li>
+            <li>Interpreted programming language.</li>
+            <li>Supports object-oriented programming.</li>
+            <li>Large collection of libraries.</li>
+            <li>Cross-platform compatibility.</li>
+            <li>Dynamically typed language.</li>
+        </ol>
+        <h2>1.3 Installing Python</h2>
+        <p>To start programming:</p>
+        <ol>
+            <li>Download Python from <a href="https://www.python.org/">https://www.python.org/</a></li>
+            <li>Install Python on your computer.</li>
+            <li>Open VS Code or Python IDLE.</li>
+            <li>Create a file named <i>main.py</i>.</li>
+            <li>Write your first Python program.</li>
+            <li>Run the program.</li>
+        </ol>
+        <h2>1.4 Python Syntax</h2>
+        <p>Syntax means the rules used to write a program.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>name</b> = <u>"Rahul"</u>
+<b>age</b> = 20
+
+<b>print(name)</b>
+<b>print(age)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Rahul
+20
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Python uses indentation (spaces at the beginning of a line) to define code blocks.</p>
+        <h2>1.5 Comments in Python</h2>
+        <p>Comments explain the code. Python does not execute comments.</p>
+        <h3>Single-line comment:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b># This is a single-line comment</b>
+<b>print</b>(<u>"Welcome to CodePath"</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Multi-line explanation:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<u>
+"""
+This program demonstrates
+how to display text in Python.
+"""
+</u>
+<b>print</b>(<u>"Hello"</u>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>1.6 Variables in Python</h2>
+        <p>A variable is a named storage location used to hold a value.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>name </b>= <u>"Aman"</u>
+<b>age</b> = 18
+<b>city</b> = <u>"Delhi"</u>
+
+<b>
+print(name)
+print(age)
+print(city)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Aman
+18
+Delhi
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Rules for naming variables:</h3>
+        <ul>
+            <li>A variable name can contain letters, numbers and underscores.</li>
+            <li>It cannot start with a number.</li>
+            <li>Spaces are not allowed.</li>
+            <li>Python keywords cannot be used as variable names.</li>
+            <li>Variable names are case-sensitive.</li>
+        </ul>
+        <p>Valid:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>student_name</b> = <u>"Aman"</u>
+<b>age1</b> = 18
+<b>total_marks</b> = 450
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Invalid:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+1name = <u>"Aman"</u>
+<b>student name</b> = <u>"Aman"</u>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>1.7 Data Types in Python</h2>
+        <p>A data type defines the kind of value stored in a variable.</p>
+        <table>
+            <tr>
+                <th>Data type</th>
+                <th>Meaning</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td class="mea">Integer numbers</td>
+                <td><i>age = 18</i></td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td class="mea">Decimal numbers</td>
+                <td><i>price = 99.5</i></td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td class="mea">Text</td>
+                <td><i>name = "Aman"</i></td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td class="mea">True or False</td>
+                <td><i>is_pass = True</i></td>
+            </tr>
+            <tr>
+                <td>list</td>
+                <td class="mea">Ordered collection</td>
+                <td><i>[10, 20, 30]</i></td>
+            </tr>
+            <tr>
+                <td>tuple</td>
+                <td class="mea">Immutable collection</td>
+                <td><i>(10, 20, 30)</i></td>
+            </tr>
+            <tr>
+                <td>set</td>
+                <td class="mea">Unique elements</td>
+                <td><i>{10, 20, 30}</i></td>
+            </tr>
+            <tr>
+                <td>dict</td>
+                <td class="mea">Key-value pairs</td>
+                <td><i>{"name": "Aman"}</i></td>
+            </tr>
+            <tr>
+                <td>NoneType</td>
+                <td class="mea">No value</td>
+                <td><i>x = None</i></td>
+            </tr>
+        </table>
+        <h2>Checking data types:</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>name</b> = <u>"Aman"</u>
+<b>age</b> = 18
+<b>marks</b> = 85.5
+<b>is_pass</b> = True
+
+<b>
+print(type(name))
+print(type(age))
+print(type(marks))
+print(type(is_pass))
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>1.8 Taking Input from Users</h2>
+        <p>The <i>input()</i> function takes information from the user.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>name</b> = <b>input</b>(<u>"Enter your name: "</u>)
+
+<b>print</b>(<u>"Welcome"</u>, <b>name</b>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+       <p>Example output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Enter your name: Aman
+Welcome Aman
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Taking numerical input:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>age = int(input(<u>"Enter your age: "</u>))</b>
+
+<b>print(<u>"Your age is:"</u>, age)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Important: input() returns a string by default. Use <i>int()</i> or <i>float()</i> when numerical input is required.</p>
+        <h2>1.9 Type Conversion</h2>
+        <p>Type conversion means changing one data type into another.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+a = <u>"25"</u>
+
+b = int(a)
+
+print(b)
+print(type(b))
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+ 25
+&lt;class 'int'>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Common conversion functions:</p>
+        <ul>
+            <li><i>int()</i> – converts to an integer when possible.</li>
+            <li><i>float()</i> – converts to a decimal number.</li>
+            <li><i>str()</i> – converts to a string.</li>
+            <li><i>bool()</i> – converts to a Boolean value.</li>
+            <li><i>list()</i> – converts an iterable into a list.</li>
+            <li><i>tuple()</i> – converts an iterable into a tuple.</li>
+        </ul>
+        <h3>1.10 Operators in Python</h3>
+        <p>Operators perform operations on values and variables.</p>
+        <h3>A. Arithmetic operators</h3>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><i>+</i></td>
+                <td>Addition</td>
+                <td><i>10 + 5 = 15</i></td>
+            </tr>
+            <tr>
+                <td><i>i</i></td>
+                <td>Subtraction</td>
+                <td><i>10 - 5 = 5</i></td>
+            </tr>
+            <tr>
+                <td><i>*</i></td>
+                <td>Multiplication</td>
+                <td><i>10 * 5 = 50</i></td>
+            </tr>
+            <tr>
+                <td><i>/</i></td>
+                <td>Division</td>
+                <td><i>10 / 5 = 2.0</i></td>
+            </tr>
+            <tr>
+                <td><i>//</i></td>
+                <td>Floor division</td>
+                <td><i>11 // 5 = 2</i></td>
+            </tr>
+            <tr>
+                <td><i>%</i></td>
+                <td>Modulus</td>
+                <td><i>11 % 5 = 1</i></td>
+            </tr>
+            <tr>
+                <td><i>**</i></td>
+                <td>Exponentiation</td>
+                <td><i>2 ** 3 = 8</i></td>
+            </tr>
+        </table>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>a</b> = 10
+<b>b</b> = 3
+
+<b>
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>B. Comparison operators</h2>
+        <p>These operators compare two values and return True or False.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>a</b> = 10
+<b>b</b> = 5
+
+<b>
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>C. Logical operators</h2>
+        <ul>
+            <li><i>and</i> – True when both conditions are True.</li>
+            <li><i>or</i> – True when at least one condition is True.</li>
+            <li><i>not</i> – Reverses a Boolean result.</li>
+        </ul>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+age = 20
+
+print(age > 18 and age < 60)
+print(age < 18 or age > 60)
+print(not age > 18)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>D. Assignment operators</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+x = 10
+x += 5
+print(x)</b>   # 15
+<b>
+x -= 3
+print(x)</b>   # 12
+<b>
+x *= 2
+print(x)</b>   # 24
+
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>E. Membership operators</h3>
+        <p><i>in</i> and <i>not in</i> check whether an item exists in a collection.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>fruits</b> = [<u>"apple", "banana", "mango"</u>]
+
+<b>print</b>(<u>"apple"</u> in <b>fruits</b>)
+<b>print</b>(<u>"grapes"</u> not in <b>fruits</b>)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>F. Identity operators</h3>
+        <p><i>is</i> and <i>is not</i> check whether two references point to the same object.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+name = <u>"CodePath"</u>
+print(name)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>String indexing:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+text = <u>"Python"</u>
+
+print(text[0])
+print(text[1])
+print(text[-1])</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+P
+y
+n
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>String slicing:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>text</b> = <b>"Python Programming"</b>
+
+<b>print(text</b>[0:6])
+<b>print(text</b>[7:18])
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Important string methods:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+name = <u>"codepath"</u>
+
+print(name.upper())
+print(name.capitalize())
+print(name.title())
+print(name.replace(<u>"code", "web"</u>))
+print(len(name))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Other useful methods include lower(), strip(), split(), find(), count() and startswith().</p>
+        <h2>1.12 String Formatting</h2>
+        <p>String formatting allows variables to be inserted into text.</p>
+        <h3>Using f-strings:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+name = <u>"Aman"</u>
+age = 18
+
+print(<u>f"My name is {name} and I am {age} years old."</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+My name is Aman and I am 18 years old.
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>1.13 Important Python Built-in Functions</h2>
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><i>print()</i></td>
+                <td>Displays output</td>
+            </tr>
+            <tr>
+                <td><i>input()</i></td>
+                <td>Takes user input</td>
+            </tr>
+            <tr>
+                <td><i>type()</i></td>
+                <td>Checks data type</td>
+            </tr>
+            <tr>
+                <td><i>len()</i></td>
+                <td>Returns length</td>
+            </tr>
+            <tr>
+                <td><i>sum()</i></td>
+                <td>Adds numerical values</td>
+            </tr>
+
+            <tr>
+                <td><i>max()</i></td>
+                <td>Returns maximum value</td>
+            </tr>
+            <tr>
+                <td><i>min()</i></td>
+                <td>Returns minimum value</td>
+            </tr>
+            <tr>
+                <td><i>abs()</i></td>
+                <td>Returns absolute value</td>
+            </tr>
+            <tr>
+                <td><i>round()</i></td>
+                <td>Rounds a number</td>
+            </tr>
+            <tr>
+                <td><i>range()</i></td>
+                <td>Generates a sequence of integers</td>
+            </tr>
+        </table>
+        <h3>Chapter 01 – Practice Questions</h3>
+        <ol>
+            <li>Write a Python program to print your name, age and college.</li>
+            <li>Create two variables and perform all arithmetic operations.</li>
+            <li>Take two numbers from the user and calculate their sum.</li>
+            <li>Convert a string containing a number into an integer.</li>
+            <li>Write a program to calculate the area of a rectangle.</li>
+            <li>Check the data type of five different variables.</li>
+            <li>Reverse a string using slicing.</li>
+            <li>Write a program to calculate the average of three numbers.</li>
+        </ol>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>
