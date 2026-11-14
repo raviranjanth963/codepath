@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array.</title>
+    <link rel="stylesheet" href="python_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="lo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="button">Notes</button>
+            <button class="btn" type="button">Practices</button>
+            <button class="btn" type="button">Resources</button>
+            <button class="btn" type="button">About</button>
+        </div>
+
+        <div class="login">
+        <a href="login.html">
+            <button class="button">Log in/Sign in</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="syll">
+        <details>
+            <summary>Course Syllabus.</summary>
+            <div class="course">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Topic</th>
+                        <th>Chapter</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="topi"><a href="python_fundamental.html">Python Fundamentals</a></td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td class="topi"><a href="python_loop.html">Conditions & Loops</a></td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td class="topi"><a href="python_datastr.html">Data Structures</a></td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td class="topi"><a href="python_function_modules.html">Functios & Modules</a></td>
+                        <td>04</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td class="topi"><a href="python_obj_oriented.html">Object-Oriented Python</a></td>
+                        <td>05</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td class="topi"><a href="python_error.html">Files & Error Handling</a></td>
+                        <td>06</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td class="topi">Practice & Final Quiz</td>
+                        <td>07</td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="head">
+        <h1>Libraries & Projects</h1>
+        <a href="https://images.openai.com/static-rsc-4/vDBop71N406SDfKOksc_XyqOwLOA2dn9XuUI5Wb6j6Bwxl_6c43OH66kQia6vyWhLrhEeRu7EzxONcnz527oj6G0AFIYFXTMNMUxTjWjza4YiE_0a-BEN-E9mhaW8ItVM6BA4qBEIKT1oYvlJPC-yY81fMosVC3kwGrPbfNnYx5jYsVHBwozEJJrlunBAIVP?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/vDBop71N406SDfKOksc_XyqOwLOA2dn9XuUI5Wb6j6Bwxl_6c43OH66kQia6vyWhLrhEeRu7EzxONcnz527oj6G0AFIYFXTMNMUxTjWjza4YiE_0a-BEN-E9mhaW8ItVM6BA4qBEIKT1oYvlJPC-yY81fMosVC3kwGrPbfNnYx5jYsVHBwozEJJrlunBAIVP?purpose=fullsize" width="100%"></a>
+        <h2>Introduction to Python Libraries</h2>
+        <p>A library is a collection of reusable code that provides functionality for specific tasks.</p>
+        <p>Python has a large ecosystem of built-in modules and third-party libraries.</p>
+        <p>Libraries help developers avoid writing everything from scratch.</p>
+        <h2>Installing Libraries Using pip</h2>
+        <p><i>pip</i> is the standard package installer commonly used for Python packages.</p>
+        <h3>Syntax:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>pip install library_name</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Example:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>pip install numpy
+pip install pandas
+pip install matplotlib</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>To see installed packages:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>pip list</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>NumPy Library</h2>
+        <p>NumPy is a Python library used for numerical computing and working with multidimensional arrays.</p>
+        <h3>Installation:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>pip install numpy</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Importing NumPy:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import<b> numpy as np</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Creating an array:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import<b> numpy as np</b>
+
+<b>numbers = np.array</b>([10, 20, 30, 40])
+
+<b>print(numbers)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Mathematical operations:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import<b> numpy as np</b>
+
+<b>a = np.array</b>([10, 20, 30])
+<b>b = np.array</b>([1, 2, 3])
+
+<b>print(a + b)
+print(a * b)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+[11 22 33]
+[10 40 90]
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Two-dimensional arrays:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import<b> numpy as np</b>
+
+<b>matrix = np.array</b>([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+
+<b>print(matrix)
+print(matrix.shape)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Pandas Library</h2>
+        <p>Pandas is used for data manipulation and analysis.</p>
+        <p>It provides two main data structures:</p>
+        <ul>
+            <li>Series: One-dimensional labeled data.</li>
+            <li>DataFrame: Two-dimensional tabular data.</li>
+        </ul>
+        <h3>Installation:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>pip install pandas</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Creating a Series:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>pandas as pd</b>
+
+<b>marks = pd.Series(</b>[85, 90, 78, 92])
+
+<b>print(marks)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Creating a DataFrame:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>pandas as pd</b>
+
+<b>data</b> = {
+    <u>"Name": ["Aman", "Ravi", "Neha"],
+    "Marks"</u>: [85, 90, 92]
+}
+
+<b>df = pd.DataFrame(data)</b>
+
+<b>print(df)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Reading a CSV file:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>pandas as pd</b>
+
+<b>df = pd.read_csv(<u>"students.csv"</u>)</b>
+
+<b>print(df.head)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Useful Pandas functions:</h3>
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><i> head() </i></td>
+                <td>Displays first rows</td>
+            </tr>
+            <tr>
+                <td><i> tail() </i></td>
+                <td>Displays last rows</td>
+            </tr>
+            <tr>
+                <td><i> info() </i></td>
+                <td>Shows DataFrame information</td>
+            </tr>
+            <tr>
+                <td><i> describe() </i></td>
+                <td>Generates descriptive statistics</td>
+            </tr>
+            <tr>
+                <td><i> shape </i></td>
+                <td>Returns dimensions</td>
+            </tr>
+            <tr>
+                <td><i> isnull() </i></td>
+                <td>Checks missing values</td>
+            </tr>
+            <tr>
+                <td><i> dropna() </i></td>
+                <td>Removes missing values</td>
+            </tr>
+            <tr>
+                <td><i> fillna() </i></td>
+                <td>Fills missing values</td>
+            </tr>
+            <tr>
+                <td><i> sort_values() </i></td>
+                <td>Sorts data</td>
+            </tr>
+        </table>
+        <h2>Matplotlib Library</h2>
+        <p>Matplotlib is used to create graphs and visualizations.</p>
+        <h3>Installation:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>pip install matplotlib</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Creating a line graph:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>matplotlib</b>.pyplot <b>as plt</b>
+
+<b>x</b> = [1, 2, 3, 4, 5]
+<b>y</b> = [10, 20, 15, 30, 25]
+
+<b>plt.plot(x, y)
+
+plt.title(<u>"Student Progress"</u>)
+plt.xlabel(<u>"Week"</u>)
+plt.ylabel(<u>"Marks"</u>)
+
+plt.show()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Creating a bar chart:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>matplotlib</b>.pyplot <b>as plt</b>
+
+<b>subjects</b> = [<u>"Math", "Python", "Physics"</u>]
+<b>marks</b> = [85, 90, 78]
+
+<b>plt.plot(subjects, marks)
+
+plt.title(<u>"Subject Marks"</u>)
+plt.xlabel(<u>"Subjects"</u>)
+plt.ylabel(<u>"Marks"</u>)
+
+plt.show()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Random Module</h2>
+        <p>The random module generates pseudo-random values.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>random
+
+print(random.randint(1, 100))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Selecting a random item:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>random
+
+fruits = [<u>"Apple", "Mango", "Banana"</u>]
+
+print(random.choice(fruits))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Datetime Module</h2>
+        <p>The datetime module works with dates and times.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+from <b>datetime</b> import <b>datetime</b>
+
+<b>today = datetime.now()
+
+print(today)
+print(today.date())
+print(today.time())</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Introduction to Virtual Environments</h2>
+        <p>A virtual environment creates an isolated Python environment for a project.</p>
+        <p>It helps manage different project dependencies separately.</p>
+        <h3>Create a virtual environment:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>python -m venv .venv</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Activate on Windows:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>.venv\Scripts\activate</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Activate on macOS/Linux:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>source .venv/bin/activate</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Install a package:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>pip install pandas</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Real-World Python Projects</h2>
+        <p>These projects help you apply the concepts learned in the previous chapters.</p>
+        <h3>Project 1 – Calculator</h3>
+        <i>alculator</i>
+        <p><dfn>Objective:</dfn> Build a calculator that performs basic mathematical operations.</p>
+        <p>Features:</p>
+        <ul>
+            <li>Addition</li>
+            <li>Subtraction</li>
+            <li>Multiplication</li>
+            <li>Division</li>
+            <li>User input</li>
+            <li>Error handling</li>
+        </ul>
+        <p>Example code:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+def <b>calculator(a, b, operator):</b>
+
+    if <b>operator</b> == <u>"+"</u>:
+        return <b>a + b</b>
+
+    elif <b>operator</b> == <u>"-"</u>:
+        return <b>a - b</b>
+
+    elif <b>operator</b> == <u>"*"</u>:
+        return <b>a * b</b>
+
+    elif <b>operator</b> == <u>"/"</u>:
+        if b == 0:
+            return <u>"Cannot divide by zero"</u>
+        return <b>a / b</b>
+
+    else:
+        return <u>"Invalid operator"</u>
+
+
+<b>a = float(input(<u>"First number: "</u>))
+b = float(input(<u>"Second number: "</u>))
+operator = input(<u>"Enter operator (+, -, *, /): ")</u>
+
+print(calculator(a, b, operator))</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Project 2 – Number Guessing Game</h3>
+        <i>Beginner</i>
+        <p><dfn>Objective:</dfn> Create a game in which the user tries to guess a randomly selected number.</p>
+        <p>Concepts used:</p>
+        <ul>
+            <li>Random module</li>
+            <li>While loop</li>
+            <li>Conditional statements</li>
+            <li>User input</li>
+        </ul>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+import <b>random</b>
+
+<b>number</b> = <b>random.randint</b>(1, 100)
+
+while True:
+    <b>guess</b> = <b>int(input(<u>"Guess a number: "</u>))</b>
+
+    if <b>guess</b> < <b>number:
+        <b>print(<u>"Too low"</u>)</b>
+
+    elif <b>guess</b> > <b>number:
+        <b>print</b>(<u>"Too high"</u>)
+
+    else:
+        <b>print</b>(<u>"Correct guess!"</u>)
+        break
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Project 3 – Student Management System</h3>
+        <i>Intermediate</i>
+        <p><dfn>Objective:</dfn> Store and manage student information.</p>
+        <p>Features:</p>
+        <ul>
+            <li>Add student</li>
+            <li>Display student details</li>
+            <li>Search student</li>
+            <li>Update student</li>
+            <li>Delete student</li>
+        </ul>
+        <p>Concepts used:</p>
+        <ul>
+            <li>Lists</li>
+            <li>Dictionaries</li>
+            <li>Functions</li>
+            <li>Loops</li>
+            <li>Conditional statements</li>
+        </ul>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>students</b> = {}
+
+def <b>add_student(roll, name, marks):
+    students[roll] = {
+        <u>"name"</u>: name,
+        <u>"marks"</u>: marks
+    }</b>
+
+def <b>display_students()</b>:
+    for <b>roll, details in students.items():
+        print(roll, details)</b>
+
+<b>add_student</b>(101, <u>"Aman"</u>, 85)
+<b>add_student</b>(102, <u>"Ravi"</u>, 90)
+
+<b>display_students()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Project 4 – To-Do List Application</h3>
+        <i>Intermediate</i>
+        <p><dfn>Objective:</dfn> Create an application to manage daily tasks.</p>
+        <p>Features:</p>
+        <ul>
+            <li>Add task</li>
+            <li>View tasks</li>
+            <li>Mark tasks as completed</li>
+            <li>Remove tasks</li>
+            <li>Save tasks in a file</li>
+        </ul>
+        <p>Concepts used:</p>
+        <ul>
+            <li>Lists</li>
+            <li>Functions</li>
+            <li>File handling</li>
+            <li>Loops</li>
+            <li>Conditional statements</li>
+        </ul>
+        <h1>Practice Questions</h1>
+        <ol>
+            <li>Install NumPy and create a numerical array.</li>
+            <li>Create a Pandas DataFrame of five students.</li>
+            <li>Read student records from a CSV file.</li>
+            <li>Create a bar graph of student marks.</li>
+            <li>Generate random numbers using Python.</li>
+            <li>Display the current date and time.</li>
+            <li>Build a calculator project.</li>
+            <li>Build a student management system.</li>
+        </ol>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

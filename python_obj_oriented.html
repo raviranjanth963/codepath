@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array.</title>
+    <link rel="stylesheet" href="python_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="lo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="button">Notes</button>
+            <button class="btn" type="button">Practices</button>
+            <button class="btn" type="button">Resources</button>
+            <button class="btn" type="button">About</button>
+        </div>
+
+        <div class="login">
+        <a href="login.html">
+            <button class="button">Log in/Sign in</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="syll">
+        <details>
+            <summary>Course Syllabus.</summary>
+            <div class="course">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Topic</th>
+                        <th>Chapter</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="topi"><a href="python_fundamental.html">Python Fundamentals</a></td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td class="topi"><a href="python_loop.html">Conditions & Loops</a></td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td class="topi"><a href="python_datastr.html">Data Structures</a></td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td class="topi"><a href="python_function_modules.html">Functios & Modules</a></td>
+                        <td>04</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td class="topi"><a href="python_error.html">Files & Error Handling</a></td>
+                        <td>05</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td class="topi"><a href="python_lib_proj.html">Libraries & Projects</a></td>
+                        <td>06</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td class="topi">Practice & Final Quiz</td>
+                        <td>07</td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="head">
+        <h1>Object-Oriented Python</h1>
+        <a href="https://images.openai.com/static-rsc-4/xry95wAutIof7_RW7HIlRqYh1rCuQxCIBZQkv5Jf9ZmjBJm8aZ37VjNmp-zNhljSiN5jdjcVeHq9f-1yBWh0sKH_FzN0gpONJj2AE_Y5vERuvQO5_mbYdFieZPG40qM9sEtappthccOACtLMmgGrWklhL5VZFap-iz2F96brPcf4RyfD8Y2OgS0XAcER_V-p?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/xry95wAutIof7_RW7HIlRqYh1rCuQxCIBZQkv5Jf9ZmjBJm8aZ37VjNmp-zNhljSiN5jdjcVeHq9f-1yBWh0sKH_FzN0gpONJj2AE_Y5vERuvQO5_mbYdFieZPG40qM9sEtappthccOACtLMmgGrWklhL5VZFap-iz2F96brPcf4RyfD8Y2OgS0XAcER_V-p?purpose=fullsize" width="100%"></a>
+        <h2>Introduction to OOP</h2>
+        <p>Object-Oriented Programming (OOP) is a programming approach based on classes and objects.</p>
+        <p>It helps organize code by combining data and related functionality.</p>
+        <p>The four main principles of OOP are:</p>
+        <ol>
+            <li>Encapsulation</li>
+            <li>Inheritance</li>
+            <li>Polymorphism</li>
+            <li>Abstraction</li>
+        </ol>
+        <h2>Classes and Objects</h2>
+        <p><dfn>Class:</dfn> A class is a blueprint used to create objects.</p>
+        <p><dfn>Object:</dfn> An object is an instance of a class.</p>
+        <h3>Example:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Student:</b>
+    <b>name</b> = <u>"Aman"</u>
+    <b>age</b> = 18
+
+<b>student1 = Student()</b>
+
+<b>print(student1.name)
+print(student1.age)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+Aman
+18
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>The init() Method</h2>
+        <p>The <i>__init__()</i> method initializes an object's attributes when the object is created.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Student:</b>
+    def<b> __init__(self, name, age):</b>
+        <b>self</b>.name = <b>name</b>
+        <b>self</b>.age = <b>age</b>
+
+<b>student1 = Student</b>(<u>"Aman"</u>, 18)
+<b>student2 = Student</b>(<u>"Ravi"</u>, 19)
+
+<b>print(student1.</b>name)
+<b>print(student2.</b>name)
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Understanding self</h2>
+        <p><i>self</i> refers to the current instance of a class.</p>
+        <p>It is used to access the object's attributes and methods.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Student:</b>
+    def<b> __init__(self, name):</b>
+        <b>self</b>.name = <b>name</b>
+    
+    def <b>display(self):
+        print(self.</b>name)
+
+<b>s1 = Student(<u>"Aman"</u>)
+s1.display()</b>
+
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Class Attributes and Instance Attributes</h2>
+        <p><dfn>Class attribute:</dfn> Shared through the class and normally accessible through its instances.</p>
+        <p><dfn>Instance attribute:</dfn> Belongs to a particular object.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Student:
+    college</b> = <u>"ADGITM"</u>
+
+    def <b>__init__(self, name):
+        self.</b>name = <b>name</b>
+
+<b>s1 = Student</b>(<u>"Aman"</u>)
+<b>s2 = Student</b>(<u>"Ravi"</u>)
+
+<b>print(s1.college)
+print(s2.college)
+print(s1.name)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Instance Methods, Class Methods and Static Methods</h2>
+        <h3>Instance method:</h3>
+        <p>Works with an object's instance data.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Student:</b>
+    def <b>display(self):
+        print</b>(<u>"Student details"</u>)
+
+<b>s1 = Student()
+s1.display()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Class method:</h3>
+        <p>Uses <i>@classmethod</i> and receives the class as <i>cls</i>.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Student:</b>
+    <b>college</b> = <u>"ADGITM"</u>
+
+    @classmethod
+    def <b>show_college(cls):
+        print(cls.</b>college)
+
+<b>Student.show_college()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h3>Static method:</h3>
+        <p>Uses <i>@staticmethod</i> and does not automatically receive self or <i>cls</i>.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Student:</b>
+    @staticmethod
+    def <b>add(a, b):</b>
+        return <b>a + b</b>
+
+<b>print(Calculator.add</b>(10, 20))
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Encapsulation</h2>
+        <p>Encapsulation means grouping data and methods together and controlling how internal data is accessed.</p>
+        <p>Python uses naming conventions and properties to manage access.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>BankAccount:</b>
+    def <b>__init__(self, balance):
+        self.</b>__balance = <b>balance</b>
+
+    def <b>get_balance(self):</b>
+        return <b>self.</b>__balance
+
+<b>account = BankAccount</b>(5000)
+
+<b>print(account.get_balance())</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Here, <i>__balance</i> uses name mangling. It is not absolute security or strict private access.</p>
+        <h2>Inheritance</h2>
+        <p>Inheritance allows a child class to reuse and extend features of a parent class.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Animal:</b>
+    <b>def eat(self):
+        print</b>(<u>"Animal is eating"</u>)
+
+class <b>Dog(Animal):</b>
+    def <b>bark(self):
+        print</b>(<u>"Dog is barking"</u>)
+
+<b>d = Dog()
+
+d.eat()
+d.bark()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Types of inheritance:</p>
+        <ul>
+            <li>Single inheritance</li>
+            <li>Multiple inheritance</li>
+            <li>Multilevel inheritance</li>
+            <li>Hierarchical inheritance</li>
+            <li>Hybrid inheritance</li>
+        </ul>
+        <h2>Polymorphism</h2>
+        <p>Polymorphism means one interface or method name can work in different ways depending on the object.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Dog:</b>
+    def <b>sound(self):
+        print</b>(<u>"Bark"</u>)
+
+class <b>Cat:</b>
+    def <b>sound(self):
+        print</b>(<u>"Meow"</u>)
+
+for <b>animal</b> in <b>[Dog(), Cat()]:
+    animal.sound()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Method Overriding</h2>
+        <p>Method overriding occurs when a child class provides its own implementation of a method inherited from the parent class.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Animal:</b>
+    def <b>sound(self):
+        print</b>(<u>"Animal sound"</u>)
+
+class <b>Dog(Animal):</b>
+    def <b>sound(self):
+        print</b>(<u>"Bark"</u>)
+
+<b>d = Dog()
+d.sound()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Abstraction</h2>
+        <p>Abstraction means exposing essential functionality while hiding implementation details.</p>
+        <p>Python supports abstraction through the <i>abc</i> module.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+from <b>abc</b> import ABC, <b>abstractmethod</b>
+
+class <b>Shape</b>(ABC):
+
+    @abstractmethod
+    def <b>area(self):</b>
+        pass
+
+class <b>Rectangle(Shape):</b>
+    def <b>__init__(self, length, width):
+        self.</b>length = <b>length
+        self.</b>width = <b>width</b>
+
+    def <b>area(self):</b>
+        return <b>self.</b>length * <b>self.</b>width
+
+<b>r = Rectangle(10, 5)
+print(r.area())</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+50
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Constructors and Destructors</h2>
+        <p><dfn>Constructor:</dfn> <i>__init__()</i> initializes an object.</p>
+        <p><dfn>Destructor:</dfn> <i>__del__()</i> is called when an object is being finalized, although its exact timing should not be relied upon.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Demo:</b>
+    def <b>__init__(self):
+        print</b>("Object created")
+
+    def <b>__del__(self):
+        print</b>("Object finalized")
+
+<b>obj = Demo()</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Operator Overloading</h2>
+        <p>Operator overloading allows operators to work with user-defined objects through special methods.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>Number:</b>
+    def <b>__init__(self, value):
+        self.</b>value = <b>value</b>
+
+    def <b>__add__(self, other):</b>
+        return <b>self.</b>value <b>+ other</b>.value
+
+<b>a = Number(10)
+b = Number(20)
+
+print(a + b)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Output:</p>
+        <div class="box2">
+            <div class="code-box2">
+               <button type="button" class="copy-btn2" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod2">
+<pre><code>
+30
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h1>Practice Questions</h1>
+        <ol>
+            <li>Create a Student class with name, roll number and branch.</li>
+            <li>Create a Rectangle class with an area method.</li>
+            <li>Demonstrate single inheritance.</li>
+            <li>Demonstrate method overriding.</li>
+            <li>Create a BankAccount class with deposit and withdrawal methods.</li>
+            <li>Demonstrate polymorphism using different classes.</li>
+            <li>Create an abstract Shape class.</li>
+            <li>Demonstrate operator overloading using __add__().</li>
+        </ol>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>

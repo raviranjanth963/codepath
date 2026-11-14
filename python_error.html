@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array.</title>
+    <link rel="stylesheet" href="python_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="web_logo">
+        <div class="lo">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div class="logo1">
+            code
+            <div><dfn>path</dfn></div>
+        </div>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="button">Notes</button>
+            <button class="btn" type="button">Practices</button>
+            <button class="btn" type="button">Resources</button>
+            <button class="btn" type="button">About</button>
+        </div>
+
+        <div class="login">
+        <a href="login.html">
+            <button class="button">Log in/Sign in</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="syll">
+        <details>
+            <summary>Course Syllabus.</summary>
+            <div class="course">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Topic</th>
+                        <th>Chapter</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="topi"><a href="python_fundamental.html">Python Fundamentals</a></td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td class="topi"><a href="python_loop.html">Conditions & Loops</a></td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td class="topi"><a href="python_datastr.html">Data Structures</a></td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td class="topi"><a href="python_function_modules.html">Functios & Modules</a></td>
+                        <td>04</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td class="topi"><a href="python_obj_oriented.html">Object-Oriented Python</a></td>
+                        <td>05</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td class="topi"><a href="python_lib_proj.html">Libraries & Projects</a></td>
+                        <td>06</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td class="topi">Practice & Final Quiz</td>
+                        <td>07</td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+    
+
+    <div class="head">
+        <h1>Files & Error Handling</h1>
+        <a href="https://images.openai.com/static-rsc-4/yHR2mvmCSI4DNdr20SquQf9RGSrynx2mUzkg3gagmH7oUq70vT74x58LYxZ57cljfQ0A99R-GcJov9OGAksZFiFc2BvUL-_bywPflAnD93C1ULlcu59uv8yzfhJjXyKqwUKaBtmANvEV1iDV-FFkdvPe3EeTzaclJPD8Pmqx7RkHn_l7pcUI_eWlK7piQ8pL?purpose=fullsize"><img src="https://images.openai.com/static-rsc-4/yHR2mvmCSI4DNdr20SquQf9RGSrynx2mUzkg3gagmH7oUq70vT74x58LYxZ57cljfQ0A99R-GcJov9OGAksZFiFc2BvUL-_bywPflAnD93C1ULlcu59uv8yzfhJjXyKqwUKaBtmANvEV1iDV-FFkdvPe3EeTzaclJPD8Pmqx7RkHn_l7pcUI_eWlK7piQ8pL?purpose=fullsize" width="100%"></a>
+        <h2>Introduction to File Handling</h2>
+        <p>File handling allows a program to create, read, write and modify files.</p>
+        <p>Python provides the built-in <i>open()</i> function.</p>
+        <h3>Syntax:</h3>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+file = open(<u>"filename.txt", "mode"</u>)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>File Opening Modes</h2>
+        <table>
+            <tr>
+                <th>Mode</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td><i>r</i></td>
+                <td>Read a file</td>
+            </tr>
+            <tr>
+                <td><i>w</i></td>
+                <td>Write; creates or overwrites a file</td>
+            </tr>
+            <tr>
+                <td><i>a</i></td>
+                <td>Append content to a file</td>
+            </tr>
+            <tr>
+                <td><i>x</i></td>
+                <td>Create a new file; fails if it exists</td>
+            </tr>
+            <tr>
+                <td><i>r+</i></td>
+                <td>Read and write</td>
+            </tr>
+            <tr>
+                <td><i>w+</i></td>
+                <td>Write and read; truncates existing content</td>
+            </tr>
+            <tr>
+                <td><i>a+</i></td>
+                <td>Append and read</td>
+            </tr>
+            <tr>
+                <td><i>b</i></td>
+                <td>Binary mode modifier</td>
+            </tr>
+            <tr>
+                <td><i>t</i></td>
+                <td>Text mode modifier (default)</td>
+            </tr>
+        </table>
+        <h2>Writing to a File</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+file = open(<u>"notes.txt", "w"</u>)
+
+file.write(<u>"Welcome to CodePath"</u>)
+
+file.close()
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>The <i>w</i> mode creates the file if it does not exist and replaces its previous contents if it does.</p>
+        <h2>Reading a File</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+file = open(<u>"notes.txt", "r"</u>)
+
+content = file.read()
+
+print(content)
+
+file.close()
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Reading Lines</h2>
+        <p><dfn>readline():</dfn> Reads one line.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+file = open(<u>"notes.txt", "r"</u>)
+
+print(file.readline())
+
+file.close()
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p><dfn>readlines():</dfn> Reads all lines and returns them as a list.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+file = open(<u>"notes.txt", "r"</u>)
+
+print(file.readlines())
+
+file.close()
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Appending to a File</h2>
+        <p>Append mode adds new content without replacing existing content.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>
+file = open(<u>"notes.txt", "a"</u>)
+
+file.write(<u>"\nPython is easy to learn."</u>)
+
+file.close()
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>The with Statement</h2>
+        <p>The<i> with</i> statement manages file closing automatically.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+with <b>open(<u>"notes.txt", "r"</u>) as file:
+    content = file.read()
+    print(content)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>This is the recommended approach for ordinary file operations.</p>
+        <h2>File Position Methods</h2>
+        <ul>
+            <li><i>tell()</i> returns the current file position.</li>
+            <li><i>seek()</i> changes the file position.</li>
+        </ul>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+with <b>open(<u>"notes.txt", "r"</u>) as file:
+    print(file.tell())
+
+    file.read(5)
+
+    print(file.tell())
+
+    file.seek(0)
+
+    print(file.read())
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Working with Directories</h2>
+        <p>Python's <i>os</i> module helps interact with the operating system.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+with <b>os
+
+print(os.getcwd())
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <p>Other useful functions:</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>os.listdir()
+os.mkdir(<u>"my_folder"</u>)
+os.path.exists(<u>"notes.txt"</u>)
+</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Introduction to Errors and Exceptions</h2>
+        <p>An error is a problem that prevents a program from working as intended.</p>
+        <p>Common Python errors:</p>
+        <table>
+            <tr>
+                <th>Error</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>SyntaxError</td>
+                <td>Incorrect syntax</td>
+            </tr>
+            <tr>
+                <td>NameError</td>
+                <td>Undefined name</td>
+            </tr>
+            <tr>
+                <td>TypeError</td>
+                <td>Incorrect type operation</td>
+            </tr>
+            <tr>
+                <td>ValueError</td>
+                <td>Invalid value</td>
+            </tr>
+            <tr>
+                <td>IndexError</td>
+                <td>Invalid sequence index</td>
+            </tr>
+            <tr>
+                <td>KeyError</td>
+                <td>Missing dictionary key</td>
+            </tr>
+            <tr>
+                <td>ZeroDivisionError</td>
+                <td>Division by zero</td>
+            </tr>
+            <tr>
+                <td>FileNotFoundError</td>
+                <td>File does not exist</td>
+            </tr>
+            <tr>
+                <td>ImportError</td>
+                <td>Import problem</td>
+            </tr>
+        </table>
+        <h2>try and except</h2>
+        <p>The <i>try</i> block contains code that might raise an exception. The except block handles a matching exception.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+try:
+    <b>num = int(input(<u>"Enter a number: "</u>))
+    print(10 / num)</b>
+
+except <b>ZeroDivisionError:
+    print(<u>"Cannot divide by zero"</u>)</b>
+
+except <b>ValueError:
+    print(<u>"Please enter a valid integer"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>else Statement</h2>
+        <p>The <u>else</u> block runs if no exception occurs in the try block.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+try:
+    <b>num = int(input(<u>"Enter a number: "</u>))
+    print(10 / num)</b>
+
+except <b>ValueError:
+    print(<u>"Invalid input"</u>)</b>
+
+except <b>
+    print(<u>"Your number is:"</u>, num)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>finally Statement</h2>
+        <p>The <i>finally</i> block runs whether an exception occurs or not.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+try:
+    <b>print(<u>"Program started"</u>)</b>
+
+except <b>Exception:
+    print(<u>"An error occurred"</u>)</b>
+
+finally <b>
+    print(<u>"Program finished"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Raising Exceptions</h2>
+        <p>The <i>raise</i> keyword allows you to raise an exception deliberately.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+<b>age</b> = -5
+
+if <b>age</b> < 0:
+    raise <b>ValueError(<u>"Age cannot be negative"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Creating Custom Exceptions</h2>
+        <p>You can create your own exception classes by inheriting from <i>Exception</i>.</p>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+class <b>InvalidAgeError(Exception):</b>
+    pass
+
+<b>age</b> = 15
+
+try:
+    if <b>age</b> < 18:
+        raise <b>InvalidAgeError(<u>"Age must be 18 or above"</u>)</b>
+
+except <b>InvalidAgeError as error:
+    print(error)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h2>Practical Example – Safe Calculator</h2>
+        <div class="box">
+            <div class="code-box">
+               <button type="button" class="copy-btn" id="copyBtn">copy</button>
+               <hr>
+               <div class="cod">
+<pre><code>
+try:
+    <b>a = float(input(<u>"Enter first number: "</u>))
+    b = float(input(<u>"Enter second number: "</u>))
+
+    result = a / b
+</b>
+except <b>ZeroDivisionError:
+    print(<u>"Cannot divide by zero"</u>)</b>
+
+except <b>ValueError:
+    print(<u>"Enter valid numbers"</u>)</b>
+
+else:
+    <b>print(<u>"Result:"</u>, result)</b>
+
+finally:
+    <b>print(<u>"Calculator closed"</u>)</b>
+</code></pre>
+               </div>
+            </div>
+        </div>
+        <h1>Practice Questions</h1>
+        <ol>
+            <li>Create a text file using Python.</li>
+            <li>Write your name and college name into a file.</li>
+            <li>Read the contents of a text file.</li>
+            <li>Append new information to an existing file.</li>
+            <li>Count the number of lines in a file.</li>
+            <li>Handle division by zero using try-except.</li>
+            <li>Handle invalid user input.</li>
+            <li>Create a custom exception for invalid marks.</li>
+        </ol>
+    </div>
+</body>
+<script src="copy.js" defer></script>
+</html>
