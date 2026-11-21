@@ -209,6 +209,7 @@ h1 {
     font-weight: bolder;
     color: rgb(210, 233, 253);
     margin: 12px;
+    /* color: linear-gradient(90deg, var(--cyan), var(--purple)); */
 }
 
 h2 {

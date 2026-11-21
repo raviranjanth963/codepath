@@ -198,7 +198,8 @@ label {
 }
 
 .logo {
-  font-size: clamp(25px, 3vw, 39px);
+  font-size: 50px;
+  font-weight: bolder;
   background: linear-gradient(100deg, #b84bff, #7a61ff);
   color: transparent;
   background-clip: text;
@@ -206,7 +207,8 @@ label {
 }
 
 .logo1 {
-    font-size: clamp(36px, 5vw, 46px);
+    font-size: 50px;
+    font-weight: bolder;
   color: #f7f8ff;
   display: flex;
 }
@@ -218,21 +220,7 @@ label {
   -webkit-background-clip: text;
 }
 
-.info {
-    font-size: 22px;
-    background: linear-gradient(100deg, #d092fa, #7d69eb);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin-top: 75px; 
-  margin-left: 28px;
-}
 
-.info1 {
-    font-size: 35px;
-    font-weight: bolder;
-    margin-left: 28px;
-}
 
 
 .big-box {
