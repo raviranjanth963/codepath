@@ -21,13 +21,18 @@ body {
   background: var(--navy);
   color: #fff;
   margin-left: 200px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .web_logo {
   display: flex;
-  margin-top: 18px;
-  margin-left: 24px;
+  padding-left: 30px;
+  padding-top: 12px;
+  position: sticky;
+  top: 5px;
+  background: linear-gradient(100deg, #240737, #060127);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .logo {
@@ -55,41 +60,83 @@ dfn {
     font-weight: bolder;
 }
 
-.butt {
-    border: 0px;
-    background: none;
-    font-size: 25px;
-    font-weight: bolder;
-    margin-top: 20px;
-}
 
-.butt:hover {
+
+/* summary:hover {
     background: rgb(200, 237, 252);
-    color: #0143a5;
+    color: #000306;
 }
 
 
-.butt:active {
-    background: rgb(200, 235, 249);
-    color: #0143a5;
-}
+summary:active {
+    background: rgb(129, 219, 255);
+    color: #01050a;
+} */
 .sele {
     display: flex;
     padding: 20px;
+    position: sticky;
+    top: 62px;
+    background: linear-gradient(100deg, #240737, #060127);
+    margin-top: 6px;
+    border-bottom: 5px solid rgb(48, 6, 88);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
-details {
-    padding-left: 10px;
-}
+
+
+/* summary {
+    height: 40px;
+    width: 180px;
+    background: #FFFFFF0F;
+    margin: 6px;
+    padding: 6px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ce0cf0;
+} */
+
 summary {
-    height: 30px;
-    width: 150px;
+    height: 40px;
+    width: 180px;
+    background: #FFFFFF0F;
+    margin: 6px;
+    padding: 6px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #ce0cf0;
 }
+
+summary:hover {
+    background: rgb(200, 237, 252);
+    color: #000306;
+}
+
+
+summary:active {
+    background: rgb(129, 219, 255);
+    color: #01050a;
+}
+
+.butt:hover {
+  color: #011345;
+}
+
+
 
 .boxx {
     display: flex;
     /* align-items: center; */
     justify-content: space-evenly;
     border: 1px solid #0143a5;
+    padding: 10px;
 }
 
 a {
@@ -215,6 +262,8 @@ spam {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 2px;
+    background: #0b1026;
+    margin-top: 5px;
 }
 
 .cd {
@@ -227,11 +276,21 @@ spam {
     padding: 10px;
 }
 
+.cd3 {
+    background: #0b1026c4;
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 26px;
+    color: #A9B0D6;
+} 
+
 .cd2 {
     background: #0b1026;
     height: 350px;
     width: 560px;
-    padding: 10px;
+    /* padding: 10px; */
     border: 1px solid black;
     border-radius: 26px;
     color: #A9B0D6;
@@ -557,31 +616,38 @@ u:hover {
 
 /*copy for*/
 
-.code-box {
-    position: relative;          /* lets the button sit in the corner */
+.code-box {        /*lets the button sit in the corner */
     background: #040126;
-    padding: 40px 20px 20px; 
+    padding: 12px; 
     border-radius: 20px;
     color: white;
     font-size: 20px;
 }
 
 .copy-btn {
-    position: absolute;
-    top: 10px;
-    left: 15px;
     background: none;
-    border: 1px solid white;
     color: white;
-    padding: 4px 12px;
-    border-radius: 6px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 14px;
     cursor: pointer;
+    width: 100px;
+    height: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .copy-btn:active {
     color: #ffd43b;
     background: #2ecc71;
+    font-weight: bolder;
 }
 
 .copy-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    font-weight: bolder;
+    background: #035c28;
+    color: #ffd43b;
+}
