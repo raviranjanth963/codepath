@@ -70,6 +70,7 @@ dfn {
 
 .mylogo {
     display: flex;
+    margin-left: 16px;
 }
 
 
@@ -91,7 +92,7 @@ dfn {
     padding: 8px;
 }
 .btn {
-    width: 140px;
+    width: 150px;
     height: 50px;
     border-radius: 15px;
     text-align: center;
@@ -99,7 +100,7 @@ dfn {
     font-weight: bold;
     background: none;
     border: none;
-    margin-left: 8px;
+    margin-left: 11px;
     color: #e2dede;
 }
 
@@ -123,11 +124,11 @@ dfn {
     justify-content: space-evenly;
     align-items: center;
     height: 45px;
-    width: 520px;
+    width: 550px;
     background: rgba(0, 0, 0, 0.6);
     background: linear-gradient(100deg, #601c8e, #1b0c65);
-    margin-right: 10px;
-    margin-left: 15px;
+    margin-right: 8px;
+    margin-left: 10px;
 }
 
 .search:hover {
@@ -138,11 +139,11 @@ dfn {
     background: none;
     border: 0px;
     height: 43px;
-    width: 460px;
+    width: 510px;
     background: linear-gradient(100deg, #601c8e, #1b0c65);
     font-size: 20px;
     color: #e2dede;
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 .log i {
@@ -166,7 +167,7 @@ dfn {
     font-weight: bolder;
     color: #e2dede;
     border-radius: 16px;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 .btn3 {
@@ -177,6 +178,7 @@ dfn {
     font-weight: bolder;
     color: #e2dede;
     border-radius: 16px;
+    margin-left: 900px;
 }
 
 .btn3:hover {
@@ -204,6 +206,11 @@ dfn {
     height: 60px;
     margin-top: 30px;
     margin-left: 30px;
+}
+
+.star {
+    display: flex;
+    align-items: center;
 }
 
 .main {
