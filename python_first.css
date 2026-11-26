@@ -99,7 +99,7 @@ dfn {
     font-weight: bold;
     background: none;
     border: none;
-    margin-left: 20px;
+    margin-left: 8px;
     color: #e2dede;
 }
 
@@ -114,6 +114,7 @@ dfn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 .search {
@@ -122,11 +123,11 @@ dfn {
     justify-content: space-evenly;
     align-items: center;
     height: 45px;
-    width: 640px;
+    width: 520px;
     background: rgba(0, 0, 0, 0.6);
     background: linear-gradient(100deg, #601c8e, #1b0c65);
-    margin-right: 20px;
-    margin-left: 35px;
+    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .search:hover {
@@ -137,11 +138,11 @@ dfn {
     background: none;
     border: 0px;
     height: 43px;
-    width: 575px;
+    width: 460px;
     background: linear-gradient(100deg, #601c8e, #1b0c65);
     font-size: 20px;
     color: #e2dede;
-    padding-left: 12px;
+    padding-left: 10px;
 }
 
 .log i {
@@ -158,18 +159,18 @@ dfn {
 }
 
 .btn2 {
-    width: 190px;
+    width: 180px;
     height: 44px;
     background: rgb(41, 105, 207);
     font-size: 24px;
     font-weight: bolder;
     color: #e2dede;
     border-radius: 16px;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 .btn3 {
-    width: 190px;
+    width: 180px;
     height: 44px;
     background: rgb(134, 34, 184);
     font-size: 24px;
