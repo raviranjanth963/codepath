@@ -179,8 +179,8 @@ summary:hover {
 }
 
 .course {
-    width: 1500px;
-    height: 800px;
+    width: 1000px;
+    height: 600px;
     border: 2px solid #65278f;
     border-radius: 26px;
     background-image: url("python .png");
@@ -293,10 +293,9 @@ li {
 }
 
 /*copy*/
-.code-box {
-    position: relative;          /* lets the button sit in the corner */
+.code-box {          /* lets the button sit in the corner */
     background: #040126;
-    padding: 40px 20px 20px;
+    padding: 12px;
     border-radius: 20px;
     color: white;
     font-size: 20px;
@@ -304,8 +303,6 @@ li {
 }
 
 .copy-btn {
-    position: absolute;
-    top: 2px;
     right: 15px;
     background: none;
     border: 0px;
@@ -320,6 +317,7 @@ li {
     border-radius: 6px;
     cursor: pointer;
     margin-bottom: 8px;
+    margin-left: 1100px;
 }
 
 .copy-btn:active {
@@ -348,10 +346,9 @@ li {
 
 
 /*copy*/
-.code-box2 {
-    position: relative;          /* lets the button sit in the corner */
+.code-box2 {  /*lets the button sit in the corner */
     background: #040126;
-    padding: 40px 20px 20px;
+    padding: 10px;
     border-radius: 20px;
     color: white;
     font-size: 20px;
@@ -359,9 +356,6 @@ li {
 }
 
 .copy-btn2 {
-    position: absolute;
-    top: 2px;
-    right: 15px;
     background: none;
     border: 0px;
     width: 120px;
@@ -375,6 +369,7 @@ li {
     border-radius: 6px;
     cursor: pointer;
     margin-bottom: 8px;
+    margin-left: 1100px;
 }
 
 .copy-btn2:active {
