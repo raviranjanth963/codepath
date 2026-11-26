@@ -143,20 +143,7 @@ details {
     position: sticky;
     top: 120px;
     margin-left: 20px;
-    /* border: 2px solid #65278f;
-    border-radius: 26px; */
 }
-/* .syll {
-    width: 80%;
-    height: 700px;
-    border: 2px solid #65278f;
-    border-radius: 26px;
-    background-image: url("python .png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 50px;
-  margin-left: 180px;
-} */
 
 summary {
     font-size: 30px;
@@ -179,7 +166,7 @@ summary:hover {
 }
 
 .course {
-    width: 1000px;
+    width: 1150px;
     height: 600px;
     border: 2px solid #65278f;
     border-radius: 26px;
@@ -193,10 +180,10 @@ summary:hover {
   justify-content: center;
 }
 .course table {
-    padding: 14px;
+    padding: 25px;
     background: rgba(0, 0, 0, 0.4);
-    width: 95%;
-    height: 600px;
+    width: 75%;
+    height: 540px;
     border: 2px solid gray; 
 }
 .course tr {
@@ -205,7 +192,7 @@ summary:hover {
 }
 
 .course th {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bolder;
     padding: 14px;
     color: rgb(250, 226, 195);
@@ -218,7 +205,7 @@ summary:hover {
     padding: 10px;
 }
 .topi {
-    width: 88%;
+    width: 80%;
 }
 
 .topi:hover {
@@ -317,7 +304,7 @@ li {
     border-radius: 6px;
     cursor: pointer;
     margin-bottom: 8px;
-    margin-left: 1100px;
+    margin-left: 1140px;
 }
 
 .copy-btn:active {
@@ -369,7 +356,7 @@ li {
     border-radius: 6px;
     cursor: pointer;
     margin-bottom: 8px;
-    margin-left: 1100px;
+    margin-left: 1140px;
 }
 
 .copy-btn2:active {
