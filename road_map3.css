@@ -24,10 +24,12 @@ body {
   margin-top: 50px;
 }
 
+
+
 .web_logo {
   display: flex;
-  /* margin-top: 8px; 
-  margin-left: 12px; */
+  width: 100%;
+  box-sizing: border-box;
   border-bottom: 5px solid blueviolet;
   border-right: 4px solid rgb(91, 16, 160);
   border-top: 3px solid rgb(54, 4, 100);
@@ -72,7 +74,7 @@ dfn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 700px;
+    margin-left: 600px;
     padding-left: 50px;
 }
 
@@ -419,15 +421,16 @@ a {
     font-weight: bold;
     text-align: center;
     border-radius: 36px;
+    margin-left: 110px;
 }
 
-.login {
+/* .login {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 300px;
     margin-left: 160px;
-}
+} */
 
 .butt:hover { transform: translateY(-3px); filter: brightness(1.12); }
 .butt:active { transform: translateY(0) scale(.98); }
